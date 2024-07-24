@@ -1,0 +1,89 @@
+from Class.Models.Variante import Variante
+from Class.Models.ValorAtributo import ValotAtributo
+from Class.ConnectionHandler import ConnectionHandler
+from Class.Models.tablas import tablas
+import requests
+import json
+from datetime import datetime
+class VarianteController:
+    def __init__(self):
+        self.process="Iniciando"
+        self.con=ConnectionHandler()
+        self.con.connect()
+        #self.con.executeQuery("delete from "+tablas["variante"])
+        #self.con.commitChange()
+        #self.con.closeConnection()
+    def getInsertVariant(self):
+        variantes=[]
+        url = 'https://api.bsale.cl/v1/variants.json?limit=50&expand=[costs,product,attribute_values]'
+        flag=True
+        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        while(flag):
+            req = requests.get(url, headers=headers)
+            response=json.loads(req.text)
+            if("next" in response):
+                flag=True
+                url=response["next"]+'&expand=[costs,product,attribute_values]'
+            else:
+                flag=False
+            if(response["count"]>0):
+                for item in response["items"]:
+                    variantes.append(item)
+            flag=False
+        return variantes
+        
+    def findData(self):
+        currentTime=datetime.now()
+        url = 'https://api.bsale.cl/v1/variants.json?limit=50'
+        flag=True
+        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        while(flag):
+            req = requests.get(url, headers=headers)
+            response=json.loads(req.text)
+            if("next" in response):
+                flag=True
+                url=response["next"]
+            else:
+                flag=False
+            if(response["count"]>0):
+                for item in response["items"]:
+                    #por cada variante buscar costo promedio
+                    costoPromedio=0
+                    if("costs" in item):
+                        try:
+                            result=requests.get(item["costs"]["href"],headers=headers)
+                            costoPromedio=json.loads(result.text)["averageCost"]
+                        except:
+                            print("Error de acceso")
+
+                    currentVariante=Variante(item["id"],item["description"],item["unlimitedStock"],item["allowNegativeStock"],item["state"],item["barCode"],item["code"],item["imagestionCenterCost"],item["imagestionAccount"],item["imagestionConceptCod"],item["imagestionProyectCod"],item["imagestionCategoryCod"],item["imagestionProductId"],item["serialNumber"],item["prestashopCombinationId"],item["prestashopValueId"],item["product"]["id"],item["attribute_values"]["href"],item["costs"]["href"],costoPromedio)
+                    currentVariante.save()
+            print(datetime.now()-currentTime)
+
+    def getAtributos(self):
+        self.con.connect()
+        query="select id,atributos from "+tablas["variante"]
+        result=self.con.executeQuery(query)
+        for current in result:
+            query="delete from "+tablas["valorAtributo"]+" where idVariante="+str(current[0])
+            self.con.executeQuery(query)
+            self.con.commitChange()
+            
+            flag=True
+            url=current[1]+"?limit=50"
+            headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+            while(flag):
+                req = requests.get(url, headers=headers)
+                response=json.loads(req.text)
+                if("next" in response):
+                    flag=True
+                    url=response["next"]
+                else:
+                    flag=False
+                if(response["count"]>0):
+                    for item in response["items"]:
+                        att='null'
+                        if("attribute" in item):
+                            att=item["attribute"]["id"]
+                        vp=ValotAtributo(item["id"],item["description"],att,current[0])
+                        vp.save()

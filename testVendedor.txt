@@ -1,0 +1,1 @@
+delete from vendedor_aux where idDocumento in (0

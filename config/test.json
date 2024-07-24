@@ -1,0 +1,435 @@
+{
+    "info": {
+        "_postman_id": "6d9abc0a-2028-4cff-aae0-7693bcb7eaef",
+        "name": "AIDAO",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "user",
+            "item": [
+                {
+                    "name": "http://localhost:4444/user/insertPollCreationEvent",
+                    "id": "a833f822-a50c-4f6f-abad-f2946997dc4b",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "endBlock",
+                                    "value": "17357716",
+                                    "type": "text",
+                                    "disabled": true
+                                }
+                            ]
+                        },
+                        "url": "http://localhost:4444/user/insertPollCreationEvent"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/user/insertPollEnteredEvent",
+                    "id": "cb71787b-6cee-4e2a-9e31-29f9e075dc92",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": []
+                        },
+                        "url": "http://localhost:4444/user/insertPollEnteredEvent"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/user/userDetails?userAddress=0x15708eba3e516E8294678806f28333427E2d9B19",
+                    "id": "d5aa200b-796f-4173-9930-451448312c67",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:4444/user/userDetails?userAddress=0x15708eba3e516E8294678806f28333427E2d9B19",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4444",
+                            "path": [
+                                "user",
+                                "userDetails"
+                            ],
+                            "query": [
+                                {
+                                    "key": "userAddress",
+                                    "value": "0x15708eba3e516E8294678806f28333427E2d9B19"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/user/pollDetails",
+                    "id": "dd11ed97-bdae-4779-8b60-2036297e6352",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "http://localhost:4444/user/pollDetails"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/user/userPollDetails?userID=5",
+                    "id": "949b5fc4-59c9-445d-925d-03040788e9ff",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:4444/user/userPollDetails?userID=5",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4444",
+                            "path": [
+                                "user",
+                                "userPollDetails"
+                            ],
+                            "query": [
+                                {
+                                    "key": "userID",
+                                    "value": "5"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/user/userDataDetails?userID=1",
+                    "id": "2f27a27b-87b0-4cae-bf11-cfa81991cfbb",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:4444/user/userDataDetails?userID=1",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4444",
+                            "path": [
+                                "user",
+                                "userDataDetails"
+                            ],
+                            "query": [
+                                {
+                                    "key": "userID",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/user/tradeHistory?userID=1",
+                    "id": "c73563a3-9f3b-4e2a-a080-3fab9942a7cb",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:4444/user/tradeHistory?userID=1",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4444",
+                            "path": [
+                                "user",
+                                "tradeHistory"
+                            ],
+                            "query": [
+                                {
+                                    "key": "userID",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/user/updateUserDataDetails?userID=1",
+                    "id": "a77e6834-cdb8-406f-bd79-b50d6889581e",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:4444/user/updateUserDataDetails?userID=1",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4444",
+                            "path": [
+                                "user",
+                                "updateUserDataDetails"
+                            ],
+                            "query": [
+                                {
+                                    "key": "userID",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ],
+            "id": "7c65b8f6-9ff1-4e68-a060-6dc7fcb3eb17"
+        },
+        {
+            "name": "forum",
+            "item": [
+                {
+                    "name": "http://localhost:4444/forum/categoryDetails",
+                    "id": "5c501314-4b9a-41b5-a892-3f4767a33029",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "http://localhost:4444/forum/categoryDetails"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/postDetails",
+                    "id": "11d66df9-3ca4-4517-869f-c3a3ec4af3f2",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "http://localhost:4444/forum/postDetails"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/userCommentDetails",
+                    "id": "c4c650b3-4f72-4b27-8276-d296d0e14896",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": []
+                        },
+                        "url": {
+                            "raw": "http://localhost:4444/forum/userCommentDetails?userID=1",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4444",
+                            "path": [
+                                "forum",
+                                "userCommentDetails"
+                            ],
+                            "query": [
+                                {
+                                    "key": "userID",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/userVoteDetails?userID=1",
+                    "id": "7d18b647-8b70-43a9-bc80-22b04d857aa1",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:4444/forum/userVoteDetails?userID=1",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4444",
+                            "path": [
+                                "forum",
+                                "userVoteDetails"
+                            ],
+                            "query": [
+                                {
+                                    "key": "userID",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/insertCategoryAddedEvent",
+                    "id": "75119513-18f4-4078-b201-97a20d23c63f",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "endBlock",
+                                    "value": "18904064",
+                                    "type": "text",
+                                    "disabled": true
+                                }
+                            ]
+                        },
+                        "url": "http://localhost:4444/forum/insertCategoryAddedEvent"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/insertPostCreationEvent",
+                    "id": "4c834495-3822-423e-97dd-f00c85ccbf74",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": "http://localhost:4444/forum/insertPostCreationEvent"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/insertCommentAddedEvent",
+                    "id": "f52740d0-e84c-483e-bca6-c3bb05ee078b",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": "http://localhost:4444/forum/insertCommentAddedEvent"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/insertCommentVotedEvent",
+                    "id": "0ff221f1-a052-4cd0-b551-17a8f8394d2e",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": "http://localhost:4444/forum/insertCommentVotedEvent"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "http://localhost:4444/forum/insertComments",
+                    "id": "05d65aef-ad02-4260-ab08-d14774be17dd",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "txHash",
+                                    "value": "0xe228c4911c5f43641dc1c8dcb2b36c1461994c8cbface317d4f508228da17ba7",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "comment",
+                                    "value": "testing",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": "http://localhost:4444/forum/insertComments"
+                    },
+                    "response": []
+                }
+            ],
+            "id": "7fa68637-1058-413b-9e9f-befb53b39e3f"
+        },
+        {
+            "name": "admin",
+            "item": [
+                {
+                    "name": "http://localhost:4444/admin/updateEventData",
+                    "id": "6f1e4b2a-21f3-4404-8ac2-f68157530286",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "event_name",
+                                    "value": "CATEGORY_ADDED",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "block_number",
+                                    "value": "1000",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": "http://localhost:4444/admin/updateEventData"
+                    },
+                    "response": []
+                }
+            ],
+            "id": "69f862e6-1238-4d1a-8f2d-dbbcf9a264d8"
+        },
+        {
+            "name": "auth",
+            "item": [
+                {
+                    "name": "http://localhost:4444/auth/signup",
+                    "id": "8ef722c0-f4b0-4746-81af-98232121e0b4",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "gurri",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "gurri@gmail.com",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "password",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "userAddress",
+                                    "value": "0x15708eba3e516E8294678806f28333427E2d9B19",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": "http://localhost:4444/auth/signup"
+                    },
+                    "response": []
+                }
+            ],
+            "id": "6d337368-303f-4cb0-91d7-3e2fa5c4624b"
+        },
+        {
+            "name": "exchange",
+            "item": [],
+            "id": "d43c10ab-4c35-4f02-b0fc-bbd03531b6ed"
+        }
+    ]
+}

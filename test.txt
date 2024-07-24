@@ -1,0 +1,7048 @@
+INSERT INTO cliente
+                        ([id]
+                        ,[firstName]
+                        ,[lastName]
+                        ,[email]
+                        ,[code]
+                        ,[phone]
+                        ,[company]
+                        ,[note]
+                        ,[facebook]
+                        ,[twitter]
+                        ,[hasCredit]
+                        ,[maxCredit]
+                        ,[state]
+                        ,[activity]
+                        ,[city]
+                        ,[municipality]
+                        ,[address]
+                        ,[companyOrPerson]
+                        ,[accumulatePoints]
+                        ,[points]
+                        ,[pointsUpdated]
+                        ,[sendDte]
+                        ,[isForeigner]
+                        ,[prestashopClientId]
+                        ,[createdAt]
+                        ,[updatedAt])
+                    VALUES
+                (5410
+                ,'julian alexis'
+                ,'diaz aguilera'
+                ,''
+                ,'11394352-1'
+                ,'95945302'
+                ,'julian alexis diaz aguilera'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5411
+                ,'maria '
+                ,'sanchez macaya'
+                ,''
+                ,'12894314-5'
+                ,'975618602'
+                ,'maria  sanchez macaya'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5412
+                ,'johana '
+                ,'santander cuevas'
+                ,'johannasantander.1982@gmail.com'
+                ,'15395173-K'
+                ,'947858120'
+                ,'johana  santander cuevas'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,50.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5413
+                ,'isabel'
+                ,'valdes martinez'
+                ,''
+                ,'8347241-3'
+                ,'950722000'
+                ,'isabel valdes martinez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5414
+                ,'Gloria '
+                ,'Lopez'
+                ,'glopez.vale@yahoo.es'
+                ,'8331914-3'
+                ,'998812927'
+                ,'Gloria  Lopez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5415
+                ,'Josseline Cristina '
+                ,'Salas Jiménez'
+                ,'josseline.c@gmail.com'
+                ,'15891203-1'
+                ,'91975866'
+                ,'Josseline Cristina  Salas Jiménez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5416
+                ,'MARIA'
+                ,'SANGUEZA'
+                ,'picuca1469@gmail.com'
+                ,'10131304-2'
+                ,'99155958'
+                ,'MARIA SANGUEZA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5417
+                ,'Moises Ernesto'
+                ,'Romero Soto'
+                ,'moisesernesto173@gmail.com'
+                ,'9997561-K'
+                ,'950156477'
+                ,'Moises Ernesto Romero Soto'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,'Santiago'
+                ,'Puente alto'
+                ,''
+                ,0
+                ,1
+                ,8.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5418
+                ,'NIDIA'
+                ,'DIAZ'
+                ,'nidiadiaz81@gmail.com'
+                ,'11296583-1'
+                ,'939058260'
+                ,'NIDIA DIAZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5419
+                ,'maria '
+                ,'bañares maya'
+                ,'mariabanares@gmail.com'
+                ,'10699607-5'
+                ,'971513018'
+                ,'maria  bañares maya'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,43.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5420
+                ,'mariela '
+                ,'cornejo ampuero'
+                ,'secretaria.asl.2013@gmail.com'
+                ,'12667674-3'
+                ,'962344030'
+                ,'mariela  cornejo ampuero'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,5.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5421
+                ,'flor maria'
+                ,'duran valenzuela'
+                ,'florduran.valenzuela@gmail.com'
+                ,'12174958-0'
+                ,'982878195'
+                ,'flor maria duran valenzuela'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5422
+                ,'abelardo '
+                ,'medina placensio'
+                ,''
+                ,'12276265-3'
+                ,'982878195'
+                ,'abelardo  medina placensio'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5423
+                ,'eduardo'
+                ,'farias'
+                ,'efarias91@yahoo.es'
+                ,'6179367-4'
+                ,'982964083'
+                ,'eduardo farias'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5424
+                ,'adriana'
+                ,'albornoz'
+                ,'galaxiadrian@gmail.com'
+                ,'19006358-5'
+                ,'964171497'
+                ,'adriana albornoz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,7.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5425
+                ,'pamela'
+                ,'rodriguez '
+                ,'pamrodriguez40@gmail.com'
+                ,'12261921-4'
+                ,'977302929'
+                ,'pamela rodriguez '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5426
+                ,'gerardo mario'
+                ,'silva carreño'
+                ,''
+                ,'8451695-3'
+                ,'967593742'
+                ,'gerardo mario silva carreño'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5427
+                ,'romina '
+                ,'correa bustamante'
+                ,'correabustamanteromina@gmail.com'
+                ,'15588466-5'
+                ,'923807088'
+                ,'romina  correa bustamante'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5428
+                ,'teresa'
+                ,'cerendero'
+                ,'teresa.novaurora@gmail.com'
+                ,'17255836-4'
+                ,'979301041'
+                ,'teresa cerendero'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,6.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5429
+                ,'fernando '
+                ,'gilil vergara'
+                ,''
+                ,'24998369-1'
+                ,'973599398'
+                ,'fernando  gilil vergara'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,22.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5430
+                ,'ortensia '
+                ,'piña madrid'
+                ,''
+                ,'6385439-5'
+                ,'979999199'
+                ,'ortensia  piña madrid'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5431
+                ,'veronica '
+                ,'rodriguez'
+                ,''
+                ,'10725142-1'
+                ,'987164692'
+                ,'veronica  rodriguez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5432
+                ,'aida '
+                ,'orellana rosales'
+                ,''
+                ,'9121955-7'
+                ,'974634021'
+                ,'aida  orellana rosales'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,2.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5433
+                ,'MONICA'
+                ,'LEON'
+                ,''
+                ,'5604502-3'
+                ,'97624125'
+                ,'MONICA LEON'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,16.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5434
+                ,'natasna '
+                ,'gonzalez rodriguez'
+                ,''
+                ,'22350137-0'
+                ,'932424591'
+                ,'natasna  gonzalez rodriguez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5435
+                ,'jenniffer'
+                ,'rodriguez miranda'
+                ,''
+                ,'16031919-4'
+                ,'928222441'
+                ,'jenniffer rodriguez miranda'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5436
+                ,'haydee alejandra'
+                ,'gallardo valdenegro'
+                ,'alejandragallardoul@gmail.com'
+                ,'12798461-1'
+                ,'993434256'
+                ,'haydee alejandra gallardo valdenegro'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5437
+                ,'maria eugenia'
+                ,'ramirez gutierrez'
+                ,'jenny.fos@gmail.com'
+                ,'8113689-0'
+                ,'972589136'
+                ,'maria eugenia ramirez gutierrez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5438
+                ,'lilian eba'
+                ,'aguirre fuentealba'
+                ,''
+                ,'8449505-0'
+                ,'983203735'
+                ,'lilian eba aguirre fuentealba'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5439
+                ,'otilia del carmen'
+                ,'cabaña'
+                ,'carmencabana2015@gmail.com'
+                ,'10269147-4'
+                ,'967863417'
+                ,'otilia del carmen cabaña'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5440
+                ,'valentina belen'
+                ,'palavecino aguirre'
+                ,''
+                ,'19734133-5'
+                ,'972525001'
+                ,'valentina belen palavecino aguirre'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,14.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5441
+                ,'Maria Fresia'
+                ,'Salgado'
+                ,'pichitasalgado@gmail.com'
+                ,'5252087-8'
+                ,'935148258'
+                ,'Maria Fresia Salgado'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5442
+                ,'santiago'
+                ,'jofre muñoz'
+                ,''
+                ,'8770372-K'
+                ,'979385754'
+                ,'santiago jofre muñoz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5443
+                ,'hector enrique'
+                ,'guerrero bahamondes'
+                ,'kgarrido980@gmail.com'
+                ,'5170368-5'
+                ,'961461048'
+                ,'hector enrique guerrero bahamondes'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,1.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5444
+                ,'fernanda andrea'
+                ,'lagos gonzalez'
+                ,'fernanda.03lg@gmail.com'
+                ,'20560035-3'
+                ,'964342139'
+                ,'fernanda andrea lagos gonzalez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5445
+                ,'jose'
+                ,'venegas '
+                ,''
+                ,'7051720-5'
+                ,'972115874'
+                ,'jose venegas '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,10.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5446
+                ,'patricia'
+                ,'tizon jimenez'
+                ,'patricia.tizo.1957@gmail.com'
+                ,'7549974-4'
+                ,'974619656'
+                ,'patricia tizon jimenez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,6.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5447
+                ,'irene carmen'
+                ,'silva herrera'
+                ,'irenesilva16@gmail.com'
+                ,'9263939-8'
+                ,'988368977'
+                ,'irene carmen silva herrera'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5448
+                ,'andrea '
+                ,'reyes muñoz'
+                ,''
+                ,'11590243-1'
+                ,'98694357'
+                ,'andrea  reyes muñoz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,9.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5449
+                ,'valentina'
+                ,'diaz ortiz'
+                ,'vale.diaz.ortiz@gmail.com'
+                ,'18172187-1'
+                ,'968440635'
+                ,'valentina diaz ortiz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5450
+                ,'Constanza Patricia '
+                ,'Gonzalez Arriagada'
+                ,'gonzalezarriagada812@gmail.com'
+                ,'20539717-5'
+                ,'964619205'
+                ,'Constanza Patricia  Gonzalez Arriagada'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5451
+                ,'Vania Yolanda'
+                ,' Téllez Arancibia'
+                ,'vania.tellez.a@gmail.com'
+                ,'17788692-0'
+                ,'989887076'
+                ,'Vania Yolanda  Téllez Arancibia'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5452
+                ,'karina tatiana'
+                ,'morales poblete'
+                ,'frazuamorales12@gmail.com'
+                ,'16031631-4'
+                ,'96445439'
+                ,'karina tatiana morales poblete'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5453
+                ,'maria teresa'
+                ,'poblete roja'
+                ,''
+                ,'6004746-4'
+                ,'954992249'
+                ,'maria teresa poblete roja'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5454
+                ,'julian'
+                ,'gallardo cepeda'
+                ,'julian.px@hotmail.com'
+                ,'17816101-6'
+                ,'985791814'
+                ,'julian gallardo cepeda'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5455
+                ,'margarita angelica'
+                ,'perez perez'
+                ,'margaritaangelicap@gmail.com'
+                ,'17334211-K'
+                ,'995909845'
+                ,'margarita angelica perez perez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5456
+                ,'JASNA'
+                ,'ODETTE'
+                ,'jasna.2828@gmail.com'
+                ,'15600364-6'
+                ,'962793948'
+                ,'JASNA ODETTE'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5457
+                ,'sonia'
+                ,'madrid catalan'
+                ,''
+                ,'8207770-7'
+                ,'998120970'
+                ,'sonia madrid catalan'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,2.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5458
+                ,'marco '
+                ,'villa reyes'
+                ,'villareyesmarco@gmail.com'
+                ,'10817251-7'
+                ,'956519240'
+                ,'marco  villa reyes'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5459
+                ,'marta '
+                ,'arejula gerrero'
+                ,'martaarejula@gmail.com'
+                ,'10770778-6'
+                ,'940784953'
+                ,'marta  arejula gerrero'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5460
+                ,'patricio alberto'
+                ,'machuca correa'
+                ,'pinipola88arda@gmail.com'
+                ,'9358874-6'
+                ,'961674202'
+                ,'patricio alberto machuca correa'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5461
+                ,'GLORIA DEL CARMEN'
+                ,'ARCE OYARZUM'
+                ,'gloriaarce.oyazum@gmail.com'
+                ,'7370215-1'
+                ,'948889409'
+                ,'GLORIA DEL CARMEN ARCE OYARZUM'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,6.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5462
+                ,'MARIA'
+                ,'BERRIOS'
+                ,''
+                ,'7560795-4'
+                ,'999178977'
+                ,'MARIA BERRIOS'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5463
+                ,'maria elena'
+                ,'escudero'
+                ,'maria.escudero@gmail.com'
+                ,'10941455-7'
+                ,'930912055'
+                ,'maria elena escudero'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5464
+                ,'joselin'
+                ,'tapia'
+                ,'joselimtapia0492@gmail.com'
+                ,'21745709-2'
+                ,'954453047'
+                ,'joselin tapia'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5465
+                ,'maria celeste'
+                ,'vejar fuentes'
+                ,''
+                ,'18675576-6'
+                ,'975328207'
+                ,'maria celeste vejar fuentes'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,7.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5466
+                ,'luz maria'
+                ,'sepulveda caro'
+                ,'luzsepulvedacaro@gmail.com'
+                ,'9474981-6'
+                ,'999778278'
+                ,'luz maria sepulveda caro'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,11.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5467
+                ,'NEDA'
+                ,'FIGUEROA'
+                ,'nedoi-ionera1963@gmail.com'
+                ,'9994997-K'
+                ,'932384214'
+                ,'NEDA FIGUEROA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5468
+                ,'eloy jose'
+                ,'castellano garcia'
+                ,'joseloy972@gmail.com'
+                ,'27237377-9'
+                ,'972249097'
+                ,'eloy jose castellano garcia'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5469
+                ,'Teresa Veruska '
+                ,'Saavedra Saavedra'
+                ,'veruska.saavedra1@gmail.com'
+                ,'12325004-4'
+                ,'+56976788894'
+                ,'Teresa Veruska  Saavedra Saavedra'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5470
+                ,'Jose Santiago '
+                ,'Antilao Leuno'
+                ,'josepepe85antilao@gmail.com'
+                ,'16173553-1'
+                ,' 966011880'
+                ,'Jose Santiago  Antilao Leuno'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5471
+                ,'Karen Denise '
+                ,'monsalves medina'
+                ,'karensitha172829@gmail.com'
+                ,'16682154-1'
+                ,'942654868'
+                ,'Karen Denise  monsalves medina'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5472
+                ,'Alejandra del Carmen '
+                ,'Carrasco Vergara'
+                ,'alerene07.n@gmail.com'
+                ,'18672317-1'
+                ,'977120658'
+                ,'Alejandra del Carmen  Carrasco Vergara'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5473
+                ,'alejandra '
+                ,'vejar stuardo'
+                ,'alejandravejar46@gmail.com'
+                ,'11610231-5'
+                ,'949068228'
+                ,'alejandra  vejar stuardo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5474
+                ,'gricelt'
+                ,'espinoza mella'
+                ,'egricelt@gmail.com'
+                ,'13705201-6'
+                ,'950029351'
+                ,'gricelt espinoza mella'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5475
+                ,'hector'
+                ,'agurto rojas'
+                ,''
+                ,'12498779-2'
+                ,'977268730'
+                ,'hector agurto rojas'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5476
+                ,'MARLENE'
+                ,'HERRERA'
+                ,''
+                ,'7555066-9'
+                ,'949739788'
+                ,'MARLENE HERRERA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5477
+                ,'camila andrea'
+                ,'hormazabal quintulen'
+                ,''
+                ,'21195029-3'
+                ,'937305390'
+                ,'camila andrea hormazabal quintulen'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5478
+                ,'patricia '
+                ,'aguilera ducasse'
+                ,'patriciaanguilera5092@gmail.com'
+                ,'12428926-2'
+                ,'986243838'
+                ,'patricia  aguilera ducasse'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,14.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5479
+                ,'lidia del transito'
+                ,'perez marambio'
+                ,'leofuentesp@gmail.com'
+                ,'6232270-5'
+                ,'994716633'
+                ,'lidia del transito perez marambio'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5480
+                ,'teresa bernardita'
+                ,'mendez pizarro'
+                ,'teresa.p.m@gmail.com'
+                ,'11973030-9'
+                ,'993661940'
+                ,'teresa bernardita mendez pizarro'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,13.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5481
+                ,'alejandra ninosca'
+                ,'rios martinez'
+                ,'anaydignaci.2@gmail.com'
+                ,'17440745-2'
+                ,'975470243'
+                ,'alejandra ninosca rios martinez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,7.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5482
+                ,'myriam '
+                ,'cornejo opazo'
+                ,''
+                ,'15791297-6'
+                ,'987032296'
+                ,'myriam  cornejo opazo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5483
+                ,'heidi del carmen'
+                ,'orostica cartagena'
+                ,'heidigalita@hotmail.com'
+                ,'13289028-5'
+                ,'977475465'
+                ,'heidi del carmen orostica cartagena'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,7.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5484
+                ,'ines '
+                ,'mora '
+                ,'inesmora104@gmail.com'
+                ,'5521234-1'
+                ,'974177367'
+                ,'ines  mora '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5485
+                ,'nadia'
+                ,'gonzalez morales'
+                ,'nadiagonzalezmorales@gmail.com'
+                ,'15934554-8'
+                ,'971325554'
+                ,'nadia gonzalez morales'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5486
+                ,'CRISTINA'
+                ,'SANCHEZ'
+                ,'cristina.carinosits@hotmail.com'
+                ,'10546062-7'
+                ,'993692457'
+                ,'CRISTINA SANCHEZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5487
+                ,'alejandro gabriel'
+                ,'machuca abarca'
+                ,'amachuca.abarca@gmail.com'
+                ,'7515194-2'
+                ,'991794551'
+                ,'alejandro gabriel machuca abarca'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5488
+                ,'judith '
+                ,'muñoz '
+                ,''
+                ,'12104711-K'
+                ,'998980613'
+                ,'judith  muñoz '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5489
+                ,'lili'
+                ,'caballero'
+                ,'lilymarelenecaballero@gmail.com'
+                ,'12471724-8'
+                ,'995288425'
+                ,'lili caballero'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,35.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5490
+                ,'devora carolina'
+                ,'aravena gonzales '
+                ,''
+                ,'19419574-5'
+                ,'984765027'
+                ,'devora carolina aravena gonzales '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5491
+                ,'graciela nicole'
+                ,'rojo del rio'
+                ,'airysbravo@gmail.com'
+                ,'18540886-8'
+                ,'952332183'
+                ,'graciela nicole rojo del rio'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5492
+                ,'claudia andrea '
+                ,'viveros abarca'
+                ,'claudia.a.viveros.a@gmail.com'
+                ,'19632577-8'
+                ,'971908085'
+                ,'claudia andrea  viveros abarca'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5493
+                ,'purisima soledad'
+                ,'abarca vega'
+                ,'claudia.a.viveros.a@gmail.com'
+                ,'12140828-7'
+                ,'971908085'
+                ,'purisima soledad abarca vega'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5494
+                ,'ana maria'
+                ,'torrealba cares'
+                ,'anatorrealbacares@gmail.com'
+                ,'10406115-K'
+                ,'933241722'
+                ,'ana maria torrealba cares'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,14.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5495
+                ,'paz'
+                ,'flores torres'
+                ,'pazflorest@gmail.com'
+                ,'17006520-4'
+                ,'97724909'
+                ,'paz flores torres'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5496
+                ,'GERALDIN'
+                ,'RUBIO'
+                ,'rubioyerita@gmail.com'
+                ,'20226960-5'
+                ,'976055519'
+                ,'GERALDIN RUBIO'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,8.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5497
+                ,'patricia angelica'
+                ,'flores '
+                ,'huentemillaflores@gmail.com'
+                ,'17305274-K'
+                ,'957486476'
+                ,'patricia angelica flores '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,39.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5498
+                ,'blas'
+                ,'cares'
+                ,''
+                ,'4486844-K'
+                ,'993638292'
+                ,'blas cares'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5499
+                ,'GLADYS'
+                ,'PINO'
+                ,'gladys.frir2590@gmail.com'
+                ,'8667639-7'
+                ,'954702315'
+                ,'GLADYS PINO'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5500
+                ,'estrella'
+                ,'diaz gonzales'
+                ,'diazestrella391@gmail.com'
+                ,'16371322-5'
+                ,'991477800'
+                ,'estrella diaz gonzales'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5501
+                ,'liliana '
+                ,'merida gonzales'
+                ,'lilianamerida@gmail.com'
+                ,'11269715-2'
+                ,'963018044'
+                ,'liliana  merida gonzales'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5502
+                ,'HUGO'
+                ,'RAMOS'
+                ,'hugoalejandro.rh@gmail.com'
+                ,'17416911-K'
+                ,'949747401'
+                ,'HUGO RAMOS'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5503
+                ,'FERNANDO'
+                ,'AGUILERA'
+                ,''
+                ,'5938074-5'
+                ,'81629278'
+                ,'FERNANDO AGUILERA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,8.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5504
+                ,'isabel '
+                ,'ceballos garrido'
+                ,''
+                ,'9311513-9'
+                ,'935234490'
+                ,'isabel  ceballos garrido'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5505
+                ,'katerine'
+                ,'orrego sandoval'
+                ,'katherine.orregos@gmail.com'
+                ,'17245201-9'
+                ,'986415900'
+                ,'katerine orrego sandoval'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5506
+                ,'JUANA'
+                ,'CACERES'
+                ,'juanamiriamcaseres@gmail.com'
+                ,'13499626-9'
+                ,'995534937'
+                ,'JUANA CACERES'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5507
+                ,'daniela'
+                ,'flores ruiz'
+                ,'danielaflores334@gmail.com'
+                ,'16266353-4'
+                ,'979895039'
+                ,'daniela flores ruiz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5508
+                ,'elena del carmen'
+                ,'varas saavedra'
+                ,'andylavas@hotmail.com'
+                ,'5275137-3'
+                ,'973892795'
+                ,'elena del carmen varas saavedra'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5509
+                ,'catherine'
+                ,'mora'
+                ,'catherinemora777@gmail.com'
+                ,'12485958-1'
+                ,'967275073'
+                ,'catherine mora'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,26.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5510
+                ,'CRISTIAN'
+                ,'ARCOS'
+                ,'cparcosdelajara@gmail.com'
+                ,'7125974-9'
+                ,'984436657'
+                ,'CRISTIAN ARCOS'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,18.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5511
+                ,'NANCY'
+                ,'SANHUEZA'
+                ,'cparcosdelajara@gmail.com'
+                ,'9029910-7'
+                ,'987745686'
+                ,'NANCY SANHUEZA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5512
+                ,'emy'
+                ,'rivas otalora'
+                ,'emyro@gmail.com'
+                ,'11184115-2'
+                ,'982355211'
+                ,'emy rivas otalora'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5513
+                ,'JESSICA'
+                ,'ZABALA'
+                ,'jesisita.1@hotmail.com'
+                ,'11657160-9'
+                ,'984984213'
+                ,'JESSICA ZABALA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,5.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5514
+                ,'MARIA CRISTINA'
+                ,'ARRIAGADA MARTINEZ'
+                ,''
+                ,'7875488-5'
+                ,'983844254'
+                ,'MARIA CRISTINA ARRIAGADA MARTINEZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5515
+                ,'waldo '
+                ,'riveros tobar'
+                ,''
+                ,'5922666-5'
+                ,'982826706'
+                ,'waldo  riveros tobar'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5516
+                ,'ana'
+                ,'hermosilla leal'
+                ,'ana.hermosilla@gmail.com'
+                ,'7182654-6'
+                ,'990507223'
+                ,'ana hermosilla leal'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5517
+                ,'diana elizabeth '
+                ,'galvez reyes'
+                ,'dianaelizabethgalvez00@gmail.com'
+                ,'19004909-4'
+                ,' 947756546'
+                ,'diana elizabeth  galvez reyes'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5518
+                ,'Leslie'
+                ,' bakker'
+                ,'lesliebakker@yahoo.com'
+                ,'5440752-1'
+                ,'990894179'
+                ,'Leslie  bakker'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5519
+                ,'Susan Carolaine '
+                ,'Valenzuela Jiménez'
+                ,'susanv1997@gmail.com'
+                ,'19572835-6'
+                ,'951707232'
+                ,'Susan Carolaine  Valenzuela Jiménez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5520
+                ,'Karen '
+                ,'Martínez'
+                ,'martinez.karen@hotmail.com'
+                ,'13451301-2'
+                ,'976962070'
+                ,'Karen  Martínez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5521
+                ,'Sergio '
+                ,'castellon'
+                ,'s.castellon282621@gmail.com'
+                ,'14208465-1'
+                ,'976962070'
+                ,'Sergio  castellon'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5522
+                ,'Haydee Emely '
+                ,'Quintero Ramirez'
+                ,'haydeequinteroramirez1978@gmail.com'
+                ,'13485385-9'
+                ,'953443122'
+                ,'Haydee Emely  Quintero Ramirez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5523
+                ,'Felipe '
+                ,'jara godoy'
+                ,'felipejaragodoy69@gmail.com'
+                ,'17242159-8'
+                ,'997497149'
+                ,'Felipe  jara godoy'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,22.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5524
+                ,' Francisca Alejandra '
+                ,'Ponce venegas'
+                ,'franciscaponce200595@gmail.com'
+                ,'19219934-4'
+                ,'987226494'
+                ,' Francisca Alejandra  Ponce venegas'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5525
+                ,'liliana '
+                ,'jimenez jofre'
+                ,''
+                ,'13671014-1'
+                ,'979942582'
+                ,'liliana  jimenez jofre'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5526
+                ,'sofia antonia'
+                ,'molina catalan'
+                ,'sofiaantoniarg4l@gmail.com'
+                ,'21889320-1'
+                ,'959592761'
+                ,'sofia antonia molina catalan'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5527
+                ,'sandra del carmen '
+                ,'catalan quiroz'
+                ,'s.catalanq@live.cl'
+                ,'11315179-K'
+                ,'95636254'
+                ,'sandra del carmen  catalan quiroz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5528
+                ,'hilda'
+                ,'manqueo'
+                ,'hmargotb@hotmail.com'
+                ,'11587408-K'
+                ,'948464857'
+                ,'hilda manqueo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5529
+                ,'nicole '
+                ,'ponce martinez'
+                ,'nikoleponc@gmail.com'
+                ,'17063391-1'
+                ,'966617925'
+                ,'nicole  ponce martinez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5530
+                ,'luis enrique'
+                ,'meza reyes'
+                ,'luismeza.4870@gmail.com'
+                ,'11658408-5'
+                ,'991590049'
+                ,'luis enrique meza reyes'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5531
+                ,'rossanna'
+                ,'hernandez bustamante'
+                ,'rossanna.1124@gmail.com'
+                ,'9586558-5'
+                ,'946244484'
+                ,'rossanna hernandez bustamante'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,18.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5532
+                ,'juan enriquez'
+                ,'salinas gallardo'
+                ,''
+                ,'10371923-2'
+                ,'949287281'
+                ,'juan enriquez salinas gallardo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,9.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5533
+                ,'heliana'
+                ,'quiroga'
+                ,'magalylahermosa7@gmail.com'
+                ,'7332744-K'
+                ,'94723187'
+                ,'heliana quiroga'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,18.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5534
+                ,'beatriz adriana'
+                ,'alpiri rios'
+                ,''
+                ,'27190125-9'
+                ,'982599908'
+                ,'beatriz adriana alpiri rios'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5535
+                ,'sandra del carmen'
+                ,'yañezz santander'
+                ,''
+                ,'12672741-0'
+                ,'949173933'
+                ,'sandra del carmen yañezz santander'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5536
+                ,'nancy '
+                ,'oñate yañez'
+                ,''
+                ,'8442566-4'
+                ,'932247423'
+                ,'nancy  oñate yañez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5537
+                ,'luis '
+                ,'contreras'
+                ,''
+                ,'8259637-2'
+                ,'938934756'
+                ,'luis  contreras'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5538
+                ,'paula ester'
+                ,'vargas maldonado'
+                ,'puo534846@gmail.com'
+                ,'12502647-8'
+                ,'978049402'
+                ,'paula ester vargas maldonado'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5539
+                ,'claudia ursula'
+                ,'salinas toledo'
+                ,'claudiasalinas.toledo@gmail.com'
+                ,'10587369-7'
+                ,'986431899'
+                ,'claudia ursula salinas toledo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5540
+                ,'silvestre '
+                ,'rojas urquieta'
+                ,'rodrigoanibalrl@gmail.com'
+                ,'3352662-8'
+                ,'990860646'
+                ,'silvestre  rojas urquieta'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5541
+                ,'maruzerla'
+                ,'correa ramos'
+                ,'maruzerlacorrea@gmail.com'
+                ,'14336284-1'
+                ,'972481626'
+                ,'maruzerla correa ramos'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,6.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5542
+                ,'diego andres'
+                ,'mendoza caro'
+                ,'dmendoza.caro@gmail.com'
+                ,'18833113-0'
+                ,'954954181'
+                ,'diego andres mendoza caro'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5543
+                ,'luis guillermo'
+                ,'quinteros  ponce'
+                ,'yiyone_la9@hotmail.com'
+                ,'17852572-7'
+                ,'945778755'
+                ,'luis guillermo quinteros  ponce'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5544
+                ,'monica'
+                ,'pinochet'
+                ,'monica.pinochetdiaz@gmail.com'
+                ,'10083157-0'
+                ,'968799110'
+                ,'monica pinochet'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5545
+                ,'martha '
+                ,'huancao'
+                ,'meche.huanca@gmail.com'
+                ,'14648111-6'
+                ,'995370770'
+                ,'martha  huancao'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5546
+                ,'katherine lisset'
+                ,'gajardo gonzales'
+                ,''
+                ,'17828978-0'
+                ,'927883773'
+                ,'katherine lisset gajardo gonzales'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5547
+                ,'marta'
+                ,'marambio'
+                ,'martitamarambio@gmail.com'
+                ,'9579217-0'
+                ,'984888666'
+                ,'marta marambio'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5548
+                ,'paulina jenniffer'
+                ,'diaz rosales'
+                ,'jpaulina1701@gmail.com'
+                ,'15823604-4'
+                ,'942972332'
+                ,'paulina jenniffer diaz rosales'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5549
+                ,'patricia alejandra'
+                ,'santibañez'
+                ,'bodega.mam@gmail.com'
+                ,'18698430-7'
+                ,'977037194'
+                ,'patricia alejandra santibañez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5550
+                ,'MARIA'
+                ,' CACERES SAEZ'
+                ,'mcaceres1967@gmail.com'
+                ,'10456302-3'
+                ,'997460210'
+                ,'MARIA  CACERES SAEZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,25.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5551
+                ,'Rodolfo Andrés '
+                ,'López González'
+                ,'rodolfo.lopez.gon@gmail.com'
+                ,'17244120-3'
+                ,'937782459'
+                ,'Rodolfo Andrés  López González'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5552
+                ,'Yesenia Catherine '
+                ,'Ortega Pacheco'
+                ,'yeseniacatherinortegapacheco@gmail.com'
+                ,'10667832-4'
+                ,'+56986963342'
+                ,'Yesenia Catherine  Ortega Pacheco'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5553
+                ,'Catherine Lizeth '
+                ,'Valenzuela Poblete'
+                ,'clpvalenzuela@gmail.com'
+                ,'13482414-K'
+                ,'975771364'
+                ,'Catherine Lizeth  Valenzuela Poblete'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5554
+                ,'Yosselin '
+                ,'Aramundiz Zavala'
+                ,'y.aramundiz@gmail.com'
+                ,'16593793-7'
+                ,'934286231'
+                ,'Yosselin  Aramundiz Zavala'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5555
+                ,'Bastian '
+                ,'gonzalez'
+                ,'basty.mauro0p@gmail.com'
+                ,'21023755-0'
+                ,'94593028'
+                ,'Bastian  gonzalez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5556
+                ,'JOSE'
+                ,'TORRES'
+                ,'joselumirosos@hotmail.com'
+                ,'9320956-7'
+                ,'994823583'
+                ,'JOSE TORRES'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5557
+                ,'luisa mariela'
+                ,'lopez '
+                ,'marielalopezravanal@gmail.com'
+                ,'11229184-9'
+                ,'948973769'
+                ,'luisa mariela lopez '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5558
+                ,'Scarlet'
+                ,'Muñoz'
+                ,'escvrlet.n@gmail.com'
+                ,'21379479-5'
+                ,'985373414'
+                ,'Scarlet Muñoz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5559
+                ,'leonardo ivan'
+                ,'melipil hermosilla'
+                ,'leo.m.hermosilla@gmail.com'
+                ,'19518166-7'
+                ,'950986394'
+                ,'leonardo ivan melipil hermosilla'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5560
+                ,'SONIA'
+                ,'COTALON'
+                ,'siniacotalon74@gmail.com'
+                ,'11640963-1'
+                ,'56995964888'
+                ,'SONIA COTALON'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5561
+                ,'VALENTINA '
+                ,'VERDUGO'
+                ,'valenvg30@gmail.com'
+                ,'17487708-4'
+                ,'957852746'
+                ,'VALENTINA  VERDUGO'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5562
+                ,'MILKO ALEJANDRO'
+                ,'SOBARZO FUENTES'
+                ,'milkosobarzo7171@gmail.com'
+                ,'20281332-1'
+                ,'971815321'
+                ,'MILKO ALEJANDRO SOBARZO FUENTES'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5563
+                ,'dominica andrea'
+                ,'muoz sepulveda'
+                ,'dominicbonita1@gmail.com'
+                ,'13061173-7'
+                ,'935075804'
+                ,'dominica andrea muoz sepulveda'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,21.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5564
+                ,'ana maria'
+                ,'yela oses'
+                ,'anamariayelaoses@gmail.com'
+                ,'9073935-2'
+                ,'982299305'
+                ,'ana maria yela oses'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5565
+                ,'Sandra '
+                ,'diaz gallardo'
+                ,'sandra.diaz.gallardo@gollim.cl'
+                ,'13086578-K'
+                ,'979284356'
+                ,'Sandra  diaz gallardo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5566
+                ,'Adriana del Pilar '
+                ,'Carrasco Hidalgo'
+                ,'pilito1403@hotmail.com'
+                ,'13706832-K'
+                ,'997489636'
+                ,'Adriana del Pilar  Carrasco Hidalgo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5567
+                ,'MARIA EUGENIA'
+                ,'CORNEJO GATICA'
+                ,''
+                ,'8252315-4'
+                ,'933158962'
+                ,'MARIA EUGENIA CORNEJO GATICA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5568
+                ,'CLAUDIA VALENTINA'
+                ,'LOPEZ LEIVA'
+                ,'valentina2000.cl@gmail.com'
+                ,'20279778-4'
+                ,'93523810'
+                ,'CLAUDIA VALENTINA LOPEZ LEIVA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5569
+                ,'ELENA ALEJANDRA'
+                ,'LEIVA TORRES'
+                ,'leivaelenas@gmail.com'
+                ,'13600108-6'
+                ,'989635155'
+                ,'ELENA ALEJANDRA LEIVA TORRES'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5570
+                ,'veronica'
+                ,'castillo'
+                ,'castillojveronica@gmail.com'
+                ,'11848035-K'
+                ,'979629233'
+                ,'veronica castillo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5571
+                ,'sonia '
+                ,'vargas sanfeliz'
+                ,'sonia.vargas.sanfeliz@gmail.com'
+                ,'10149919-7'
+                ,'942436058'
+                ,'sonia  vargas sanfeliz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5572
+                ,'eugenio'
+                ,'toledo sanchez'
+                ,'eugenio.toledo.s@gmail.com'
+                ,'9832505-0'
+                ,'99279307'
+                ,'eugenio toledo sanchez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5573
+                ,'VARINIA '
+                ,'CATALAN GUERRA'
+                ,''
+                ,'21055962-0'
+                ,'931318455'
+                ,'VARINIA  CATALAN GUERRA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5574
+                ,'KATTIA NINA '
+                ,'BENAVIDES'
+                ,'kattianina@gmail.com'
+                ,'14625387-3'
+                ,'926422414'
+                ,'KATTIA NINA  BENAVIDES'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5575
+                ,'claudia andrea'
+                ,'tobar gamboa'
+                ,'claudiatobargamboa@gmail.com'
+                ,'15440635-2'
+                ,'961946162'
+                ,'claudia andrea tobar gamboa'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5576
+                ,'liliana '
+                ,'sanzana muñoz'
+                ,''
+                ,'9215957-4'
+                ,'932018761'
+                ,'liliana  sanzana muñoz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5577
+                ,'RAFAEL'
+                ,'GODOY'
+                ,'rafaelgodoy.zur@gmail.com'
+                ,'8431754-3'
+                ,'992995433'
+                ,'RAFAEL GODOY'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5578
+                ,'KAREN'
+                ,'PEREZ'
+                ,'mirandacamila496@gmail.com'
+                ,'15436770-5'
+                ,'942065572'
+                ,'KAREN PEREZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5579
+                ,'francsco javier'
+                ,'moran moran'
+                ,'panchopersaw@gmail.com'
+                ,'16541853-0'
+                ,'95463909'
+                ,'francsco javier moran moran'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5580
+                ,'NORMA'
+                ,'LLANCOAVIL'
+                ,'pilar.llancavil@gmail.com'
+                ,'15423055-6'
+                ,'962789120'
+                ,'NORMA LLANCOAVIL'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5581
+                ,'yuri '
+                ,'fariña fariña'
+                ,'yurifarina@gmail.com'
+                ,'15988791-K'
+                ,'954130672'
+                ,'yuri  fariña fariña'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5582
+                ,'carla belen '
+                ,'guerrero amaya'
+                ,'carliiita1995@gmail.com'
+                ,'19022617-4'
+                ,''
+                ,'carla belen  guerrero amaya'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5583
+                ,'CESAR'
+                ,'ODAR'
+                ,'cesarodar@gmail.com'
+                ,'25882143-2'
+                ,'957674703'
+                ,'CESAR ODAR'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,9.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5584
+                ,'Juan Luis'
+                ,'Fuentes'
+                ,'juanluis.fuentes.gajardo@gmail.com'
+                ,'13485451-0'
+                ,'981366015'
+                ,'Juan Luis Fuentes'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5585
+                ,'Hernan'
+                ,'Liberon'
+                ,'h_liberon1973@hotmail.com'
+                ,'14424213-0'
+                ,'956170771'
+                ,'Hernan Liberon'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5586
+                ,'Anibal'
+                ,'Vivanco'
+                ,'a.vivanco1416@gmail.com'
+                ,'14483322-8'
+                ,'976468676'
+                ,'Anibal Vivanco'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,10.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5587
+                ,'OLGA ADRIANA'
+                ,'VALENZUELA GAETE'
+                ,'gioconda134@hotmail.com'
+                ,'8121990-7'
+                ,'999647276'
+                ,'OLGA ADRIANA VALENZUELA GAETE'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5588
+                ,'Sonia'
+                ,'Escobar'
+                ,'sonia.escobars56@gmail.com'
+                ,'10951002-5'
+                ,'967972110'
+                ,'Sonia Escobar'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5589
+                ,'Gonzalo'
+                ,'Guzman'
+                ,'gonzalo.guzmant78@gmail.com'
+                ,'13687373-3'
+                ,'965941903'
+                ,'Gonzalo Guzman'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5590
+                ,'Jorge'
+                ,'Capello'
+                ,'jhcapello2@gmail.com'
+                ,'7232224-K'
+                ,'99310375'
+                ,'Jorge Capello'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5591
+                ,'JENIFER FRANCESCA'
+                ,'LOPEZ ANABALON'
+                ,''
+                ,'15891853-6'
+                ,'961337976'
+                ,'JENIFER FRANCESCA LOPEZ ANABALON'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5592
+                ,'isabel'
+                ,'ramirez'
+                ,''
+                ,'8908984-0'
+                ,'922438512'
+                ,'isabel ramirez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5593
+                ,'luisa'
+                ,'Ramirez'
+                ,''
+                ,'9967453-9'
+                ,'959444542'
+                ,'luisa Ramirez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5594
+                ,'jacqueline '
+                ,'velasquez catalan'
+                ,'jacquelinevc17@gmail.com'
+                ,'8560622-0'
+                ,'948973636'
+                ,'jacqueline  velasquez catalan'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5595
+                ,'ANDREA'
+                ,'LEVIN'
+                ,'andreacontab@gmail.com'
+                ,'14498796-9'
+                ,'942324289'
+                ,'ANDREA LEVIN'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5596
+                ,'Luna'
+                ,'Espinoza'
+                ,'luna.quesillo@gmai.com'
+                ,'21225162-3'
+                ,'958984836'
+                ,'Luna Espinoza'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5597
+                ,'iris margarita'
+                ,'bocca lobos'
+                ,'irisbocca.lobos@gmail.com'
+                ,'12680129-7'
+                ,'963760002'
+                ,'iris margarita bocca lobos'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5598
+                ,'cecilia '
+                ,'pallacon romero'
+                ,'ceci.peluquera@hotmail.com'
+                ,'10120430-8'
+                ,'964638947'
+                ,'cecilia  pallacon romero'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5599
+                ,'patricia elena '
+                ,'montoya zuñiga'
+                ,''
+                ,'7977389-1'
+                ,'971367647'
+                ,'patricia elena  montoya zuñiga'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,14.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5600
+                ,'ISABEL CARRASCO'
+                ,'ESCOBAR'
+                ,'isabelcarrascoescobar@gmail.com'
+                ,'6530019-2'
+                ,'994674415'
+                ,'ISABEL CARRASCO ESCOBAR'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5601
+                ,'carolina ester'
+                ,'molina morales'
+                ,'caro.molinamorales3@gmail.com'
+                ,'14188929-K'
+                ,'950182355'
+                ,'carolina ester molina morales'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5602
+                ,'gulnara  '
+                ,'rojas espina'
+                ,''
+                ,'7194337-2'
+                ,'98555647'
+                ,'gulnara   rojas espina'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5603
+                ,'claudio felipe'
+                ,'plaza fuentes'
+                ,'claudioplaza@gmail.com'
+                ,'16029045-5'
+                ,'951797584'
+                ,'claudio felipe plaza fuentes'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5604
+                ,'LUIS'
+                ,'VEGA'
+                ,'vega75080@gmail.com'
+                ,'11574316-3'
+                ,'930142601'
+                ,'LUIS VEGA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5605
+                ,'ELIZABETTT'
+                ,'AGUILA'
+                ,'elizabetaguila@hotmail.com'
+                ,'11137970-K'
+                ,'988967791'
+                ,'ELIZABETTT AGUILA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5606
+                ,'romina marlene'
+                ,'cisterna osses'
+                ,'rominacisternasosses@gmail.com'
+                ,'20446368-9'
+                ,'936920073'
+                ,'romina marlene cisterna osses'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5607
+                ,'alida '
+                ,'calquin'
+                ,'alita.claquin@gmail.com'
+                ,'16267021-2'
+                ,'959891915'
+                ,'alida  calquin'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5608
+                ,'carolina'
+                ,'araneda soto'
+                ,'carolinaaranedasoto@gmail.com'
+                ,'13652173-K'
+                ,'993570027'
+                ,'carolina araneda soto'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5609
+                ,'pedro omar'
+                ,'toledo millan'
+                ,'toledo_101dm@gmail.com'
+                ,'13484949-5'
+                ,'962538769'
+                ,'pedro omar toledo millan'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5610
+                ,'sara'
+                ,'hernandez '
+                ,'saryhernandez197573@gmail.com'
+                ,'12775795-K'
+                ,'936118798'
+                ,'sara hernandez '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5611
+                ,'fernanda andrea'
+                ,'silva de la barra'
+                ,'fernandasilvadelab@gmail.com'
+                ,'19733213-1'
+                ,'983702589'
+                ,'fernanda andrea silva de la barra'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,9.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5612
+                ,'segundo ernesto'
+                ,'colin pichun'
+                ,''
+                ,'1281001-6'
+                ,'965630150'
+                ,'segundo ernesto colin pichun'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5613
+                ,'alejandra cristina'
+                ,'pino meza'
+                ,'ale.pino.meza00@gmail.com'
+                ,'20818971-9'
+                ,'963719148'
+                ,'alejandra cristina pino meza'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5614
+                ,'odeth margarita'
+                ,'oyarce salazar'
+                ,'coretitoymaxito@gmail.com'
+                ,'15490646-0'
+                ,'949349757'
+                ,'odeth margarita oyarce salazar'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,13.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5615
+                ,'pamela andrea'
+                ,'jimenez blanco'
+                ,'pamelajimenezblanco@gmail.com'
+                ,'13489958-1'
+                ,'965438298'
+                ,'pamela andrea jimenez blanco'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5616
+                ,'maccarena pilar'
+                ,'blanchetean sanhueza'
+                ,'maccarena1978@gmail.com'
+                ,'13393240-2'
+                ,'982709295'
+                ,'maccarena pilar blanchetean sanhueza'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5617
+                ,'MIRIAM'
+                ,'ROA'
+                ,'isidoraroa88@gmail.com'
+                ,'19919220-5'
+                ,'926238628'
+                ,'MIRIAM ROA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5618
+                ,'daisy daiana'
+                ,'castro gomez'
+                ,''
+                ,'15790662-3'
+                ,'992044741'
+                ,'daisy daiana castro gomez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5619
+                ,'Maritza '
+                ,'huenuanca'
+                ,'maritzahuai@gmail.com'
+                ,'12476245-6'
+                ,'9668458865'
+                ,'Maritza  huenuanca'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5620
+                ,'Hortensia '
+                ,'Mellado'
+                ,'hortensia.121@gmail.com'
+                ,'17674854-0'
+                ,'975792631'
+                ,'Hortensia  Mellado'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5621
+                ,'Carolina '
+                ,'Fuentes Munoz'
+                ,'karol3233@gmail.com'
+                ,'14190317-9'
+                ,'976970982'
+                ,'Carolina  Fuentes Munoz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5622
+                ,'alejandra '
+                ,'diaz peña'
+                ,''
+                ,'11874928-6'
+                ,'976044449'
+                ,'alejandra  diaz peña'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5623
+                ,'MACARENA LISSETTE'
+                ,'VASQUEZ ORFALI'
+                ,''
+                ,'15430422-3'
+                ,'957059113'
+                ,'MACARENA LISSETTE VASQUEZ ORFALI'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5624
+                ,'rosa'
+                ,'escobar'
+                ,''
+                ,'10162925-2'
+                ,'9828442529'
+                ,'rosa escobar'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5625
+                ,'norma'
+                ,'guajardo'
+                ,'normita.guajardo.30@gmail.com'
+                ,'11874133-1'
+                ,'982019666'
+                ,'norma guajardo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,1.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5626
+                ,'RODRIGO '
+                ,'SAEZ'
+                ,'rodrigoestructuras@gmail.com'
+                ,'13067797-5'
+                ,'983618457'
+                ,'RODRIGO  SAEZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5627
+                ,'CECILIA HORTENSIA'
+                ,'ARAYA HERNANDEZ'
+                ,'ceciliarayah.50@gmail.com'
+                ,'10844026-0'
+                ,'962755717'
+                ,'CECILIA HORTENSIA ARAYA HERNANDEZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5628
+                ,'viviana alexandra'
+                ,'navarro arango'
+                ,'alexanavarro28@hotmail.com'
+                ,'23572648-3'
+                ,'945679404'
+                ,'viviana alexandra navarro arango'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,11.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5629
+                ,'ORIANA '
+                ,'BRAVO MIRRANDA'
+                ,''
+                ,'11127146-1'
+                ,'949101444'
+                ,'ORIANA  BRAVO MIRRANDA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5630
+                ,'TEGUALDA'
+                ,'ESCOBAR VASQUEZ'
+                ,''
+                ,'7803833-0'
+                ,'961501169'
+                ,'TEGUALDA ESCOBAR VASQUEZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5631
+                ,'cecilia pilar'
+                ,'telleria ahumada'
+                ,'ceciliatelleria@gmail.com'
+                ,'9521063-5'
+                ,'932374627'
+                ,'cecilia pilar telleria ahumada'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,2.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5632
+                ,'yorka alejandra'
+                ,'cancino salinas'
+                ,'yorkacamsal@hotmail.com'
+                ,'14515519-3'
+                ,'979146019'
+                ,'yorka alejandra cancino salinas'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5633
+                ,'Javier Alexis '
+                ,'Castro Angulo'
+                ,'javioli1507@gmail.com'
+                ,'21975262-8'
+                ,'+56953636445'
+                ,'Javier Alexis  Castro Angulo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5634
+                ,'Esteban Andres '
+                ,'Palavecinos Palavecinos'
+                ,'epalavecinosp@gmail.com'
+                ,'18606034-2'
+                ,'999647080'
+                ,'Esteban Andres  Palavecinos Palavecinos'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5635
+                ,'catalina ester'
+                ,'llanos bravo'
+                ,''
+                ,'12100556-5'
+                ,'973022968'
+                ,'catalina ester llanos bravo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,2.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5636
+                ,'luis'
+                ,'fernandez'
+                ,'lfernandezmell@gmail.com'
+                ,'11914799-9'
+                ,'967659202'
+                ,'luis fernandez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5637
+                ,'eliana rosa'
+                ,'romo diaz'
+                ,''
+                ,'7985541-3'
+                ,'950343594'
+                ,'eliana rosa romo diaz'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5638
+                ,'armanda elena'
+                ,'gonzales flores'
+                ,'armandagonzalesf@gmail.com'
+                ,'9767741-7'
+                ,''
+                ,'armanda elena gonzales flores'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5639
+                ,'dennisse paloma'
+                ,'saldaña fernandez'
+                ,'d.p.s.fn13@gmail.com'
+                ,'21256388-9'
+                ,'967321054'
+                ,'dennisse paloma saldaña fernandez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5640
+                ,'katia'
+                ,'orellana'
+                ,'oerllana12166@gmail.com'
+                ,'11874256-7'
+                ,'999246988'
+                ,'katia orellana'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5641
+                ,'jaqueline'
+                ,'alarcon coloma'
+                ,'yaquelin1970@live.com'
+                ,'11532243-5'
+                ,'968508653'
+                ,'jaqueline alarcon coloma'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,5.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5642
+                ,'Jorge'
+                ,'Marchant'
+                ,'jmarchant877@gmail.com'
+                ,'9910764-2'
+                ,'966388714'
+                ,'Jorge Marchant'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5643
+                ,'monica '
+                ,'zuñiga  berrios'
+                ,''
+                ,'10170453-K'
+                ,'9818470261'
+                ,'monica  zuñiga  berrios'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5644
+                ,'NANCY '
+                ,'MAUREIRA'
+                ,''
+                ,'12121383-4'
+                ,'965868801'
+                ,'NANCY  MAUREIRA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5645
+                ,'Gabriela'
+                ,'Mejias '
+                ,'draakgulden@gmail.com'
+                ,'6120069-K'
+                ,'981572370'
+                ,'Gabriela Mejias '
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,5.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5646
+                ,'Enriqueta'
+                ,'Salinas'
+                ,'tia.keta.salinas@gmail.com'
+                ,'7646382-4'
+                ,'93535456'
+                ,'Enriqueta Salinas'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5647
+                ,'Maria'
+                ,'Abarca'
+                ,''
+                ,'6301499-0'
+                ,'947145922'
+                ,'Maria Abarca'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5648
+                ,'JOSE '
+                ,'ARRIAGADA PINTO'
+                ,''
+                ,'4383283-2'
+                ,'966347430'
+                ,'JOSE  ARRIAGADA PINTO'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,20.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5649
+                ,'FRANCISCO '
+                ,'FERNANDEZ LARA'
+                ,''
+                ,'4253156-1'
+                ,'999549787'
+                ,'FRANCISCO  FERNANDEZ LARA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5650
+                ,'JUAN '
+                ,'VILLALOBOS PEREZ'
+                ,''
+                ,'9483216-0'
+                ,'977930910'
+                ,'JUAN  VILLALOBOS PEREZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5651
+                ,'maria eugenia'
+                ,'tudela polanco'
+                ,'maritu63a@gmail.com'
+                ,'9900694-3'
+                ,'998645737'
+                ,'maria eugenia tudela polanco'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,11.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5652
+                ,'angelica'
+                ,'levinao alegria'
+                ,'angelica-anvidcar@hotmail.com'
+                ,'12504131-0'
+                ,'989201789'
+                ,'angelica levinao alegria'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,6.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5653
+                ,'gisella cecilia'
+                ,'vilches jara'
+                ,''
+                ,'10414831-K'
+                ,'976222915'
+                ,'gisella cecilia vilches jara'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,9.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5654
+                ,'Patricia '
+                ,'Plaza'
+                ,''
+                ,'7675881-6'
+                ,'945543325'
+                ,'Patricia  Plaza'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5655
+                ,'CAROLINA '
+                ,'COMICHEO'
+                ,'carolina_acn@hotmail.com'
+                ,'16065662-K'
+                ,'963082748'
+                ,'CAROLINA  COMICHEO'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,null
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5656
+                ,'paola '
+                ,'parada oñate'
+                ,'paola1803.parada@gmail.com'
+                ,'9921134-2'
+                ,'86255226'
+                ,'paola  parada oñate'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5657
+                ,'orfelina'
+                ,'ayenao forma'
+                ,'carmenayenao@gmail.com'
+                ,'8890574-1'
+                ,'982881522'
+                ,'orfelina ayenao forma'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,12.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5658
+                ,'cintia'
+                ,'carvajal pinto'
+                ,'pintocarvajalcintia@gmail.com'
+                ,'14375955-5'
+                ,'954360047'
+                ,'cintia carvajal pinto'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5659
+                ,'alicia guillermina'
+                ,'escudero gonzalez'
+                ,'aliciaecudero12@gmail.com'
+                ,'8312734-1'
+                ,'996640605'
+                ,'alicia guillermina escudero gonzalez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,6.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5660
+                ,'patricia'
+                ,'bueno lopez'
+                ,'pattybueno62@gmail.com'
+                ,'9215335-5'
+                ,'966423523'
+                ,'patricia bueno lopez'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,11.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5661
+                ,'roberto andres'
+                ,'quintriqueo'
+                ,'rquintriqueoisla@gmail.com'
+                ,'13840064-6'
+                ,'963546515'
+                ,'roberto andres quintriqueo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,2.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5662
+                ,'carlos roman'
+                ,'montt hormazabal'
+                ,'cmontt.hormazabal@gmail.com'
+                ,'6447219-4'
+                ,'995788077'
+                ,'carlos roman montt hormazabal'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,6.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5663
+                ,'carolina '
+                ,'alegria cerda'
+                ,''
+                ,'15985151-6'
+                ,'930865236'
+                ,'carolina  alegria cerda'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5664
+                ,'ADRIANA '
+                ,'CABEZA'
+                ,''
+                ,'5660339-5'
+                ,'947759018'
+                ,'ADRIANA  CABEZA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5665
+                ,'SERGIO '
+                ,'MEZA FALCON'
+                ,''
+                ,'8196885-3'
+                ,'932380330'
+                ,'SERGIO  MEZA FALCON'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5666
+                ,'MATIAS FELIPE'
+                ,'ARRIAGADA MORA'
+                ,''
+                ,'18731801-7'
+                ,'949917755'
+                ,'MATIAS FELIPE ARRIAGADA MORA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,3.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5667
+                ,'KATHERINE MELISA'
+                ,'MEZA ALVAREZ'
+                ,'malvarez5481@gmail.com'
+                ,'18602630-6'
+                ,'954814754'
+                ,'KATHERINE MELISA MEZA ALVAREZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5668
+                ,'PATRICIA ROSA'
+                ,'ALVAREZ MUÑOZ'
+                ,'patriciarosaalvarez@yahoo.es'
+                ,'9721573-1'
+                ,'966720560'
+                ,'PATRICIA ROSA ALVAREZ MUÑOZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,29.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5669
+                ,'yessenia'
+                ,'varela'
+                ,'yesseniavm21@gmail.com'
+                ,'20389063-K'
+                ,'935594250'
+                ,'yessenia varela'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5670
+                ,'JUANA'
+                ,'VASQUEZ'
+                ,''
+                ,'5979051-K'
+                ,'225040267'
+                ,'JUANA VASQUEZ'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,93.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5671
+                ,'EUGENIA'
+                ,'SAA'
+                ,'catapihi@gmail.com'
+                ,'5711135-6'
+                ,'991452403'
+                ,'EUGENIA SAA'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5672
+                ,'carmen'
+                ,'diaz ortega'
+                ,''
+                ,'7141826-K'
+                ,'993473030'
+                ,'carmen diaz ortega'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5673
+                ,'dalton israel'
+                ,'carrasco rubilar'
+                ,'dalton.carrasco@gmail.com'
+                ,'8237203-2'
+                ,'998224939'
+                ,'dalton israel carrasco rubilar'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5674
+                ,'jose ricardo '
+                ,'pinto molina'
+                ,''
+                ,'7624396-4'
+                ,'973851422'
+                ,'jose ricardo  pinto molina'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5675
+                ,'francisco'
+                ,'machuca'
+                ,''
+                ,'13484619-4'
+                ,'993004541'
+                ,'francisco machuca'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5676
+                ,'ana amelia'
+                ,'rios rebolledo'
+                ,''
+                ,'7922290-9'
+                ,'979456914'
+                ,'ana amelia rios rebolledo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,2.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5677
+                ,'JEANNETTE'
+                ,'AGUILAR'
+                ,'joneettaguilar@gmail.com'
+                ,'11837557-2'
+                ,'984574091'
+                ,'JEANNETTE AGUILAR'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,4.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5678
+                ,'sylvia eleuteria'
+                ,'peralta escobedo'
+                ,''
+                ,'5590679-3'
+                ,'229264832'
+                ,'sylvia eleuteria peralta escobedo'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,11.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null),
+                (5679
+                ,'monica'
+                ,'flores bazan'
+                ,''
+                ,'7460306-8'
+                ,'941761215'
+                ,'monica flores bazan'
+                ,''
+                ,null
+                ,null
+                ,0
+                ,0.0
+                ,0
+                ,'Sin Giro'
+                ,''
+                ,''
+                ,''
+                ,0
+                ,1
+                ,0.0
+                ,''
+                ,0
+                ,0
+                ,0
+                ,null
+                ,null)

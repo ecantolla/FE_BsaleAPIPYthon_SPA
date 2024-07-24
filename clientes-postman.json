@@ -1,0 +1,1975 @@
+{
+  "href": "https://api.bsale.io/v1/clients.json",
+  "count": 5650,
+  "limit": 50,
+  "offset": 0,
+  "items": [
+      {
+          "href": "https://api.bsale.io/v1/clients/1.json",
+          "id": 1,
+          "firstName": "Inicial",
+          "lastName": "Demo",
+          "email": "",
+          "code": "",
+          "phone": "",
+          "company": "Inicial Demo",
+          "note": null,
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": "",
+          "updatedAt": "",
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/1/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/1/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/1/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/2.json",
+          "id": 2,
+          "firstName": "ALEXANDER",
+          "lastName": "STEMPEL(5%)",
+          "email": "alex@gmail.com",
+          "code": "7.201.933-4",
+          "phone": "",
+          "company": "ALEXANDER STEMPEL",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 1,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1624844160,
+          "updatedAt": 1697745542,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/2/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/2/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/2/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/3.json",
+          "id": 3,
+          "firstName": "Paulina ",
+          "lastName": "Mocarquer",
+          "email": "paly.moc@gmail.com",
+          "code": "",
+          "phone": "993153429",
+          "company": "Paulina  Mocarquer",
+          "note": "",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 1,
+          "maxCredit": 200000.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 62.0,
+          "pointsUpdated": 1717432105,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1625940349,
+          "updatedAt": 1717432105,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/3/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/3/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/3/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/4.json",
+          "id": 4,
+          "firstName": "Claudia",
+          "lastName": "Mocarquer(5%)",
+          "email": "",
+          "code": "7.807.821-9",
+          "phone": "",
+          "company": "Claudia Mocarquer",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1626523199,
+          "updatedAt": 1697745543,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/4/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/4/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/4/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/6.json",
+          "id": 6,
+          "firstName": "Cliente ",
+          "lastName": "Devoluciones(5%)",
+          "email": "",
+          "code": "11.111.111-1",
+          "phone": "",
+          "company": "Cliente  Devoluciones",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Concha y toro 180",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 49.0,
+          "pointsUpdated": 1713293630,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1626707645,
+          "updatedAt": 1713293630,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/6/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/6/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/6/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/7.json",
+          "id": 7,
+          "firstName": "Sindicato",
+          "lastName": "Farmacia(5%)",
+          "email": "",
+          "code": "9.529.339-5",
+          "phone": "",
+          "company": "Sindicato Farmacia",
+          "note": "",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 1,
+          "maxCredit": 0.0,
+          "state": 1,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Avda. Concha y Toro 180",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 1,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1627064495,
+          "updatedAt": 1697745543,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/7/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/7/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/7/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/8.json",
+          "id": 8,
+          "firstName": "Empresa Trabajadores",
+          "lastName": "Fin de Mes",
+          "email": "",
+          "code": "3084297-9",
+          "phone": "",
+          "company": "Empresa Trabajadores Fin de Mes",
+          "note": "",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 1,
+          "maxCredit": 100000000.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Avenida concha y toro 180",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 1289.0,
+          "pointsUpdated": 1721080732,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1627319562,
+          "updatedAt": 1721080732,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/8/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/8/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/8/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/9.json",
+          "id": 9,
+          "firstName": "marcela de las mercedes",
+          "lastName": "Cerpa gonzalez(5%)",
+          "email": "13.santiagonuevaestremadura@fundacion.integra.cl",
+          "code": "70.574.900-0",
+          "phone": "",
+          "company": "fundacion educacional para el desarrollo",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "educacion",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Santiago",
+          "address": "alonso Ovalle 1180",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1628885257,
+          "updatedAt": 1697745544,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/9/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/9/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/9/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/12.json",
+          "id": 12,
+          "firstName": "Ernesto ",
+          "lastName": "Muñoz(5%)",
+          "email": "",
+          "code": "20.456.243-1",
+          "phone": "",
+          "company": "Ernesto  Muñoz",
+          "note": "",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 13.0,
+          "pointsUpdated": 1672418809,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1632938273,
+          "updatedAt": 1697745544,
+          "price_list": {
+              "href": "https://api.bsale.io/v1/price_lists/4.json",
+              "id": "4"
+          },
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/12/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/12/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/12/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/13.json",
+          "id": 13,
+          "firstName": "Hector",
+          "lastName": "Rocha(5%)",
+          "email": "",
+          "code": "5.236.193-1",
+          "phone": "",
+          "company": "Hector Rocha",
+          "note": "",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Concha y Toro 180",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 41.0,
+          "pointsUpdated": 1684351012,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1633181058,
+          "updatedAt": 1697745544,
+          "price_list": {
+              "href": "https://api.bsale.io/v1/price_lists/4.json",
+              "id": "4"
+          },
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/13/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/13/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/13/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/14.json",
+          "id": 14,
+          "firstName": "Carlos ",
+          "lastName": "Flores Cepeda(5%)",
+          "email": "",
+          "code": "5253606-5",
+          "phone": "",
+          "company": "Carlos  Flores Cepeda(5%)",
+          "note": "",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 1,
+          "maxCredit": 100000000.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 1417.0,
+          "pointsUpdated": 1721067548,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1633181258,
+          "updatedAt": 1721067548,
+          "payment_type": {
+              "href": "https://api.bsale.io/v1/payment_types/5.json",
+              "id": "5"
+          },
+          "price_list": {
+              "href": "https://api.bsale.io/v1/price_lists/4.json",
+              "id": "4"
+          },
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/14/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/14/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/14/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/15.json",
+          "id": 15,
+          "firstName": "MARILUZ",
+          "lastName": "ARELLANO(5%)",
+          "email": "",
+          "code": "22.222.222-2",
+          "phone": "",
+          "company": "MARILUZ ARELLANO",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 1,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1635009852,
+          "updatedAt": 1697745544,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/15/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/15/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/15/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/16.json",
+          "id": 16,
+          "firstName": "orlando",
+          "lastName": "cerda(5%)",
+          "email": "",
+          "code": "96.723.650-0",
+          "phone": "",
+          "company": "soc educacional de pirque",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "pirque",
+          "address": "alcalde hernan prieto 911",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1645723385,
+          "updatedAt": 1697745545,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/16/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/16/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/16/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/17.json",
+          "id": 17,
+          "firstName": "MARIA",
+          "lastName": "VARGAS(5%)",
+          "email": "",
+          "code": "65.044.065-K",
+          "phone": "",
+          "company": "FUNDACION EDUCACIONAL PROTECTORA DE LA INFANCIA",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "EDUCACION",
+          "city": "santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente alto",
+          "address": "CONCHA Y TORO 2188",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1646934822,
+          "updatedAt": 1697745545,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/17/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/17/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/17/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/18.json",
+          "id": 18,
+          "firstName": "claudia",
+          "lastName": "Chávez Rojas(5%)",
+          "email": "cchavez@ilm.cl",
+          "code": "78.146.900-9",
+          "phone": "226820212",
+          "company": "INVERSIONES LA MUNDIAL LTDA",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "IMPORT.EXPORT.DISTRIB.DE ART.FOTOGRA,ELECT,PERFU.VTA.BEBIDAS ENERGET.",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Santiago",
+          "address": "libertad 790",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1648059043,
+          "updatedAt": 1697745545,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/18/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/18/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/18/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/19.json",
+          "id": 19,
+          "firstName": "Carola",
+          "lastName": "Valenzuela Salgado(5%)",
+          "email": "",
+          "code": "76.958.416-1",
+          "phone": "",
+          "company": "MAESTRANZA & INGENIERÍA INDUSTRIAL MAESK LIMITADA",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "MAEZTRANZA Y FABRICACION DE PIEZAS",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "San Joaquín",
+          "address": "Tomás de Campanella 5408",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1650551898,
+          "updatedAt": 1697745545,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/19/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/19/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/19/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/20.json",
+          "id": 20,
+          "firstName": "AMALIA",
+          "lastName": "COFRE MORALES(5%)",
+          "email": "",
+          "code": "9.499.127-7",
+          "phone": "",
+          "company": "FRUTOS SECOS DIAMANELL LTAD",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "FRUTOS SECOS",
+          "city": "SANTIAGO",
+          "commerciallyBlocked": 0,
+          "municipality": "PIRQUE",
+          "address": "LOS TULIPANES 3990 SAN JOSE DE MAIPO",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1654023433,
+          "updatedAt": 1697745545,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/20/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/20/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/20/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/21.json",
+          "id": 21,
+          "firstName": "JORGE ",
+          "lastName": "SEBASTIANI(5%)",
+          "email": "",
+          "code": "18.198.328-0",
+          "phone": "",
+          "company": "JORGE  SEBASTIANI",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Concha y Toro 180",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1659108713,
+          "updatedAt": 1697745546,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/21/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/21/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/21/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/22.json",
+          "id": 22,
+          "firstName": "JESSICA",
+          "lastName": "VARGAS ROJAS(5%)",
+          "email": "jessicavargak@gmail.com",
+          "code": "10.885.956-3",
+          "phone": "931157186",
+          "company": "JESSICA VARGAS ROJAS",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "PUENTE ALTO",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1659110572,
+          "updatedAt": 1697745546,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/22/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/22/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/22/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/23.json",
+          "id": 23,
+          "firstName": "Slavka Katarina",
+          "lastName": "Lenac Salamanca(5%)",
+          "email": "",
+          "code": "19.438.207-3",
+          "phone": "976300620",
+          "company": "Slavka Katarina Lenac Salamanca",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Canal La Luz Poniente 4490",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1661881987,
+          "updatedAt": 1697745546,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/23/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/23/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/23/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/24.json",
+          "id": 24,
+          "firstName": "Nicolas",
+          "lastName": "Tamayo(5%)",
+          "email": "nicotamayom@gmail.com",
+          "code": "18172675-K",
+          "phone": "973020099",
+          "company": "Nicolas Tamayo",
+          "note": "cliente bello",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Las Condes",
+          "address": "av. colon 4020",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1661893845,
+          "updatedAt": 1697745546,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/24/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/24/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/24/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/25.json",
+          "id": 25,
+          "firstName": "Susana Ximena",
+          "lastName": "Cortes Ulloa(5%)",
+          "email": "",
+          "code": "65.232.280-8",
+          "phone": "",
+          "company": "Fundación Educacional Origen",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Educación",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Pirque",
+          "address": "Virginia Subercaseaux 2400",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1665164337,
+          "updatedAt": 1697745546,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/25/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/25/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/25/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/26.json",
+          "id": 26,
+          "firstName": "Alexis",
+          "lastName": "Cornejo(5%)",
+          "email": "",
+          "code": "65.128.698-0",
+          "phone": "",
+          "company": "Corporación Educacional Colegio Cristiano Belén",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Educación",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Irarrázabal 0649",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1665584492,
+          "updatedAt": 1697745546,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/26/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/26/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/26/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/27.json",
+          "id": 27,
+          "firstName": "CAROLINA ARCELIA ",
+          "lastName": "URQUIZA CRUZ(5%)",
+          "email": "ji.creacion@cmpuentealto.cl",
+          "code": "70.856.400-1",
+          "phone": "227975423",
+          "company": "CORP MUNIC EDUC SALUD Y ATENCION",
+          "note": "JARDIN CREACION",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "EDUCACION",
+          "city": "SANTIAGO",
+          "commerciallyBlocked": 0,
+          "municipality": "PUENTE ALTO",
+          "address": "Jardín Creación,  Gandarillas 93",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1665689366,
+          "updatedAt": 1697745547,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/27/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/27/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/27/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/28.json",
+          "id": 28,
+          "firstName": "",
+          "lastName": "(5%)",
+          "email": "",
+          "code": "96.607.990-8",
+          "phone": "",
+          "company": "HIDRONOR CHILE S.A.",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "SERVICIOS DE MEDIO AMBIENTE, TRATAMIENTO Y GESTIÓN",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Pudahuel",
+          "address": "Vizcaya 16907",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1666974211,
+          "updatedAt": 1697745547,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/28/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/28/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/28/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/29.json",
+          "id": 29,
+          "firstName": "Juan ",
+          "lastName": "Roca  Leal(5%)",
+          "email": "",
+          "code": "76.591.592-9",
+          "phone": "",
+          "company": "Comercial Rocante Ltda.",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Distribuidora Albumes",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Avda. Gabriela Oriente No 01289",
+          "companyOrPerson": 1,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1671469813,
+          "updatedAt": 1697745547,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/29/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/29/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/29/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/30.json",
+          "id": 30,
+          "firstName": "Rosa Amelia ",
+          "lastName": "Espinoza Leiva(5%)",
+          "email": "ra.espinozal@gmail.com",
+          "code": "13.203.356-0",
+          "phone": "",
+          "company": "Rosa Amelia  Espinoza Leiva",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "Cabo Boqueron 1606 V. La Capilla",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672236068,
+          "updatedAt": 1697745547,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/30/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/30/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/30/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/31.json",
+          "id": 31,
+          "firstName": "Beatriz del Pilar ",
+          "lastName": "Leyton Diaz(5%)",
+          "email": "bealeytond@gmail.com",
+          "code": "9.307.993-0",
+          "phone": "",
+          "company": "Beatriz del Pilar  Leyton Diaz",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "Santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "Santiago centro",
+          "address": "Bandera 883 Dp 407",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672236224,
+          "updatedAt": 1697745547,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/31/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/31/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/31/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/32.json",
+          "id": 32,
+          "firstName": "Ruby ",
+          "lastName": "Cuello Tapia(5%)",
+          "email": "perfisica8@gmail.com",
+          "code": "4.759.282-8",
+          "phone": "",
+          "company": "Ruby  Cuello Tapia",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "Los Copihues 70 Paradero 26 Vicuña Mackenna Villa",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672236320,
+          "updatedAt": 1697745548,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/32/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/32/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/32/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/33.json",
+          "id": 33,
+          "firstName": "Rosa ",
+          "lastName": "Maturana",
+          "email": "rosamaturana1961@gmail.com",
+          "code": "",
+          "phone": "",
+          "company": "Rosa  Maturana",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672236380,
+          "updatedAt": 1672236380,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/33/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/33/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/33/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/34.json",
+          "id": 34,
+          "firstName": " Francisca Alejandra ",
+          "lastName": "Muñoz Neira(5%)",
+          "email": "francisca.alejandra97@gmail.com",
+          "code": "19.705.252-k",
+          "phone": "",
+          "company": " Francisca Alejandra  Muñoz Neira",
+          "note": "",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Nonato Coo 0386 Poblacion Los Andes",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237358,
+          "updatedAt": 1697745548,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/34/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/34/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/34/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/35.json",
+          "id": 35,
+          "firstName": "Alam Milenko",
+          "lastName": "Ugalde Gonzalez(5%)",
+          "email": "alam.ugalde@gmail.com",
+          "code": "9.529.247-K",
+          "phone": "",
+          "company": "Alam Milenko Ugalde Gonzalez",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "Pje Unihue 0331 V Cordillera",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237470,
+          "updatedAt": 1697745548,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/35/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/35/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/35/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/36.json",
+          "id": 36,
+          "firstName": "Elizabeth Alejandra ",
+          "lastName": "Abarca Iturriaga(5%)",
+          "email": "elisof27@hotmail.com",
+          "code": "16.016.561-8",
+          "phone": "",
+          "company": "Elizabeth Alejandra  Abarca Iturriaga",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "Cerro Calan 10443",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237550,
+          "updatedAt": 1697745548,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/36/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/36/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/36/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/37.json",
+          "id": 37,
+          "firstName": "Ruth gloria",
+          "lastName": " Carvajal Hernandez(5%)",
+          "email": "ruthcarvajal@gmail.com",
+          "code": "8.289.393-8",
+          "phone": "",
+          "company": "Ruth gloria  Carvajal Hernandez",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "Lincon 4562",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237694,
+          "updatedAt": 1697745548,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/37/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/37/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/37/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/38.json",
+          "id": 38,
+          "firstName": "Fernando Humberto",
+          "lastName": "Gonzalez Polanco (5%)",
+          "email": "",
+          "code": "14542441-0",
+          "phone": "",
+          "company": "Fernando Humberto Gonzalez Polanco (5%)",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "gonzalezpolancofernando20@gmail.com",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237760,
+          "updatedAt": 1714670661,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/38/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/38/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/38/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/39.json",
+          "id": 39,
+          "firstName": "Maritza Del Carmen",
+          "lastName": "Toro Molina (5%)",
+          "email": "maritzita2003@hotmail.com",
+          "code": "9.968.879-3",
+          "phone": "",
+          "company": "Maritza Del Carmen Toro Molina ",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "El Cabildo 0638 Pb San Geronimo P A",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237810,
+          "updatedAt": 1697745549,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/39/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/39/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/39/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/40.json",
+          "id": 40,
+          "firstName": "Claudia Andrea",
+          "lastName": "Vita vega(5%)",
+          "email": "clauvita6@gmail.com",
+          "code": "8.688.379-1",
+          "phone": "",
+          "company": "Claudia Andrea Vita vega",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "Cristobal Colon 5010 Depto -71",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237864,
+          "updatedAt": 1697745549,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/40/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/40/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/40/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/41.json",
+          "id": 41,
+          "firstName": "Alejandra Beatriz",
+          "lastName": "Mocarquer Saud(5%)",
+          "email": "alemocarquer@gmail.com",
+          "code": "11.625.199-k",
+          "phone": "",
+          "company": "Alejandra Beatriz Mocarquer Saud",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "Av Colon 6275",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 82.0,
+          "pointsUpdated": 1720116999,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237911,
+          "updatedAt": 1720116999,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/41/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/41/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/41/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/42.json",
+          "id": 42,
+          "firstName": "Maribel Luisa",
+          "lastName": "Guzmán Rojas(5%)",
+          "email": "maribelguzman803@gmail.com",
+          "code": "13.042.722-7",
+          "phone": "977940080",
+          "company": "Maribel Luisa Guzmán Rojas",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "La florida",
+          "address": "Mejillones 39",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672237987,
+          "updatedAt": 1697745549,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/42/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/42/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/42/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/43.json",
+          "id": 43,
+          "firstName": "Silvia Mirna",
+          "lastName": "Rojas Gomez (5%)",
+          "email": "maribelguzman803@gmail.com",
+          "code": "3.003.343-4",
+          "phone": "",
+          "company": "Silvia Mirna Rojas Gomez ",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "La florida",
+          "address": "Mejillones 39 ",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672238356,
+          "updatedAt": 1697745549,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/43/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/43/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/43/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/44.json",
+          "id": 44,
+          "firstName": "Fernando Humberto ",
+          "lastName": "Manlfer Vázquez(5%)",
+          "email": "fernando.humberto.manlfer@gmail.com",
+          "code": "14.367.609-9",
+          "phone": "935286993",
+          "company": "Fernando Humberto  Manlfer Vázquez",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Buin",
+          "address": "Biderminia bozan #1134",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672238431,
+          "updatedAt": 1697745550,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/44/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/44/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/44/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/45.json",
+          "id": 45,
+          "firstName": "Jessica Jury",
+          "lastName": "Bravo Diaz (5%)",
+          "email": "jessica.bravodiaz@gmail.com",
+          "code": "12.879.183-3",
+          "phone": "999412517",
+          "company": "Jessica Jury Bravo Diaz ",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente alto",
+          "address": "Av nonato coo 3303",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672401597,
+          "updatedAt": 1697745550,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/45/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/45/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/45/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/46.json",
+          "id": 46,
+          "firstName": "johanna",
+          "lastName": "castillo(5%)",
+          "email": "johanna.castillo2326@gmail.com",
+          "code": "16698400-9",
+          "phone": "963473159",
+          "company": "johanna castillo(5%)",
+          "note": "7",
+          "facebook": "",
+          "twitter": "",
+          "hasCredit": 1,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "puente alto",
+          "address": "nn",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 74.0,
+          "pointsUpdated": 1712602758,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672769707,
+          "updatedAt": 1714424514,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/46/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/46/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/46/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/47.json",
+          "id": 47,
+          "firstName": "maria",
+          "lastName": "contreras (5%)",
+          "email": "",
+          "code": "7.483.840-5",
+          "phone": "952491985",
+          "company": "maria contreras ",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "puente alto",
+          "address": "nn",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 3.0,
+          "pointsUpdated": 1687188051,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672839470,
+          "updatedAt": 1697745550,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/47/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/47/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/47/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/48.json",
+          "id": 48,
+          "firstName": "rosana  contrera",
+          "lastName": "martinez(5%)",
+          "email": "rossanaicm23@gmail.com",
+          "code": "12.469.000-5",
+          "phone": "995992006",
+          "company": "rosana  contrera martinez",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "santiago",
+          "commerciallyBlocked": 0,
+          "municipality": "puente  alto",
+          "address": "lago  carilanquen   04508",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 6.0,
+          "pointsUpdated": 1672846148,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672846079,
+          "updatedAt": 1697745550,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/48/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/48/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/48/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/49.json",
+          "id": 49,
+          "firstName": "hilda",
+          "lastName": "aravena(5%)",
+          "email": "",
+          "code": "4.111.259-k",
+          "phone": "",
+          "company": "hilda aravena",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "",
+          "address": "",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1672947127,
+          "updatedAt": 1697745550,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/49/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/49/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/49/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/50.json",
+          "id": 50,
+          "firstName": "Nibaldo javier ",
+          "lastName": "Reveco Andrade(5%)",
+          "email": "nra1988soldier@gmail.com",
+          "code": "16.938.071-6",
+          "phone": "961581465",
+          "company": "Nibaldo javier  Reveco Andrade",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente alto",
+          "address": "Loma redonda 7 poniente",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1673006479,
+          "updatedAt": 1697745551,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/50/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/50/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/50/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/51.json",
+          "id": 51,
+          "firstName": "Veronica Nelly",
+          "lastName": "monzón salinas(5%)",
+          "email": "veronica.vizcachas1969@gmail.com",
+          "code": "11.481.687-6",
+          "phone": "979950463",
+          "company": "Veronica Nelly monzón salinas",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente alto",
+          "address": "Camino san jose de maipo05879 condominio 3 casa12",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1673006538,
+          "updatedAt": 1697745551,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/51/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/51/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/51/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/52.json",
+          "id": 52,
+          "firstName": "Carolina Del Carmen",
+          "lastName": "fuentes farias(5%)",
+          "email": "carofuentes322@gmail.com",
+          "code": "16.739.306-3",
+          "phone": "949460966",
+          "company": "Carolina Del Carmen fuentes farias",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente alto",
+          "address": "Juan Conrad 944 Pon Manuel Plaza",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 0.0,
+          "pointsUpdated": "",
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1673018876,
+          "updatedAt": 1697745551,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/52/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/52/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/52/addresses.json"
+          }
+      },
+      {
+          "href": "https://api.bsale.io/v1/clients/53.json",
+          "id": 53,
+          "firstName": "Lorena Andrea",
+          "lastName": "Montes Valdes(5%)",
+          "email": "lorrein.31@gmail.com",
+          "code": "15.462.788-k",
+          "phone": "944919859",
+          "company": "Lorena Andrea Montes Valdes",
+          "note": "",
+          "facebook": null,
+          "twitter": "",
+          "hasCredit": 0,
+          "maxCredit": 0.0,
+          "state": 0,
+          "activity": "Sin Giro",
+          "city": "",
+          "commerciallyBlocked": 0,
+          "municipality": "Puente Alto",
+          "address": "De Las Cumbres 3487 Gabriela Mistral",
+          "companyOrPerson": 0,
+          "accumulatePoints": 1,
+          "points": 45.0,
+          "pointsUpdated": 1697746653,
+          "sendDte": 0,
+          "isForeigner": 0,
+          "prestashopClienId": 0,
+          "createdAt": 1673031280,
+          "updatedAt": 1697746653,
+          "contacts": {
+              "href": "https://api.bsale.io/v1/clients/53/contacts.json"
+          },
+          "attributes": {
+              "href": "https://api.bsale.io/v1/clients/53/attributes.json"
+          },
+          "addresses": {
+              "href": "https://api.bsale.io/v1/clients/53/addresses.json"
+          }
+      }
+  ],
+  "next": "https://api.bsale.io/v1/clients.json?limit=50&offset=50"
+}

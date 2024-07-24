@@ -1,0 +1,3081 @@
+{
+  "href": "https://api.bsale.cl/v1/stocks/consumptions.json",
+  "count": 2187,
+  "limit": 50,
+  "offset": 0,
+  "items": [
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/2.json",
+          "id": 2,
+          "consumptionDate": 1626652800,
+          "note": "-1 Uso Farmacia",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/2/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/1/details/1.json",
+                      "id": 1,
+                      "quantity": 1.0,
+                      "cost": 977.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6342.json",
+                          "id": "6342"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/3.json",
+          "id": 3,
+          "consumptionDate": 1626652800,
+          "note": "Uso Local",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/3/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/2/details/2.json",
+                      "id": 2,
+                      "quantity": 1.0,
+                      "cost": 2090.0,
+                      "variantStock": 40.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4876.json",
+                          "id": "4876"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/4.json",
+          "id": 4,
+          "consumptionDate": 1626652800,
+          "note": "-1 venta mal efectuada ",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/4/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/3/details/3.json",
+                      "id": 3,
+                      "quantity": 1.0,
+                      "cost": 8290.0,
+                      "variantStock": 42.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5273.json",
+                          "id": "5273"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/5.json",
+          "id": 5,
+          "consumptionDate": 1626652800,
+          "note": "-1 lo lleva por cambio autorizado por paulina",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/5/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/4/details/4.json",
+                      "id": 4,
+                      "quantity": 1.0,
+                      "cost": 9120.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5619.json",
+                          "id": "5619"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/6.json",
+          "id": 6,
+          "consumptionDate": 1626739200,
+          "note": "Actualizar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/6/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/5/details/5.json",
+                      "id": 5,
+                      "quantity": 4.0,
+                      "cost": 1590.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7224.json",
+                          "id": "7224"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/7.json",
+          "id": 7,
+          "consumptionDate": 1626739200,
+          "note": "Actualizar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/7/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/6/details/6.json",
+                      "id": 6,
+                      "quantity": 1.0,
+                      "cost": 8301.0,
+                      "variantStock": 21.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5271.json",
+                          "id": "5271"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/8.json",
+          "id": 8,
+          "consumptionDate": 1626739200,
+          "note": "Actualizar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/8/details.json",
+              "count": 11,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/7/details/7.json",
+                      "id": 7,
+                      "quantity": 10.0,
+                      "cost": 5583.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7241.json",
+                          "id": "7241"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/8/details/8.json",
+                      "id": 8,
+                      "quantity": 20.0,
+                      "cost": 814.0,
+                      "variantStock": 8.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6662.json",
+                          "id": "6662"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/9/details/9.json",
+                      "id": 9,
+                      "quantity": 3.0,
+                      "cost": 6038.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6265.json",
+                          "id": "6265"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/10/details/10.json",
+                      "id": 10,
+                      "quantity": 5.0,
+                      "cost": 3452.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5725.json",
+                          "id": "5725"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/11/details/11.json",
+                      "id": 11,
+                      "quantity": 55.0,
+                      "cost": 1260.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7220.json",
+                          "id": "7220"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/12/details/12.json",
+                      "id": 12,
+                      "quantity": 5.0,
+                      "cost": 5088.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6969.json",
+                          "id": "6969"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/13/details/13.json",
+                      "id": 13,
+                      "quantity": 50.0,
+                      "cost": 381.0,
+                      "variantStock": 31.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6244.json",
+                          "id": "6244"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/14/details/14.json",
+                      "id": 14,
+                      "quantity": 4.0,
+                      "cost": 6619.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5593.json",
+                          "id": "5593"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/15/details/15.json",
+                      "id": 15,
+                      "quantity": 4.0,
+                      "cost": 9571.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5594.json",
+                          "id": "5594"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/16/details/16.json",
+                      "id": 16,
+                      "quantity": 8.0,
+                      "cost": 2740.0,
+                      "variantStock": 8.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5078.json",
+                          "id": "5078"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/17/details/17.json",
+                      "id": 17,
+                      "quantity": 4.0,
+                      "cost": 3564.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5079.json",
+                          "id": "5079"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/9.json",
+          "id": 9,
+          "consumptionDate": 1626739200,
+          "note": "Actualizar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/9/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/18/details/18.json",
+                      "id": 18,
+                      "quantity": 1.0,
+                      "cost": 12290.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6249.json",
+                          "id": "6249"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/10.json",
+          "id": 10,
+          "consumptionDate": 1626739200,
+          "note": "Actualizar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/10/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/19/details/19.json",
+                      "id": 19,
+                      "quantity": 4.0,
+                      "cost": 1590.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7224.json",
+                          "id": "7224"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/11.json",
+          "id": 11,
+          "consumptionDate": 1626739200,
+          "note": "Actualizar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/11/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/20/details/20.json",
+                      "id": 20,
+                      "quantity": 1.0,
+                      "cost": 8301.0,
+                      "variantStock": 21.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5271.json",
+                          "id": "5271"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/12.json",
+          "id": 12,
+          "consumptionDate": 1626739200,
+          "note": "por cambio de productos se lleva 4 Boleta N°30010 Mister Farmacia",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/12/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/21/details/21.json",
+                      "id": 21,
+                      "quantity": 4.0,
+                      "cost": 250.0,
+                      "variantStock": 166.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6806.json",
+                          "id": "6806"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/13.json",
+          "id": 13,
+          "consumptionDate": 1626739200,
+          "note": "Ajuste de Stock: jorge sebastiani",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/13/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/22/details/22.json",
+                      "id": 22,
+                      "quantity": 80.0,
+                      "cost": 890.0,
+                      "variantStock": 48.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6841.json",
+                          "id": "6841"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/14.json",
+          "id": 14,
+          "consumptionDate": 1626912000,
+          "note": "-1 Uso Farmacia",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/14/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/23/details/23.json",
+                      "id": 23,
+                      "quantity": 1.0,
+                      "cost": 1016.0,
+                      "variantStock": 5.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6014.json",
+                          "id": "6014"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/15.json",
+          "id": 15,
+          "consumptionDate": 1626912000,
+          "note": "-1 uso farmacia",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/15/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/24/details/24.json",
+                      "id": 24,
+                      "quantity": 1.0,
+                      "cost": 1016.0,
+                      "variantStock": 4.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6014.json",
+                          "id": "6014"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/16.json",
+          "id": 16,
+          "consumptionDate": 1626912000,
+          "note": "-2 señorita casa",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/16/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/25/details/25.json",
+                      "id": 25,
+                      "quantity": 2.0,
+                      "cost": 131.0,
+                      "variantStock": 3262.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6267.json",
+                          "id": "6267"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/17.json",
+          "id": 17,
+          "consumptionDate": 1626998400,
+          "note": "Casa Señorita Hermano",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/17/details.json",
+              "count": 9,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/26/details/26.json",
+                      "id": 26,
+                      "quantity": 1.0,
+                      "cost": 23400.0,
+                      "variantStock": 2.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6722.json",
+                          "id": "6722"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/27/details/27.json",
+                      "id": 27,
+                      "quantity": 1.0,
+                      "cost": 7500.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6090.json",
+                          "id": "6090"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/28/details/28.json",
+                      "id": 28,
+                      "quantity": 1.0,
+                      "cost": 1069.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5690.json",
+                          "id": "5690"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/29/details/29.json",
+                      "id": 29,
+                      "quantity": 2.0,
+                      "cost": 1707.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4999.json",
+                          "id": "4999"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/30/details/30.json",
+                      "id": 30,
+                      "quantity": 1.0,
+                      "cost": 445.0,
+                      "variantStock": 25.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7008.json",
+                          "id": "7008"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/31/details/31.json",
+                      "id": 31,
+                      "quantity": 1.0,
+                      "cost": 629.0,
+                      "variantStock": 13.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7006.json",
+                          "id": "7006"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/32/details/32.json",
+                      "id": 32,
+                      "quantity": 1.0,
+                      "cost": 2490.0,
+                      "variantStock": 14.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5049.json",
+                          "id": "5049"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/33/details/33.json",
+                      "id": 33,
+                      "quantity": 1.0,
+                      "cost": 5750.0,
+                      "variantStock": 5.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7144.json",
+                          "id": "7144"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/34/details/34.json",
+                      "id": 34,
+                      "quantity": 1.0,
+                      "cost": 9504.0,
+                      "variantStock": 8.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5355.json",
+                          "id": "5355"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/18.json",
+          "id": 18,
+          "consumptionDate": 1626998400,
+          "note": "Ajuste de Stock: jorge sebastiani",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/18/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/35/details/35.json",
+                      "id": 35,
+                      "quantity": 66.0,
+                      "cost": 987.0,
+                      "variantStock": 18.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5213.json",
+                          "id": "5213"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/19.json",
+          "id": 19,
+          "consumptionDate": 1626998400,
+          "note": "Sra olga ",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/19/details.json",
+              "count": 2,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/36/details/36.json",
+                      "id": 36,
+                      "quantity": 5.0,
+                      "cost": 560.0,
+                      "variantStock": 128.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4911.json",
+                          "id": "4911"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/37/details/37.json",
+                      "id": 37,
+                      "quantity": 2.0,
+                      "cost": 1320.0,
+                      "variantStock": 120.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5312.json",
+                          "id": "5312"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/20.json",
+          "id": 20,
+          "consumptionDate": 1626998400,
+          "note": "-1 Casa paulina",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/20/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/38/details/38.json",
+                      "id": 38,
+                      "quantity": 1.0,
+                      "cost": 6203.0,
+                      "variantStock": 79.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5896.json",
+                          "id": "5896"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/21.json",
+          "id": 21,
+          "consumptionDate": 1627257600,
+          "note": "-1 Casa Señorita",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/21/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/39/details/39.json",
+                      "id": 39,
+                      "quantity": 1.0,
+                      "cost": 3660.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5579.json",
+                          "id": "5579"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/22.json",
+          "id": 22,
+          "consumptionDate": 1627344000,
+          "note": "-1 señorita",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/22/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/40/details/40.json",
+                      "id": 40,
+                      "quantity": 1.0,
+                      "cost": 650.0,
+                      "variantStock": 100.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5556.json",
+                          "id": "5556"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/23.json",
+          "id": 23,
+          "consumptionDate": 1627344000,
+          "note": "Sra Violeta Pago con cheque",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/23/details.json",
+              "count": 15,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/41/details/41.json",
+                      "id": 41,
+                      "quantity": 1.0,
+                      "cost": 260.0,
+                      "variantStock": 70.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5335.json",
+                          "id": "5335"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/42/details/42.json",
+                      "id": 42,
+                      "quantity": 1.0,
+                      "cost": 23950.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6285.json",
+                          "id": "6285"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/43/details/43.json",
+                      "id": 43,
+                      "quantity": 1.0,
+                      "cost": 1035.0,
+                      "variantStock": 36.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6272.json",
+                          "id": "6272"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/44/details/44.json",
+                      "id": 44,
+                      "quantity": 1.0,
+                      "cost": 6990.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6670.json",
+                          "id": "6670"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/45/details/45.json",
+                      "id": 45,
+                      "quantity": 1.0,
+                      "cost": 23100.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7116.json",
+                          "id": "7116"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/46/details/46.json",
+                      "id": 46,
+                      "quantity": 1.0,
+                      "cost": 15730.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6256.json",
+                          "id": "6256"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/47/details/47.json",
+                      "id": 47,
+                      "quantity": 1.0,
+                      "cost": 9760.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5458.json",
+                          "id": "5458"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/48/details/48.json",
+                      "id": 48,
+                      "quantity": 1.0,
+                      "cost": 7040.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5666.json",
+                          "id": "5666"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/49/details/49.json",
+                      "id": 49,
+                      "quantity": 3.0,
+                      "cost": 45.0,
+                      "variantStock": 445.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7230.json",
+                          "id": "7230"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/50/details/50.json",
+                      "id": 50,
+                      "quantity": 1.0,
+                      "cost": 2340.0,
+                      "variantStock": 13.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4925.json",
+                          "id": "4925"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/51/details/51.json",
+                      "id": 51,
+                      "quantity": 1.0,
+                      "cost": 1965.0,
+                      "variantStock": 40.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6562.json",
+                          "id": "6562"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/52/details/52.json",
+                      "id": 52,
+                      "quantity": 2.0,
+                      "cost": 9554.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6606.json",
+                          "id": "6606"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/53/details/53.json",
+                      "id": 53,
+                      "quantity": 2.0,
+                      "cost": 638.0,
+                      "variantStock": 32.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5034.json",
+                          "id": "5034"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/54/details/54.json",
+                      "id": 54,
+                      "quantity": 1.0,
+                      "cost": 1380.0,
+                      "variantStock": 8.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4900.json",
+                          "id": "4900"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/55/details/55.json",
+                      "id": 55,
+                      "quantity": 1.0,
+                      "cost": 2090.0,
+                      "variantStock": 56.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4876.json",
+                          "id": "4876"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/24.json",
+          "id": 24,
+          "consumptionDate": 1627344000,
+          "note": "Eliminar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/24/details.json",
+              "count": 24,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/56/details/56.json",
+                      "id": 56,
+                      "quantity": 4.0,
+                      "cost": 1690.0,
+                      "variantStock": 10.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4841.json",
+                          "id": "4841"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/57/details/57.json",
+                      "id": 57,
+                      "quantity": 6.0,
+                      "cost": 3490.0,
+                      "variantStock": 5.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4842.json",
+                          "id": "4842"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/58/details/58.json",
+                      "id": 58,
+                      "quantity": 3.0,
+                      "cost": 9346.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4920.json",
+                          "id": "4920"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/59/details/59.json",
+                      "id": 59,
+                      "quantity": 5.0,
+                      "cost": 6450.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5102.json",
+                          "id": "5102"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/60/details/60.json",
+                      "id": 60,
+                      "quantity": 2.0,
+                      "cost": 3930.0,
+                      "variantStock": 2.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5179.json",
+                          "id": "5179"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/61/details/61.json",
+                      "id": 61,
+                      "quantity": 2.0,
+                      "cost": 10370.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5450.json",
+                          "id": "5450"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/62/details/62.json",
+                      "id": 62,
+                      "quantity": 3.0,
+                      "cost": 13900.0,
+                      "variantStock": 9.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5460.json",
+                          "id": "5460"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/63/details/63.json",
+                      "id": 63,
+                      "quantity": 2.0,
+                      "cost": 7160.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5573.json",
+                          "id": "5573"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/64/details/64.json",
+                      "id": 64,
+                      "quantity": 3.0,
+                      "cost": 3660.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5579.json",
+                          "id": "5579"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/65/details/65.json",
+                      "id": 65,
+                      "quantity": 5.0,
+                      "cost": 5300.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5658.json",
+                          "id": "5658"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/66/details/66.json",
+                      "id": 66,
+                      "quantity": 4.0,
+                      "cost": 6400.0,
+                      "variantStock": 6.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5665.json",
+                          "id": "5665"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/67/details/67.json",
+                      "id": 67,
+                      "quantity": 2.0,
+                      "cost": 7280.0,
+                      "variantStock": 2.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5667.json",
+                          "id": "5667"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/68/details/68.json",
+                      "id": 68,
+                      "quantity": 2.0,
+                      "cost": 4010.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5897.json",
+                          "id": "5897"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/69/details/69.json",
+                      "id": 69,
+                      "quantity": 4.0,
+                      "cost": 8230.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6119.json",
+                          "id": "6119"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/70/details/70.json",
+                      "id": 70,
+                      "quantity": 3.0,
+                      "cost": 11690.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6193.json",
+                          "id": "6193"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/71/details/71.json",
+                      "id": 71,
+                      "quantity": 2.0,
+                      "cost": 6120.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6429.json",
+                          "id": "6429"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/72/details/72.json",
+                      "id": 72,
+                      "quantity": 2.0,
+                      "cost": 6040.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6430.json",
+                          "id": "6430"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/73/details/73.json",
+                      "id": 73,
+                      "quantity": 3.0,
+                      "cost": 10310.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6436.json",
+                          "id": "6436"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/74/details/74.json",
+                      "id": 74,
+                      "quantity": 3.0,
+                      "cost": 3890.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6434.json",
+                          "id": "6434"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/75/details/75.json",
+                      "id": 75,
+                      "quantity": 2.0,
+                      "cost": 12900.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7326.json",
+                          "id": "7326"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/76/details/76.json",
+                      "id": 76,
+                      "quantity": 3.0,
+                      "cost": 4990.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6913.json",
+                          "id": "6913"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/77/details/77.json",
+                      "id": 77,
+                      "quantity": 1.0,
+                      "cost": 15500.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7013.json",
+                          "id": "7013"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/78/details/78.json",
+                      "id": 78,
+                      "quantity": 2.0,
+                      "cost": 11390.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7039.json",
+                          "id": "7039"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/79/details/79.json",
+                      "id": 79,
+                      "quantity": 2.0,
+                      "cost": 10160.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7327.json",
+                          "id": "7327"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/25.json",
+          "id": 25,
+          "consumptionDate": 1627344000,
+          "note": "SRA VIOLETA CON CHEQUE",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/25/details.json",
+              "count": 2,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/80/details/80.json",
+                      "id": 80,
+                      "quantity": 1.0,
+                      "cost": 22480.0,
+                      "variantStock": 5.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6284.json",
+                          "id": "6284"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/81/details/81.json",
+                      "id": 81,
+                      "quantity": 1.0,
+                      "cost": 32666.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5655.json",
+                          "id": "5655"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/26.json",
+          "id": 26,
+          "consumptionDate": 1627344000,
+          "note": "SEÑORITA CASA SERGIO",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/26/details.json",
+              "count": 11,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/82/details/82.json",
+                      "id": 82,
+                      "quantity": 1.0,
+                      "cost": 17700.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5103.json",
+                          "id": "5103"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/83/details/83.json",
+                      "id": 83,
+                      "quantity": 1.0,
+                      "cost": 1050.0,
+                      "variantStock": 29.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6518.json",
+                          "id": "6518"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/84/details/84.json",
+                      "id": 84,
+                      "quantity": 1.0,
+                      "cost": 8600.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5173.json",
+                          "id": "5173"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/85/details/85.json",
+                      "id": 85,
+                      "quantity": 1.0,
+                      "cost": 3440.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6544.json",
+                          "id": "6544"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/86/details/86.json",
+                      "id": 86,
+                      "quantity": 3.0,
+                      "cost": 3674.0,
+                      "variantStock": 7.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6085.json",
+                          "id": "6085"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/87/details/87.json",
+                      "id": 87,
+                      "quantity": 3.0,
+                      "cost": 194.0,
+                      "variantStock": 330.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6550.json",
+                          "id": "6550"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/88/details/88.json",
+                      "id": 88,
+                      "quantity": 1.0,
+                      "cost": 519.0,
+                      "variantStock": 77.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5087.json",
+                          "id": "5087"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/89/details/89.json",
+                      "id": 89,
+                      "quantity": 1.0,
+                      "cost": 3990.0,
+                      "variantStock": 5.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6435.json",
+                          "id": "6435"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/90/details/90.json",
+                      "id": 90,
+                      "quantity": 1.0,
+                      "cost": 940.0,
+                      "variantStock": 29.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5300.json",
+                          "id": "5300"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/91/details/91.json",
+                      "id": 91,
+                      "quantity": 1.0,
+                      "cost": 13900.0,
+                      "variantStock": 11.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5460.json",
+                          "id": "5460"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/92/details/92.json",
+                      "id": 92,
+                      "quantity": 1.0,
+                      "cost": 382.0,
+                      "variantStock": 30.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5166.json",
+                          "id": "5166"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/27.json",
+          "id": 27,
+          "consumptionDate": 1627430400,
+          "note": "Casa señorita ",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/27/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/93/details/93.json",
+                      "id": 93,
+                      "quantity": 1.0,
+                      "cost": 1990.0,
+                      "variantStock": 66.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5324.json",
+                          "id": "5324"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/28.json",
+          "id": 28,
+          "consumptionDate": 1627430400,
+          "note": "-1 señorita con receta",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/28/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/94/details/94.json",
+                      "id": 94,
+                      "quantity": 1.0,
+                      "cost": 560.0,
+                      "variantStock": 78.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4911.json",
+                          "id": "4911"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/29.json",
+          "id": 29,
+          "consumptionDate": 1627516800,
+          "note": "-1 yaque lleva sra olga",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/29/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/95/details/95.json",
+                      "id": 95,
+                      "quantity": 1.0,
+                      "cost": 2990.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6665.json",
+                          "id": "6665"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/30.json",
+          "id": 30,
+          "consumptionDate": 1627516800,
+          "note": "Eliminar Recepcion",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/30/details.json",
+              "count": 30,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/96/details/96.json",
+                      "id": 96,
+                      "quantity": 10.0,
+                      "cost": 2800.0,
+                      "variantStock": 18.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4849.json",
+                          "id": "4849"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/97/details/97.json",
+                      "id": 97,
+                      "quantity": 12.0,
+                      "cost": 2350.0,
+                      "variantStock": 11.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4990.json",
+                          "id": "4990"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/98/details/98.json",
+                      "id": 98,
+                      "quantity": 2.0,
+                      "cost": 18500.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5027.json",
+                          "id": "5027"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/99/details/99.json",
+                      "id": 99,
+                      "quantity": 2.0,
+                      "cost": 9830.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6846.json",
+                          "id": "6846"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/100/details/100.json",
+                      "id": 100,
+                      "quantity": 3.0,
+                      "cost": 10850.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5115.json",
+                          "id": "5115"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/101/details/101.json",
+                      "id": 101,
+                      "quantity": 5.0,
+                      "cost": 1280.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5289.json",
+                          "id": "5289"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/102/details/102.json",
+                      "id": 102,
+                      "quantity": 4.0,
+                      "cost": 7500.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5555.json",
+                          "id": "5555"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/103/details/103.json",
+                      "id": 103,
+                      "quantity": 5.0,
+                      "cost": 7350.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5558.json",
+                          "id": "5558"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/104/details/104.json",
+                      "id": 104,
+                      "quantity": 20.0,
+                      "cost": 698.0,
+                      "variantStock": 40.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5636.json",
+                          "id": "5636"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/105/details/105.json",
+                      "id": 105,
+                      "quantity": 3.0,
+                      "cost": 3100.0,
+                      "variantStock": 7.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6100.json",
+                          "id": "6100"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/106/details/106.json",
+                      "id": 106,
+                      "quantity": 5.0,
+                      "cost": 3300.0,
+                      "variantStock": 2.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6100.json",
+                          "id": "6100"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/107/details/107.json",
+                      "id": 107,
+                      "quantity": 5.0,
+                      "cost": 1850.0,
+                      "variantStock": 6.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6104.json",
+                          "id": "6104"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/108/details/108.json",
+                      "id": 108,
+                      "quantity": 1.0,
+                      "cost": 15730.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6256.json",
+                          "id": "6256"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/109/details/109.json",
+                      "id": 109,
+                      "quantity": 5.0,
+                      "cost": 1980.0,
+                      "variantStock": 29.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6313.json",
+                          "id": "6313"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/110/details/110.json",
+                      "id": 110,
+                      "quantity": 5.0,
+                      "cost": 2170.0,
+                      "variantStock": 2.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6314.json",
+                          "id": "6314"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/111/details/111.json",
+                      "id": 111,
+                      "quantity": 3.0,
+                      "cost": 4860.0,
+                      "variantStock": 6.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6310.json",
+                          "id": "6310"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/112/details/112.json",
+                      "id": 112,
+                      "quantity": 30.0,
+                      "cost": 664.0,
+                      "variantStock": 77.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6462.json",
+                          "id": "6462"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/113/details/113.json",
+                      "id": 113,
+                      "quantity": 12.0,
+                      "cost": 1012.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6487.json",
+                          "id": "6487"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/114/details/114.json",
+                      "id": 114,
+                      "quantity": 3.0,
+                      "cost": 2550.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7345.json",
+                          "id": "7345"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/115/details/115.json",
+                      "id": 115,
+                      "quantity": 4.0,
+                      "cost": 3775.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6629.json",
+                          "id": "6629"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/116/details/116.json",
+                      "id": 116,
+                      "quantity": 3.0,
+                      "cost": 4200.0,
+                      "variantStock": 10.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6914.json",
+                          "id": "6914"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/117/details/117.json",
+                      "id": 117,
+                      "quantity": 2.0,
+                      "cost": 8420.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6913.json",
+                          "id": "6913"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/118/details/118.json",
+                      "id": 118,
+                      "quantity": 10.0,
+                      "cost": 1120.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6946.json",
+                          "id": "6946"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/119/details/119.json",
+                      "id": 119,
+                      "quantity": 120.0,
+                      "cost": 288.0,
+                      "variantStock": 67.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6953.json",
+                          "id": "6953"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/120/details/120.json",
+                      "id": 120,
+                      "quantity": 1.0,
+                      "cost": 16500.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7049.json",
+                          "id": "7049"
+                      }
+                  }
+              ],
+              "next": "https://api.bsale.cl/v1/stocks/consumptions/30/details.json?limit=25&offset=25"
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/31.json",
+          "id": 31,
+          "consumptionDate": 1627516800,
+          "note": "Señorita Olga ",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/31/details.json",
+              "count": 2,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/126/details/126.json",
+                      "id": 126,
+                      "quantity": 2.0,
+                      "cost": 20391.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7355.json",
+                          "id": "7355"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/127/details/127.json",
+                      "id": 127,
+                      "quantity": 2.0,
+                      "cost": 20391.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7356.json",
+                          "id": "7356"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/32.json",
+          "id": 32,
+          "consumptionDate": 1627516800,
+          "note": "Casa Paulina ",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/32/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/128/details/128.json",
+                      "id": 128,
+                      "quantity": 2.0,
+                      "cost": 3674.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6085.json",
+                          "id": "6085"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/33.json",
+          "id": 33,
+          "consumptionDate": 1627603200,
+          "note": "Paulina Mocarquer",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/2.json",
+              "id": "2"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/33/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/129/details/129.json",
+                      "id": 129,
+                      "quantity": 1.0,
+                      "cost": 11202.0,
+                      "variantStock": 4.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6116.json",
+                          "id": "6116"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/34.json",
+          "id": 34,
+          "consumptionDate": 1627603200,
+          "note": "PAULINA MOCARQUER",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/2.json",
+              "id": "2"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/34/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/130/details/130.json",
+                      "id": 130,
+                      "quantity": 1.0,
+                      "cost": 3740.0,
+                      "variantStock": 4.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5086.json",
+                          "id": "5086"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/35.json",
+          "id": 35,
+          "consumptionDate": 1627603200,
+          "note": "sra olga",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/12.json",
+              "id": "12"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/35/details.json",
+              "count": 7,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/131/details/131.json",
+                      "id": 131,
+                      "quantity": 4.0,
+                      "cost": 827.0,
+                      "variantStock": 43.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5311.json",
+                          "id": "5311"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/132/details/132.json",
+                      "id": 132,
+                      "quantity": 1.0,
+                      "cost": 541.0,
+                      "variantStock": 12.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5031.json",
+                          "id": "5031"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/133/details/133.json",
+                      "id": 133,
+                      "quantity": 2.0,
+                      "cost": 515.0,
+                      "variantStock": 345.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6166.json",
+                          "id": "6166"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/134/details/134.json",
+                      "id": 134,
+                      "quantity": 2.0,
+                      "cost": 211.0,
+                      "variantStock": 11.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5748.json",
+                          "id": "5748"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/135/details/135.json",
+                      "id": 135,
+                      "quantity": 1.0,
+                      "cost": 4163.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5124.json",
+                          "id": "5124"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/136/details/136.json",
+                      "id": 136,
+                      "quantity": 1.0,
+                      "cost": 2994.0,
+                      "variantStock": 48.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5634.json",
+                          "id": "5634"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/137/details/137.json",
+                      "id": 137,
+                      "quantity": 1.0,
+                      "cost": 1069.0,
+                      "variantStock": 61.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4807.json",
+                          "id": "4807"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/36.json",
+          "id": 36,
+          "consumptionDate": 1627862400,
+          "note": "casa señorita jaque",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/36/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/138/details/138.json",
+                      "id": 138,
+                      "quantity": 1.0,
+                      "cost": 1750.0,
+                      "variantStock": 4.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5466.json",
+                          "id": "5466"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/37.json",
+          "id": 37,
+          "consumptionDate": 1627862400,
+          "note": "Ajuste de Stock: jorge sebastiani",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 1,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/37/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/139/details/139.json",
+                      "id": 139,
+                      "quantity": 33.0,
+                      "cost": 1200.0,
+                      "variantStock": 55.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6600.json",
+                          "id": "6600"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/38.json",
+          "id": 38,
+          "consumptionDate": 1627948800,
+          "note": "Uso Farmacia",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/38/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/140/details/140.json",
+                      "id": 140,
+                      "quantity": 1.0,
+                      "cost": 1300.0,
+                      "variantStock": 7.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5167.json",
+                          "id": "5167"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/39.json",
+          "id": 39,
+          "consumptionDate": 1627948800,
+          "note": "Señorita Olga",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/39/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/141/details/141.json",
+                      "id": 141,
+                      "quantity": 1.0,
+                      "cost": 977.0,
+                      "variantStock": 2.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6342.json",
+                          "id": "6342"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/40.json",
+          "id": 40,
+          "consumptionDate": 1628035200,
+          "note": "Uso Farmacia",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/40/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/142/details/142.json",
+                      "id": 142,
+                      "quantity": 1.0,
+                      "cost": 4650.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4882.json",
+                          "id": "4882"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/41.json",
+          "id": 41,
+          "consumptionDate": 1628035200,
+          "note": "Señorita Con receta y Pagados",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/41/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/143/details/143.json",
+                      "id": 143,
+                      "quantity": 4.0,
+                      "cost": 560.0,
+                      "variantStock": 77.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4911.json",
+                          "id": "4911"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/42.json",
+          "id": 42,
+          "consumptionDate": 1628035200,
+          "note": "Señorita hermano 30/07",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/42/details.json",
+              "count": 14,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/144/details/144.json",
+                      "id": 144,
+                      "quantity": 1.0,
+                      "cost": 560.0,
+                      "variantStock": 109.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4911.json",
+                          "id": "4911"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/145/details/145.json",
+                      "id": 145,
+                      "quantity": 1.0,
+                      "cost": 1050.0,
+                      "variantStock": 35.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6518.json",
+                          "id": "6518"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/146/details/146.json",
+                      "id": 146,
+                      "quantity": 1.0,
+                      "cost": 2990.0,
+                      "variantStock": 5.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6665.json",
+                          "id": "6665"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/147/details/147.json",
+                      "id": 147,
+                      "quantity": 3.0,
+                      "cost": 194.0,
+                      "variantStock": 543.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6550.json",
+                          "id": "6550"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/148/details/148.json",
+                      "id": 148,
+                      "quantity": 1.0,
+                      "cost": 13900.0,
+                      "variantStock": 9.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5460.json",
+                          "id": "5460"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/149/details/149.json",
+                      "id": 149,
+                      "quantity": 2.0,
+                      "cost": 1707.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/4999.json",
+                          "id": "4999"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/150/details/150.json",
+                      "id": 150,
+                      "quantity": 1.0,
+                      "cost": 759.0,
+                      "variantStock": 9.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6373.json",
+                          "id": "6373"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/151/details/151.json",
+                      "id": 151,
+                      "quantity": 1.0,
+                      "cost": 6290.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6268.json",
+                          "id": "6268"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/152/details/152.json",
+                      "id": 152,
+                      "quantity": 1.0,
+                      "cost": 890.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6539.json",
+                          "id": "6539"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/153/details/153.json",
+                      "id": 153,
+                      "quantity": 1.0,
+                      "cost": 1036.0,
+                      "variantStock": 75.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7089.json",
+                          "id": "7089"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/154/details/154.json",
+                      "id": 154,
+                      "quantity": 1.0,
+                      "cost": 827.0,
+                      "variantStock": 38.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5311.json",
+                          "id": "5311"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/155/details/155.json",
+                      "id": 155,
+                      "quantity": 1.0,
+                      "cost": 4990.0,
+                      "variantStock": 135.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7142.json",
+                          "id": "7142"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/156/details/156.json",
+                      "id": 156,
+                      "quantity": 3.0,
+                      "cost": 594.0,
+                      "variantStock": 36.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7012.json",
+                          "id": "7012"
+                      }
+                  },
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/157/details/157.json",
+                      "id": 157,
+                      "quantity": 1.0,
+                      "cost": 382.0,
+                      "variantStock": 28.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5166.json",
+                          "id": "5166"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/43.json",
+          "id": 43,
+          "consumptionDate": 1628035200,
+          "note": "Compradas Vencidas",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 2,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/43/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/158/details/158.json",
+                      "id": 158,
+                      "quantity": 235.0,
+                      "cost": 10.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6031.json",
+                          "id": "6031"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/44.json",
+          "id": 44,
+          "consumptionDate": 1628035200,
+          "note": "Se Compraron Vencidas",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 2,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/44/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/159/details/159.json",
+                      "id": 159,
+                      "quantity": 146.0,
+                      "cost": 10.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6032.json",
+                          "id": "6032"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/45.json",
+          "id": 45,
+          "consumptionDate": 1628035200,
+          "note": "Señorita Olga",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/45/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/160/details/160.json",
+                      "id": 160,
+                      "quantity": 1.0,
+                      "cost": 10250.0,
+                      "variantStock": 2.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7117.json",
+                          "id": "7117"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/46.json",
+          "id": 46,
+          "consumptionDate": 1628035200,
+          "note": "Se venden por unidad",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 4,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/46/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/161/details/161.json",
+                      "id": 161,
+                      "quantity": 1.0,
+                      "cost": 7490.0,
+                      "variantStock": 0.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/7311.json",
+                          "id": "7311"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/47.json",
+          "id": 47,
+          "consumptionDate": 1628121600,
+          "note": "Señorita se los lleva el 30/07 con receta no se habían descontado por sistema ",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/47/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/162/details/162.json",
+                      "id": 162,
+                      "quantity": 4.0,
+                      "cost": 1320.0,
+                      "variantStock": 125.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5312.json",
+                          "id": "5312"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/48.json",
+          "id": 48,
+          "consumptionDate": 1628121600,
+          "note": "cliente hace cambio nota de crédito 260 se pasa venta 05/08 y plata en caja",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/48/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/163/details/163.json",
+                      "id": 163,
+                      "quantity": 1.0,
+                      "cost": 7080.0,
+                      "variantStock": 7.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6440.json",
+                          "id": "6440"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/49.json",
+          "id": 49,
+          "consumptionDate": 1628121600,
+          "note": "ventas cambiadas x el flemex forte",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/3.json",
+              "id": "3"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/49/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/164/details/164.json",
+                      "id": 164,
+                      "quantity": 1.0,
+                      "cost": 7200.0,
+                      "variantStock": 1.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5716.json",
+                          "id": "5716"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/50.json",
+          "id": 50,
+          "consumptionDate": 1628121600,
+          "note": "paulina mocarquer",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/2.json",
+              "id": "2"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/50/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/165/details/165.json",
+                      "id": 165,
+                      "quantity": 1.0,
+                      "cost": 3740.0,
+                      "variantStock": 9.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/5297.json",
+                          "id": "5297"
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "href": "https://api.bsale.cl/v1/stocks/consumptions/51.json",
+          "id": 51,
+          "consumptionDate": 1628121600,
+          "note": "Paulina Mocarquer",
+          "imagestionCcdescription": "",
+          "imagestionCenterCostId": 0,
+          "updateStock": 0,
+          "consumptionTypeId": 1,
+          "office": {
+              "href": "https://api.bsale.cl/v1/offices/1.json",
+              "id": "1"
+          },
+          "user": {
+              "href": "https://api.bsale.cl/v1/users/2.json",
+              "id": "2"
+          },
+          "details": {
+              "href": "https://api.bsale.cl/v1/stocks/consumptions/51/details.json",
+              "count": 1,
+              "limit": 25,
+              "offset": 0,
+              "items": [
+                  {
+                      "href": "https://api.bsale.cl/v1/stocks/consumptions/166/details/166.json",
+                      "id": 166,
+                      "quantity": 1.0,
+                      "cost": 7330.0,
+                      "variantStock": 3.0,
+                      "variant": {
+                          "href": "https://api.bsale.cl/v1/variants/6360.json",
+                          "id": "6360"
+                      }
+                  }
+              ]
+          }
+      }
+  ],
+  "next": "https://api.bsale.cl/v1/stocks/consumptions.json?limit=50&offset=50"
+}
