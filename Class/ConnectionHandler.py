@@ -11,10 +11,17 @@ class ConnectionHandler:
         self.conn=None
     def connect(self):
         try:
-            self.conn=pyodbc.connect('Driver={SQL Server};SERVER='+self.host+';DATABASE='+self.database+';UID='+self.user+';PWD='+self.passwd)
+            connectionString = f'Driver={{ODBC Driver 18 for SQL Server}};' \
+                f'SERVER={self.host};' \
+                f'DATABASE={self.database};' \
+                f'UID={self.user};' \
+                f'PWD={self.passwd};' \
+                'Encrypt=no;TrustServerCertificate=yes'
+            print(connectionString)
+            self.conn = pyodbc.connect(connectionString)
             return self.conn
-        except:
-            print("no hay conexion")
+        except Exception as e:
+            print("no hay conexion: ", str(e))
             return None
     def executeQuery(self,query):
         self.connect()
