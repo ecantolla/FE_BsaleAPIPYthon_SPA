@@ -2,6 +2,10 @@ from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class ConsumoController:
     def __init__(self):
@@ -13,9 +17,9 @@ class ConsumoController:
         self.executeQuery("delete from "+self.details)
         return query
     def getData(self):
-        url = 'https://api.bsale.cl/v1/stocks/consumptions.json?limit=50&offset=0&expand=[details]'
+        url = os.getenv('OLD_API_URL_BASE') + '/stocks/consumptions.json?limit=50&offset=0&expand=[details]'
         flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        headers = {'Accept': 'application/json','access_token': os.getenv('OLD_API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
@@ -121,6 +125,8 @@ class ConsumoController:
         self.executeQuery(self.cleanData())
         print("Obteniendo recepcion")
         self.getData()
+        # breakpoint()
         print("Generando Query")
-        query=self.getInsertQuery()
+        self.getInsertQuery()
+        #query=self.getInsertQuery()
         #self.executeQuery(query)

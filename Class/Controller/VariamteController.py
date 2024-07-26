@@ -4,6 +4,11 @@ from Class.ConnectionHandler import ConnectionHandler
 from Class.Models.tablas import tablas
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from datetime import datetime
 class VarianteController:
     def __init__(self):
@@ -15,9 +20,9 @@ class VarianteController:
         #self.con.closeConnection()
     def getInsertVariant(self):
         variantes=[]
-        url = 'https://api.bsale.cl/v1/variants.json?limit=50&expand=[costs,product,attribute_values]'
+        url = os.getenv('OLD_API_URL_BASE') + '/variants.json?limit=50&expand=[costs,product,attribute_values]'
         flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
@@ -34,9 +39,9 @@ class VarianteController:
         
     def findData(self):
         currentTime=datetime.now()
-        url = 'https://api.bsale.cl/v1/variants.json?limit=50'
+        url = os.getenv('OLD_API_URL_BASE') + '/variants.json?limit=50'
         flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
@@ -71,7 +76,7 @@ class VarianteController:
             
             flag=True
             url=current[1]+"?limit=50"
-            headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+            headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
             while(flag):
                 req = requests.get(url, headers=headers)
                 response=json.loads(req.text)

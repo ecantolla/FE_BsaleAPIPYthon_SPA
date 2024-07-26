@@ -4,6 +4,10 @@ import requests
 import json
 from Class.Models.Document import Document
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class DocumentController:
     def __init__(self,firstDay,lastDay) -> None:
@@ -19,16 +23,16 @@ class DocumentController:
         con.commitChange()
         print("Eliminados los documentos")
         acumulados=50
-        url = 'https://api.bsale.cl/v1/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
+        url = os.getenv('OLD_API_URL_BASE') + '/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
         flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
             acumulados=acumulados+len(response["items"])
             if("next" in response):
                 flag=True
-                url = url = 'https://api.bsale.cl/v1/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
+                url = os.getenv('OLD_API_URL_BASE') + '/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
             else:
                 flag=False
             #procesar las solicitudes 

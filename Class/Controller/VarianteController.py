@@ -2,6 +2,10 @@ from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class VarianteController:
     def __init__(self):
@@ -16,9 +20,9 @@ class VarianteController:
 
         return query
     def getData(self):
-        url = 'https://api.bsale.cl/v1/variants.json?expand=[attribute_values,product,costs]&limit=50&offset=0'
+        url = os.getenv('OLD_API_URL_BASE') + '/variants.json?expand=[attribute_values,product,costs]&limit=50&offset=0'
         flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
         i=0
         while(flag):
             req = requests.get(url, headers=headers)
@@ -118,7 +122,7 @@ class VarianteController:
                 ,{current["prestashopValueId"]}
                 ,{current["product"]["id"]}
                 ,'{current["attribute_values"]["href"]}'
-                ,'https://api.bsale.cl/v1/variants/{current["id"]}/costs.json'
+                ,'{os.getenv("OLD_API_URL_BASE")}/variants/{current["id"]}/costs.json'
                 ,{avg}),"""
             if(contVariante>900):
                 contVariante=0

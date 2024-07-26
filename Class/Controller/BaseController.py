@@ -3,6 +3,10 @@ from Class.Models.ListaPrecio import ListaPrecio
 from Class.ConnectionHandler import ConnectionHandler
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class BaseController:
     def __init__(self) -> None:
@@ -12,9 +16,9 @@ class BaseController:
         self.con.connect()
         self.con.executeQuery("delete from "+tablas["listaPrecio"])
         self.con.commitChange()
-        url = 'https://api.bsale.cl/v1/price_lists.json?limit=50'
+        url = os.getenv('OLD_API_URL_BASE') + '/price_lists.json?limit=50'
         flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
+        headers = {'Accept': 'application/json','access_token': os.getenv('OLD_API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
