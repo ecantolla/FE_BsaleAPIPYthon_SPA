@@ -17,7 +17,6 @@ class ConnectionHandler:
                 f'UID={self.user};' \
                 f'PWD={self.passwd};' \
                 'Encrypt=no;TrustServerCertificate=yes'
-            print(connectionString)
             self.conn = pyodbc.connect(connectionString)
             return self.conn
         except Exception as e:
