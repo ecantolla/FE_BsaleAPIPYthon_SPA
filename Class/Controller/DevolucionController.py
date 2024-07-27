@@ -18,9 +18,9 @@ class DevolucionController:
 
         return query
     def getData(self):
-        url = os.getenv('OLD_API_URL_BASE') + '/returns.json?limit=50&expand=[details]'
+        url = os.getenv('API_URL_BASE') + '/returns.json?limit=50&expand=[details]'
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)

@@ -19,10 +19,10 @@ class DocumentoController:
     def cleanData(self):
         pass
     def getData(self):
-        url = os.getenv('OLD_API_URL_BASE') + '/documents.json?limit=50&offset=0&emissiondaterange=['+str(self.inicio)+' ,'+str(self.fin)+']&expand=[details,sellers]'
+        url = os.getenv('API_URL_BASE') + '/documents.json?limit=50&offset=0&emissiondaterange=['+str(self.inicio)+' ,'+str(self.fin)+']&expand=[details,sellers]'
         #1676430000.0 , 1678158000.0
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
@@ -272,10 +272,10 @@ class DocumentoController:
         documents=[812,994,962,998,796,791,803,993,796,797,790,812,799,993,947,811,810,1047,994,998,998,946]
         for currentDocument in documents:
             try:
-                url = os.getenv('OLD_API_URL_BASE') + '/'+str(currentDocument)+'/documents.json?limit=50&offset=0&expand=[details,sellers]'
+                url = os.getenv('API_URL_BASE') + '/'+str(currentDocument)+'/documents.json?limit=50&offset=0&expand=[details,sellers]'
             #1676430000.0 , 1678158000.0
                 flag=True
-                headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+                headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
                 while(flag):
                     req = requests.get(url, headers=headers)
                     response=json.loads(req.text)
@@ -356,10 +356,10 @@ class DocumentoController:
         
         '''
     def getDataPatch(self,number):
-        url = os.getenv('OLD_API_URL_BASE') + '/documents.json?number='+str(number)+'&expand=[details,sellers]'
+        url = os.getenv('API_URL_BASE') + '/documents.json?number='+str(number)+'&expand=[details,sellers]'
         #1676430000.0 , 1678158000.0
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         req = requests.get(url, headers=headers)
         response=json.loads(req.text)
         print(url)

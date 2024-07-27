@@ -20,9 +20,9 @@ class VarianteController:
 
         return query
     def getData(self):
-        url = os.getenv('OLD_API_URL_BASE') + '/variants.json?expand=[attribute_values,product,costs]&limit=50&offset=0'
+        url = os.getenv('API_URL_BASE') + '/variants.json?expand=[attribute_values,product,costs]&limit=50&offset=0'
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         i=0
         while(flag):
             req = requests.get(url, headers=headers)
@@ -122,7 +122,7 @@ class VarianteController:
                 ,{current["prestashopValueId"]}
                 ,{current["product"]["id"]}
                 ,'{current["attribute_values"]["href"]}'
-                ,'{os.getenv("OLD_API_URL_BASE")}/variants/{current["id"]}/costs.json'
+                ,'{os.getenv("API_URL_BASE")}/variants/{current["id"]}/costs.json'
                 ,{avg}),"""
             if(contVariante>900):
                 contVariante=0

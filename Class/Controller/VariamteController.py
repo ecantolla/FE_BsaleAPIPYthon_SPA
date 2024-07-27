@@ -20,9 +20,9 @@ class VarianteController:
         #self.con.closeConnection()
     def getInsertVariant(self):
         variantes=[]
-        url = os.getenv('OLD_API_URL_BASE') + '/variants.json?limit=50&expand=[costs,product,attribute_values]'
+        url = os.getenv('API_URL_BASE') + '/variants.json?limit=50&expand=[costs,product,attribute_values]'
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
@@ -39,9 +39,9 @@ class VarianteController:
         
     def findData(self):
         currentTime=datetime.now()
-        url = os.getenv('OLD_API_URL_BASE') + '/variants.json?limit=50'
+        url = os.getenv('API_URL_BASE') + '/variants.json?limit=50'
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
@@ -76,7 +76,7 @@ class VarianteController:
             
             flag=True
             url=current[1]+"?limit=50"
-            headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+            headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
             while(flag):
                 req = requests.get(url, headers=headers)
                 response=json.loads(req.text)

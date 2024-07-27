@@ -15,9 +15,9 @@ class SucursalController:
         query=f"""delete from {self.table}"""
         return query
     def getData(self):
-        url = os.getenv('OLD_API_URL_BASE') + '/offices.json'
+        url = os.getenv('API_URL_BASE') + '/offices.json'
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)

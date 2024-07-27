@@ -17,9 +17,9 @@ class ConsumoController:
         self.executeQuery("delete from "+self.details)
         return query
     def getData(self):
-        url = os.getenv('OLD_API_URL_BASE') + '/stocks/consumptions.json?limit=50&offset=0&expand=[details]'
+        url = os.getenv('API_URL_BASE') + '/stocks/consumptions.json?limit=50&offset=0&expand=[details]'
         flag=True
-        headers = {'Accept': 'application/json','access_token': os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token': os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)

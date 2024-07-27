@@ -18,9 +18,9 @@ class ListaPrecioController:
         self.executeQuery("delete from "+self.detalle)
         return query
     def getData(self):
-        url = os.getenv('OLD_API_URL_BASE') + '/price_lists.json?limit=50&expand=[coin,details]'
+        url = os.getenv('API_URL_BASE') + '/price_lists.json?limit=50&expand=[coin,details]'
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)

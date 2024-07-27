@@ -23,16 +23,16 @@ class DocumentController:
         con.commitChange()
         print("Eliminados los documentos")
         acumulados=50
-        url = os.getenv('OLD_API_URL_BASE') + '/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
+        url = os.getenv('API_URL_BASE') + '/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
         flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)
             acumulados=acumulados+len(response["items"])
             if("next" in response):
                 flag=True
-                url = os.getenv('OLD_API_URL_BASE') + '/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
+                url = os.getenv('API_URL_BASE') + '/documents.json?expand=details,sellers,attributes&emissiondaterange=['+str(self.firstDay)+','+ str(self.lastDay)+']&offset='+str(acumulados)+"&limit=50"
             else:
                 flag=False
             #procesar las solicitudes 

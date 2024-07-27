@@ -17,9 +17,9 @@ class ClienteController:
         self.executeQuery(query)
         return query
     def getData(self):
-        url = os.getenv('OLD_API_URL_BASE') + '/clients.json?limit=50'
+        url = os.getenv('API_URL_BASE') + '/clients.json?limit=50'
         flag=True
-        headers = {'Accept': 'application/json','access_token': os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token': os.getenv('API_KEY')}
         while(flag):
             req = requests.get(url, headers=headers)
             response=json.loads(req.text)

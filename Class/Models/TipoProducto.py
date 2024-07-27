@@ -35,7 +35,7 @@ class TipoProducto:
         self.con.commitChange()
         #ir por los atributos de un tipo de producto
         
-        headers = {'Accept': 'application/json','access_token':os.getenv('OLD_API_KEY')}
+        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
         req = requests.get(self.attributos, headers=headers)
         response=json.loads(req.text)
         if(response["count"]>0):
@@ -97,5 +97,3 @@ class TipoProducto:
            ,{self.prestashopCategoryId}
            ,'{self.attributos}')
         """
-
-    
