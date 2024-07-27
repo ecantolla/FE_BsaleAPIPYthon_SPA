@@ -1,12 +1,9 @@
 from Class.Controller.AbstractController import AbstractController
-from Class.Models.tablas import tablas, old_tablas
-from Class.ConnectionHandler import ConnectionHandler
 from Class.Controller.Herlpers import *
 import requests
 import json
 import os
 from dotenv import load_dotenv
-import numpy as np
 
 load_dotenv()
 
@@ -40,7 +37,7 @@ class ClienteController(AbstractController):
                 break
 
     def insert_data(self):
-        query = f'INSERT INTO {tablas["cliente"]} '
+        query = f'INSERT INTO {self.table} '
         query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
         query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
         values = []
