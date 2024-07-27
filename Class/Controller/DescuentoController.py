@@ -1,5 +1,5 @@
-from Class.Models.tablas import tablas
-from Class.ConnectionHandler import ConnectionHandler
+from Class.Controller.AbstractController import AbstractController
+from Class.Controller.Herlpers import format_record
 import requests
 import json
 import os
@@ -7,57 +7,40 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class DescuentoController:
-    def __init__(self):
-        self.table=tablas["descuento"]
-        self.datas=[]
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        return query
-    def getData(self):
-        url = os.getenv('API_URL_BASE') + '/discounts.json?limit=50&offset=0'
-        flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
-        while(flag):
-            req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            if("next" in response):
-                flag=True
-                url=response["next"]+''
-            else:
-                flag=False
-            for current in response["items"]:
-                self.datas.append(current)
-    def getInsertQuery(self):
-        query=f"""INSERT INTO {self.table}
-                ([id]
-                ,[name]
-                ,[percentage]
-                ,[state]
-                ,[automatic])
-            VALUES"""
-        for current in self.datas:
-            query=query+f"""
-            ({current["id"]}
-           ,'{current["name"]}'
-           ,{current["percentage"]}
-           ,{current["state"]}
-           ,{current["automatic"]}),"""
 
-        query=query.replace("'None'",'null')
-        query=query[:-1]
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
-    def executelogic(self):
-        print("Limpiando descuentos")
-        self.executeQuery(self.cleanData())
-        print("Obteniendo descuento")
-        self.getData()
+class DescuentoController(AbstractController):
+    def __init__(self, tabla):
+        super().__init__(tabla)
+
+    def get_data(self):
+        url = os.getenv('API_URL_BASE') + '/discounts.json?limit=50&offset=0'
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        while True:
+            req = requests.get(url, headers=headers)
+            response = json.loads(req.text)
+            for current in response["items"]:
+                current = format_record(current, self.cols, self.ctypes)
+                self.datas.append(current)
+
+            if "next" in response['items']:
+                url = response["next"]
+            else:
+                break
+
+    def insert_data(self):
+        query = f'INSERT INTO {self.table} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
+        for i, current in enumerate(self.datas, 1):
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+        self.execute_query(query, 'insert', values)
+
+    def execute_logic(self):
+        # print(f"Limpiando {self.table}")
+        # self.clear_table()
+        print(f"Obteniendo {self.table}")
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
-        self.executeQuery(query)
+        self.insert_data()

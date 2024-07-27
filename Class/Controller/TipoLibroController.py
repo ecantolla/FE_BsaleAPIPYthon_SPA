@@ -1,3 +1,5 @@
+from Class.Controller.AbstractController import AbstractController
+from Class.Controller.Herlpers import format_record
 from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 import requests
@@ -7,57 +9,40 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class TipoLibroController:
-    def __init__(self):
-        self.table=tablas["tipoLibro"]
-        self.datas=[]
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        return query
-    def getData(self):
+
+class TipoLibroController(AbstractController):
+    def __init__(self, tabla):
+        super().__init__(tabla)
+
+    def get_data(self):
         url = os.getenv('API_URL_BASE') + '/book_types.json'
-        flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
-        while(flag):
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            if("next" in response):
-                flag=True
-                url=response["next"]+''
-            else:
-                flag=False
+            response = json.loads(req.text)
             for current in response["items"]:
+                current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
-    def getInsertQuery(self):
-        query=f"""INSERT INTO {self.table}
-                ([id]
-                ,[name]
-                ,[dteProcess]
-                ,[code]
-                ,[state])
-            VALUES"""
-        for current in self.datas:
-            query=query+f"""
-                ({current["id"]}
-                ,'{current["name"]}'
-                ,'{current["dteProcess"]}'
-                ,'{current["code"]}'
-                ,{current["state"]}),"""
-        
-        query=query.replace("'None'",'null')
-        query=query[:-1]
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
-    def executelogic(self):
-        print("Limpiando tipo libro")
-        self.executeQuery(self.cleanData())
+
+            if "next" in response['items']:
+                url = response["next"]
+            else:
+                break
+
+    def insert_data(self):
+        query = f'INSERT INTO {self.table} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
+        for i, current in enumerate(self.datas, 1):
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+        self.execute_query(query, 'insert', values)
+
+    def execute_logic(self):
+        # print("Limpiando tipo libro")
+        # self.clear_table()
         print("Obteniendo tipo libro")
-        self.getData()
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
-        self.executeQuery(query)
+        self.insert_data()
