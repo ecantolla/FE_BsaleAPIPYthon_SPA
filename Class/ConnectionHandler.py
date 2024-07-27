@@ -1,33 +1,49 @@
 import pyodbc
 import configparser
+
+
 class ConnectionHandler:
     def __init__(self):
-        config=configparser.ConfigParser()
+        config = configparser.ConfigParser()
         config.read('./config/config.ini')
-        self.host=config["config"]["host"]
-        self.database=config["config"]["database"]
-        self.user=config["config"]["user"]
-        self.passwd=config["config"]["passwd"]
-        self.conn=None
+        self.host = config["config"]["host"]
+        self.database = config["config"]["database"]
+        self.user = config["config"]["user"]
+        self.passwd = config["config"]["passwd"]
+        self.conn = None
+
     def connect(self):
         try:
-            connectionString = f'Driver={{ODBC Driver 18 for SQL Server}};' \
+            connection_string = f'Driver={{ODBC Driver 18 for SQL Server}};' \
                 f'SERVER={self.host};' \
                 f'DATABASE={self.database};' \
                 f'UID={self.user};' \
                 f'PWD={self.passwd};' \
                 'Encrypt=no;TrustServerCertificate=yes'
-            self.conn = pyodbc.connect(connectionString)
-            return self.conn
+            self.conn = pyodbc.connect(connection_string)
+            return True
         except Exception as e:
             print("no hay conexion: ", str(e))
-            return None
-    def executeQuery(self,query):
+            return False
+
+    def executeQuery(self, query, query_type, values=None):
         self.connect()
-        cursor=self.conn.cursor()
-        result=cursor.execute(query)
+        cursor = self.conn.cursor()
+        if values:
+            if query_type == 'select':
+                result = cursor.execute(query, values)
+            else:
+                cursor.fast_executemany = True
+                result = cursor.executemany(query, values)
+        else:
+            result = cursor.execute(query)
+
+        if query_type in ('insert', 'truncate'):
+            cursor.commit()
+        elif query_type == 'select':
+            result = cursor.fetchall() if result else None
+        cursor.close()
         return result
+
     def closeConnection(self):
         self.conn.close()
-    def commitChange(self):
-        self.conn.commit()

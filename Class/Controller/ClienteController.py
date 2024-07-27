@@ -1,202 +1,84 @@
 from Class.Models.tablas import tablas, old_tablas
 from Class.ConnectionHandler import ConnectionHandler
+from Class.Controller.Herlpers import *
 import requests
 import json
 import os
 from dotenv import load_dotenv
+import numpy as np
 
 load_dotenv()
 
+
 class ClienteController:
     def __init__(self):
-        self.table=tablas["cliente"]
-        self.oldtable= old_tablas["cliente"]
-        self.datas=[]
+        self.table = tablas["cliente"]
+        self.oldtable = old_tablas["cliente"]
+        self.datas = []
+        c_t = np.array([ct for ct in get_col_dtype(self.table)])
+        self.cols = c_t[:, 0].tolist()
+        self.ctypes = c_t[:, 1].tolist()
 
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        self.executeQuery(query)
-        return query
-    def searchRow(self,data):
-        for key in data:
-            if key in ("createdAt", "updatedAt"):
-                if data[key] in (None, ''):
-                    data[key]=0
-            if data[key] is None:
-                data[key]=''
-            elif type(data[key])==dict:
-                data[key]=data[key]['href']
-            
-        query=f"""SELECT * FROM {self.table}
-        WHERE id={data["id"]}
-        AND firstName='{data["firstName"]}'
-        AND lastName='{data["lastName"]}'
-        AND email='{data["email"]}'
-        AND code='{data["code"]}'
-        AND phone='{data["phone"]}'
-        AND company='{data["company"]}'
-        AND note='{data["note"]}'
-        AND facebook='{data["facebook"]}'
-        AND twitter='{data["twitter"]}'
-        AND hasCredit={data["hasCredit"]}
-        AND maxCredit={data["maxCredit"]}
-        AND state={data["state"]}
-        AND activity='{data["activity"]}'
-        AND city='{data["city"]}'
-        AND municipality='{data["municipality"]}'
-        AND address='{data["addresses"]}'
-        AND companyOrPerson={data["companyOrPerson"]}
-        AND accumulatePoints={data["accumulatePoints"]}
-        AND points={data["points"]}
-        AND pointsUpdated='{data["pointsUpdated"]}'
-        AND sendDte={data["sendDte"]}
-        AND isForeigner={data["isForeigner"]}
-        AND prestashopClientId={data["prestashopClienId"]}
-        AND createdAt=NULL
-        AND updatedAt=NULL"""
-        
-        conn=ConnectionHandler()
-        conn.connect()
-        result = conn.executeQuery(query)
-        breakpoint()
-        #result = conn.getCursor().fetchone()
-        conn.closeConnection()
-        return result is not None
-        #return result
-    def getData(self):
+    def clear_table(self):
+        query = f"TRUNCATE TABLE {self.table}"
+        self.execute_query(query, 'truncate')
+
+    def row_exists(self, data):
+        query = f"SELECT * FROM {self.table} WHERE "
+        filtered_data = {k: v for k, v in data.items() if k in self.cols and v is not None}
+        cols = list(filtered_data.keys())
+        vals = tuple(filtered_data.values())
+        query += " AND ".join([f"{c} = ?" for c in cols]) + ";"
+        result = self.execute_query(query, 'select', vals)
+        return True if result else False
+
+    def get_data(self):
         url = os.getenv('API_URL_BASE') + '/clients.json?limit=50'
-        flag=True
-        headers = {'Accept': 'application/json','access_token': os.getenv('API_KEY')}
-        while(flag):
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        i = 0
+        while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            if("next" in response):
-                flag=True
-                url=response["next"]+''
-            else:
-                flag=False
+            response = json.loads(req.text)
             for current in response["items"]:
-                if not self.searchRow(current):
-                    self.datas.append(current)
-                else:
-                    print(f"El cliente {current['id']} ya existe")
-    def getInsertQuery(self):
-        query=f"""INSERT INTO {tablas["cliente"]}
-                ([id]
-                ,[firstName]
-                ,[lastName]
-                ,[email]
-                ,[code]
-                ,[phone]
-                ,[company]
-                ,[note]
-                ,[facebook]
-                ,[twitter]
-                ,[hasCredit]
-                ,[maxCredit]
-                ,[state]
-                ,[activity]
-                ,[city]
-                ,[municipality]
-                ,[address]
-                ,[companyOrPerson]
-                ,[accumulatePoints]
-                ,[points]
-                ,[pointsUpdated]
-                ,[sendDte]
-                ,[isForeigner]
-                ,[prestashopClientId]
-                ,[createdAt]
-                ,[updatedAt])
-            VALUES"""
-        i=0
-        for current in self.datas:
-            i=i+1
-            presta=0
-            if "prestashopClienId" in current:
-                presta={current["prestashopClienId"]}
+                current['prestashopClientId'] = current['prestashopClienId']
+                del current['prestashopClienId']
 
-            query=query+f"""
-                ({current["id"]}
-                ,'{current["firstName"]}'
-                ,'{current["lastName"]}'
-                ,'{current["email"]}'
-                ,'{current["code"]}'
-                ,'{current["phone"]}'
-                ,'{current["company"]}'
-                ,'{current["note"]}'
-                ,{current["facebook"] if current["facebook"] is not None else 'null'}
-                ,{current["twitter"] if current["twitter"] is not None else 'null'}
-                ,{current["hasCredit"]}
-                ,{current["maxCredit"]}
-                ,{current["state"]}
-                ,'{current["activity"]}'
-                ,'{current["city"]}'
-                ,'{current["municipality"]}'
-                ,'{current["address"]}'
-                ,{current["companyOrPerson"]}
-                ,{current["accumulatePoints"]}
-                ,{current["points"]}
-                ,{current["pointsUpdated"]}
-                ,{current["sendDte"]}
-                ,{current["isForeigner"]}
-                ,{presta}
-                ,{current["createdAt"] if current["createdAt"] is not None else ""}
-                ,{current["updatedAt"] if current["updatedAt"] is not None else ""}),"""
-            if i>900:
-                i=0
-                print("insertando 900 clientes")
-                query=query.replace("'None'",'null')
-                query=query.replace('None','null')
-                query=query[:-1]
-                self.executeQuery(query)
-                query=f"""INSERT INTO {tablas["cliente"]}
-                        ([id]
-                        ,[firstName]
-                        ,[lastName]
-                        ,[email]
-                        ,[code]
-                        ,[phone]
-                        ,[company]
-                        ,[note]
-                        ,[facebook]
-                        ,[twitter]
-                        ,[hasCredit]
-                        ,[maxCredit]
-                        ,[state]
-                        ,[activity]
-                        ,[city]
-                        ,[municipality]
-                        ,[address]
-                        ,[companyOrPerson]
-                        ,[accumulatePoints]
-                        ,[points]
-                        ,[pointsUpdated]
-                        ,[sendDte]
-                        ,[isForeigner]
-                        ,[prestashopClientId]
-                        ,[createdAt]
-                        ,[updatedAt])
-                    VALUES"""
-            
-        query=query.replace("'None'",'null')
-        query=query.replace('None','null')
-        query=query[:-1]
-        file=open("test.txt","w")
-        file.write(query)
-        file.close()
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
+                current = format_record(current, self.cols, self.ctypes)
+
+                if self.row_exists(current):
+                    print(f"El cliente {current['id']} ya existe")
+                    continue
+
+                self.datas.append(current)
+            if "next" in response:
+                url = response["next"]
+            else:
+                break
+
+    def insert_data(self):
+        query = f'INSERT INTO {tablas["cliente"]} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
+        for i, current in enumerate(self.datas, 1):
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+            if i % 50 == 0:
+                print(f"insertando cliente {i}")
+                self.execute_query(query, 'insert', values)
+                values = []
+
+    def execute_query(self, query, query_type, values=None):
+        conn = ConnectionHandler()
         conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
+        result = conn.executeQuery(query, query_type, values)
         conn.closeConnection()
+        return result
+
     def executelogic(self):
-        """ print("Limpiando clientes")
-        self.executeQuery(self.cleanData()) """
+        # print("Limpiando clientes")
+        # self.clear_table()
         print("Obteniendo clientes")
-        self.getData()
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
-        self.executeQuery(query)
+        self.insert_data()
