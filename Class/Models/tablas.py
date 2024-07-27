@@ -1,7 +1,7 @@
 tablas={
     "detalle_devolucion":"detalle_devolucion_aux",
     "devolucion":"devolucion_aux",
-    "cliente":"cliente_aux",    
+    "cliente":"cliente",    
     "vendedor":"vendedor",
     "documento":"documento",
     "detalleDocumento":"detalle_documento",
@@ -22,6 +22,32 @@ tablas={
     "usuario":"usuario",
     "descuento":"descuento_aux",
     "tipoLibro":"tipoLibro_aux"
+}
+
+old_tablas={
+    "detalle_devolucion":"OLD1807_DETALLE_DEVOLUCION",
+    "devolucion":"OLD1807_DEVOLUCION",
+    "cliente":"OLD1807_CLIENTE",    
+    "vendedor":"OLD1807_VENDEDOR",
+    "documento":"OLD1807_DOCUMENTO",
+    "detalleDocumento":"OLD1807_DETALLE_DOCUMENTO",
+    "consumo":"OLD1807_CONSUMO",
+    "consumoDetalle":"OLD1807_DETALLE_CONSUMO",
+    "recepcionDetalle":"OLD1807_DETALLE_RECEPCION",
+    "recepcion":"OLD1807_RECEPCION",
+    "stock":"OLD1807_STOCK",
+    "detalleListaPrecio":"OLD1807_DETALLE_LISTA_PRECIO",
+    "listaPrecio":"OLD1807_LISTA_PRECIO",
+    "valorAtributo":"OLD1807_VALOR_ATRIBUTO",
+    "producto":"OLD1807_PRODUCTO",
+    "variante":"OLD1807_VARIANTE",
+    "atributo":"OLD1807_ATRIBUTO",
+    "tipoProducto":"OLD1807_TIPO_PRODUCTO",
+    "tipoDocumento":"OLD1807_TIPO_DOCUMENTO",
+    "sucursal":"OLD1807_SUCURSAL",
+    "usuario":"OLD1807_USUARIO",
+    "descuento":"OLD1807_DESCUENTO",
+    "tipoLibro":"OLD1807_TIPO_LIBRO"
 }
 
 #tablas={
