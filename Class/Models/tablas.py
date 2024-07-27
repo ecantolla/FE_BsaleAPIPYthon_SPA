@@ -1,7 +1,7 @@
 tablas={
     "detalle_devolucion":"detalle_devolucion_aux",
     "devolucion":"devolucion_aux",
-    "cliente":"cliente_aux",    
+    "cliente":"cliente",    
     "vendedor":"vendedor",
     "documento":"documento",
     "detalleDocumento":"detalle_documento",

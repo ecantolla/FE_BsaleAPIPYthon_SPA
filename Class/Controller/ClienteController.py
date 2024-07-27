@@ -18,7 +18,16 @@ class ClienteController:
         self.executeQuery(query)
         return query
     def searchRow(self,data):
-        query=f"""SELECT * FROM {self.oldtable}
+        for key in data:
+            if key in ("createdAt", "updatedAt"):
+                if data[key] in (None, ''):
+                    data[key]=0
+            if data[key] is None:
+                data[key]=''
+            elif type(data[key])==dict:
+                data[key]=data[key]['href']
+            
+        query=f"""SELECT * FROM {self.table}
         WHERE id={data["id"]}
         AND firstName='{data["firstName"]}'
         AND lastName='{data["lastName"]}'
@@ -35,7 +44,7 @@ class ClienteController:
         AND activity='{data["activity"]}'
         AND city='{data["city"]}'
         AND municipality='{data["municipality"]}'
-        AND address='{data["address"]}'
+        AND address='{data["addresses"]}'
         AND companyOrPerson={data["companyOrPerson"]}
         AND accumulatePoints={data["accumulatePoints"]}
         AND points={data["points"]}
@@ -43,12 +52,14 @@ class ClienteController:
         AND sendDte={data["sendDte"]}
         AND isForeigner={data["isForeigner"]}
         AND prestashopClientId={data["prestashopClienId"]}
-        AND createdAt={data["createdAt"]}
-        AND updatedAt={data["updatedAt"]}"""
+        AND createdAt=NULL
+        AND updatedAt=NULL"""
+        
         conn=ConnectionHandler()
         conn.connect()
-        conn.executeQuery(query)
-        result=conn.getCursor().fetchone()
+        result = conn.executeQuery(query)
+        breakpoint()
+        #result = conn.getCursor().fetchone()
         conn.closeConnection()
         return result is not None
         #return result
