@@ -3,15 +3,16 @@ from Class.ConnectionHandler import ConnectionHandler
 import requests
 import json
 import os
+from Class.Controller.AbstractController import AbstractController
 from dotenv import load_dotenv
 
 load_dotenv()
 
-class UsuarioController:
+
+class UsuarioController(AbstractController):
     def __init__(self):
-        self.table=tablas["usuario"]
-        self.datas=[]
-        self.offset=0
+        super().__init__('usuario')
+        self.offset = 0
     def cleanData(self):
         query=f"""delete from {self.table}"""
         return query

@@ -1,3 +1,4 @@
+from Class.Controller.AbstractController import AbstractController
 from Class.Models.tablas import tablas, old_tablas
 from Class.ConnectionHandler import ConnectionHandler
 from Class.Controller.Herlpers import *
@@ -10,30 +11,13 @@ import numpy as np
 load_dotenv()
 
 
-class ClienteController:
-    def __init__(self):
-        self.table = tablas["cliente"]
-        self.oldtable = old_tablas["cliente"]
-        self.datas = []
-        c_t = np.array([ct for ct in get_col_dtype(self.table)])
-        self.cols = c_t[:, 0].tolist()
-        self.ctypes = c_t[:, 1].tolist()
-
-    def clear_table(self):
-        query = f"TRUNCATE TABLE {self.table}"
-        self.execute_query(query, 'truncate')
-
-    def row_exists(self, data):
-        query = f"SELECT * FROM {self.table} WHERE "
-        filtered_data = {k: v for k, v in data.items() if k in self.cols and v is not None}
-        cols = list(filtered_data.keys())
-        vals = tuple(filtered_data.values())
-        query += " AND ".join([f"{c} = ?" for c in cols]) + ";"
-        result = self.execute_query(query, 'select', vals)
-        return True if result else False
+class ClienteController(AbstractController):
+    def __init__(self, tabla):
+        super().__init__(tabla)
+        self.endpoint = '/clients.json?limit=50'
 
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/clients.json?limit=50'
+        url = os.getenv('API_URL_BASE') + self.endpoint
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         i = 0
         while True:
@@ -68,17 +52,10 @@ class ClienteController:
                 self.execute_query(query, 'insert', values)
                 values = []
 
-    def execute_query(self, query, query_type, values=None):
-        conn = ConnectionHandler()
-        conn.connect()
-        result = conn.executeQuery(query, query_type, values)
-        conn.closeConnection()
-        return result
-
-    def executelogic(self):
-        # print("Limpiando clientes")
+    def execute_logic(self):
+        # print(f"Limpiando {self.table}")
         # self.clear_table()
-        print("Obteniendo clientes")
+        print(f"Obteniendo {self.table}")
         self.get_data()
         print("Generando Query")
         self.insert_data()

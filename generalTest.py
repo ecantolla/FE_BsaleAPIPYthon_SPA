@@ -12,13 +12,12 @@ from Class.Controller.RecepcionController import RecepcionController
 from Class.Controller.ConsumoController import ConsumoController
 from Class.Controller.ClienteController import ClienteController
 from Class.Controller.DevolucionController import DevolucionController
-from Class.ConnectionHandler import ConnectionHandler
 
 from datetime import datetime
 
 inicio=datetime.now()
 print("##########################################")
-""" print("Inicio sucursal")
+print("Inicio sucursal")
 sucursal=SucursalController()
 sucursal.executelogic()
 print("##########################################")
@@ -67,16 +66,16 @@ tp.executelogic()
 print("##########################################")
 print("Inicio Consumo")
 tp=ConsumoController()
-tp.executelogic() """
+tp.executelogic()
 
 print("##########################################")
 print("Inicio Cliente")
-tp=ClienteController()
-tp.executelogic()
+tp = ClienteController('cliente')
+tp.execute_logic()
 
-""" print("##########################################")
+print("##########################################")
 print("Inicio Devolucion")
 tp=DevolucionController()
-tp.executelogic() """
+tp.executelogic()
 
 print(datetime.now()-inicio)
