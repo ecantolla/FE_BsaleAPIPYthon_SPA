@@ -1,5 +1,3 @@
-from Class.Models.tablas import tablas
-from Class.ConnectionHandler import ConnectionHandler
 from Class.Controller.Herlpers import *
 import requests
 import json
@@ -14,13 +12,10 @@ class UsuarioController(AbstractController):
     def __init__(self, tabla):
         super().__init__(tabla)
         self.offset = 0
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        return query
-    def getData(self):
-        url = os.getenv('API_URL_BASE') + '/users.json?limit=50&offset='+str(self.offset)
-        flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
+
+    def get_data(self):
+        url = os.getenv('API_URL_BASE') + '/users.json?limit=50&offset=' + str(self.offset)
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
             response = json.loads(req.text)
@@ -28,8 +23,6 @@ class UsuarioController(AbstractController):
                 if 'office' in current:
                     current['idSucursal'] = current['office']['id']
                     del current['office']
-                # print(current)
-                # breakpoint()
                 current = format_record(current, self.cols, self.ctypes)
 
                 if self.row_exists(current):
@@ -42,12 +35,12 @@ class UsuarioController(AbstractController):
             else:
                 break
 
-    def getInsertQuery(self):
+    def insert_data(self):
         query = f'INSERT INTO {self.table} '
         query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
         query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
         values = []
-        for i, current in enumerate(self.datas, 1):
+        for current in self.datas:
             vals = tuple([current[c] for c in self.cols])
             values.append(vals)
         try:
@@ -56,12 +49,10 @@ class UsuarioController(AbstractController):
             print('no se insertaron datos de usuario.')
             print(e)
 
-        values = []
-
-    def executelogic(self):
+    def execute_logic(self):
         # print("Limpiando Usuario")
-        # self.executeQuery(self.cleanData())
+        # self.clear_table()
         print("Obteniendo usuarios")
-        self.getData()
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
+        self.insert_data()

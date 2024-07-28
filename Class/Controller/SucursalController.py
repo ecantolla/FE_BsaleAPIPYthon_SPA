@@ -1,4 +1,3 @@
-from Class.Models.tablas import tablas
 from Class.Controller.AbstractController import AbstractController
 from Class.Controller.Herlpers import *
 import requests
@@ -8,18 +7,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 class SucursalController(AbstractController):
     def __init__(self, tabla):
         super().__init__(tabla)
 
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        return query
-
-    def getData(self):
+    def get_data(self):
         url = os.getenv('API_URL_BASE') + '/offices.json'
-        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
-
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
             response = json.loads(req.text)
@@ -34,13 +29,12 @@ class SucursalController(AbstractController):
             else:
                 break
 
-    def getInsertQuery(self):
+    def insert_data(self):
         query = f'INSERT INTO {self.table} '
         query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
         query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
-        
         values = []
-        for i, current in enumerate(self.datas, 1):
+        for current in self.datas:
             vals = tuple([current[c] for c in self.cols])
             values.append(vals)
         try:
@@ -49,13 +43,10 @@ class SucursalController(AbstractController):
             print('no se insertaron datos.')
             print(e)
 
-        values = []
-
-    def executelogic(self):
+    def execute_logic(self):
         # print("Limpiando sucursales")
-        # self.executeQuery(self.cleanData())
+        # self.clear_table()
         print("Obteniendo sucursales")
-        self.getData()
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
-        #self.executeQuery(query)
+        self.insert_data()

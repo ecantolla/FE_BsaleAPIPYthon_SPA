@@ -44,14 +44,16 @@ class ClienteController(AbstractController):
         for i, current in enumerate(self.datas, 1):
             vals = tuple([current[c] for c in self.cols])
             values.append(vals)
-            if i % 50 == 0:
+            if i % 900 == 0:
                 print(f"insertando cliente {i}")
                 self.execute_query(query, 'insert', values)
                 values = []
+        if values:
+            self.execute_query(query, 'insert', values)
 
     def execute_logic(self):
-        # print(f"Limpiando {self.table}")
-        # self.clear_table()
+        print(f"Limpiando {self.table}")
+        self.clear_table()
         print(f"Obteniendo {self.table}")
         self.get_data()
         print("Generando Query")
