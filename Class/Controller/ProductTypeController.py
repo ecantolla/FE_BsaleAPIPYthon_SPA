@@ -83,7 +83,7 @@ class ProductTypeController(AbstractController):
 
     def execute_logic(self):
         # print(f"Limpiando {self.table}")
-        # self.clear_table(self.table)
+        # self.clear_table()
         # print(f"Limpiando {self.table2}")
         # self.clear_table(self.table2)
         print(f"Obteniendo {self.table}")
