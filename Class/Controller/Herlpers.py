@@ -29,8 +29,11 @@ def format_record(datas, cols, dtypes):
                     new_data[col] = int(new_data[col])
                 elif dtype == 'float':
                     new_data[col] = float(new_data[col])
-                elif new_data[col] is dict:
-                    new_data[col] = new_data[col]['href']
+                elif isinstance(new_data[col], dict):
+                    if 'items' in new_data[col]:
+                        new_data[col] = new_data[col]['items']
+                    elif 'href' in new_data[col]:
+                        new_data[col] = new_data[col]['href']
             else:
                 if dtype == 'int':
                     new_data[col] = None

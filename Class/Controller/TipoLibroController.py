@@ -34,7 +34,7 @@ class TipoLibroController(AbstractController):
         query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
         query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
         values = []
-        for i, current in enumerate(self.datas, 1):
+        for current in self.datas:
             vals = tuple([current[c] for c in self.cols])
             values.append(vals)
         self.execute_query(query, 'insert', values)
