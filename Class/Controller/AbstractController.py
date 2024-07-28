@@ -23,12 +23,14 @@ class AbstractController:
     def insert_data(self):
         pass
 
-    def clear_table(self):
-        query = f"TRUNCATE TABLE {self.table}"
+    def clear_table(self, table=None):
+        table = table if table else self.table
+        query = f"TRUNCATE TABLE {table}"
         self.execute_query(query, 'truncate')
 
-    def row_exists(self, data):
-        query = f"SELECT * FROM {self.table} WHERE "
+    def row_exists(self, data, table=None):
+        table = table if table else self.table
+        query = f"SELECT * FROM {table} WHERE "
         filtered_data = {k: v for k, v in data.items() if k in self.cols and v is not None}
         cols = list(filtered_data.keys())
         vals = tuple(filtered_data.values())
