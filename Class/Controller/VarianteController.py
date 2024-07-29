@@ -121,7 +121,7 @@ class VarianteController(AbstractController):
         if values3:
             self.execute_query(query3, 'insert', values3)
 
-    def executelogic(self):        
+    def execute_logic(self):
         # print("Limpiando variante")
         # tablas = [self.table, self.attTable, self.productTable]
         # for tabla in tablas:
