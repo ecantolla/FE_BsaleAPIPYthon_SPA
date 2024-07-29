@@ -26,11 +26,9 @@ class ClienteController(AbstractController):
 
                 current = format_record(current, self.cols, self.ctypes)
 
-                if self.row_exists(current):
-                    print(f"El cliente {current['id']} ya existe")
-                    continue
-
-                self.datas.append(current)
+                if not self.row_exists(current):
+                    self.datas.append(current)
+                
             if "next" in response:
                 url = response["next"]
             else:

@@ -20,10 +20,9 @@ class SucursalController(AbstractController):
             response = json.loads(req.text)
             for current in response["items"]:                
                 current = format_record(current, self.cols, self.ctypes)
-                if self.row_exists(current):
-                    print(f"la sucursal {current['id']} ya existe")
-                    continue
-                self.datas.append(current)
+                if not self.row_exists(current):
+                    self.datas.append(current)
+                
             if "next" in response:
                 url = response["next"]
             else:
