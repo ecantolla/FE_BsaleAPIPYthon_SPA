@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 class RecepcionController(AbstractController):
 
     def __init__(self, tabla):
