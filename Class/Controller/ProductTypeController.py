@@ -23,10 +23,6 @@ class ProductTypeController(AbstractController):
         self.atrb_ctypes = c_t[:, 1].tolist()
         self.atrb_datas = []
 
-    def clear_table(self, t):
-        query = f"TRUNCATE TABLE {t}"
-        self.execute_query(query, 'truncate')
-
     def get_data(self):
         url = os.getenv('API_URL_BASE') + '/product_types.json?limit=50&expand=[attributes]'
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
