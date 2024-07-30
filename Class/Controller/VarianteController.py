@@ -1,5 +1,4 @@
 from Class.Models.tablas import tablas
-from Class.ConnectionHandler import ConnectionHandler
 from Class.Controller.AbstractController import AbstractController
 from Class.Controller.Herlpers import *
 import requests
