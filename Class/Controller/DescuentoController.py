@@ -38,8 +38,8 @@ class DescuentoController(AbstractController):
         self.execute_query(query, 'insert', values)
 
     def execute_logic(self):
-        # print(f"Limpiando {self.table}")
-        # self.clear_table()
+        print(f"Limpiando {self.table}")
+        self.clear_table()
         print(f"Obteniendo {self.table}")
         self.get_data()
         print("Generando Query")

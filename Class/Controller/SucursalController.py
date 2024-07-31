@@ -43,8 +43,8 @@ class SucursalController(AbstractController):
             print(e)
 
     def execute_logic(self):
-        # print("Limpiando sucursales")
-        # self.clear_table()
+        print("Limpiando sucursales")
+        self.clear_table()
         print("Obteniendo sucursales")
         self.get_data()
         print("Generando Query")

@@ -48,8 +48,8 @@ class UsuarioController(AbstractController):
             print(e)
 
     def execute_logic(self):
-        # print("Limpiando Usuario")
-        # self.clear_table()
+        print("Limpiando Usuario")
+        self.clear_table()
         print("Obteniendo usuarios")
         self.get_data()
         print("Generando Query")

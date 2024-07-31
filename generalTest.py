@@ -64,12 +64,12 @@ print("##########################################")
 print("Inicio Recepcion")
 rc = RecepcionController('recepcion')
 rc.execute_logic()
-#
-print("##########################################")
-print("Inicio Consumo")
-cc = ConsumoController('consumo')
-cc.execute_logic()
-#
+
+# print("##########################################")
+# print("Inicio Consumo")
+# cc = ConsumoController()
+# cc.executelogic()
+
 print("##########################################")
 print("Inicio Cliente")
 cc = ClienteController('cliente')
@@ -77,7 +77,7 @@ cc.execute_logic()
 
 print("##########################################")
 print("Inicio Devolucion")
-tp = DevolucionController('devolucion')
+tp=DevolucionController('devolucion')
 tp.execute_logic()
 
 print(datetime.now()-inicio)

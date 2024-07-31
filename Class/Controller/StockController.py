@@ -50,8 +50,8 @@ class StockController(AbstractController):
             self.execute_query(query, 'insert', values)
 
     def execute_logic(self):
-        # print("Limpiando stock")
-        # self.clear_table()
+        print("Limpiando stock")
+        self.clear_table()
         print("Obteniendo stock")
         self.get_data()
         print("Generando Query")

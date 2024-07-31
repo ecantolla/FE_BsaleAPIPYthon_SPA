@@ -90,10 +90,10 @@ class DevolucionController(AbstractController):
         if values2:
             self.execute_query(query2, 'insert', values2)
 
-    def executelogic(self):
+    def execute_logic(self):
         print("Limpiando devoluciones")
         self.clear_table("detalle_devolucion")
-        self.clear_table("devolucion")
+        self.clear_table()
         print("Obteniendo devoluciones")
         self.get_data()
         print("Generando Query")

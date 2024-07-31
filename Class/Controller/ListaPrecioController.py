@@ -64,10 +64,10 @@ class ListaPrecioController(AbstractController):
         self.execute_query(query, 'insert', values)
 
     def execute_logic(self):
-        # print(f"Limpiando {self.table}")
-        # self.clear_table()
-        # print(f"Limpiando {self.table2}")
-        # self.clear_table(self.table2)
+        print(f"Limpiando {self.table}")
+        self.clear_table()
+        print(f"Limpiando {self.table2}")
+        self.clear_table(self.table2)
         print("Obteniendo descuento")
         self.get_data()
         print("Generando Query")

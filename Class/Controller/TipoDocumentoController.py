@@ -45,8 +45,8 @@ class TipoDocumentoController(AbstractController):
         self.execute_query(query, 'insert', values)
 
     def executelogic(self):
-        # print("Limpiando tipo documento")
-        # self.clear_table()
+        print("Limpiando tipo documento")
+        self.clear_table()
         print("Obteniendo tipo documento")
         self.get_data()
         print("Generando Query")

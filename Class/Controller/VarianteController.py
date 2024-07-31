@@ -121,10 +121,10 @@ class VarianteController(AbstractController):
             self.execute_query(query3, 'insert', values3)
 
     def execute_logic(self):
-        # print("Limpiando variante")
-        # tablas = [self.table, self.attTable, self.productTable]
-        # for tabla in tablas:
-        #     self.clear_table(tabla)
+        print("Limpiando variante")
+        tablas = [self.table, self.attTable, self.productTable]
+        for tabla in tablas:
+            self.clear_table(tabla)
         print("Obteniendo variante")
         self.get_data()
         print("Generando Query")

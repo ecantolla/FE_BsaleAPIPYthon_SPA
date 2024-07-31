@@ -40,8 +40,8 @@ class TipoLibroController(AbstractController):
         self.execute_query(query, 'insert', values)
 
     def execute_logic(self):
-        # print("Limpiando tipo libro")
-        # self.clear_table()
+        print("Limpiando tipo libro")
+        self.clear_table()
         print("Obteniendo tipo libro")
         self.get_data()
         print("Generando Query")
