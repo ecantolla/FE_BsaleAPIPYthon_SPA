@@ -44,11 +44,8 @@ class TipoDocumentoController(AbstractController):
             values.append(vals)
         self.execute_query(query, 'insert', values)
 
-<<<<<<< Updated upstream
-    def executelogic(self):
-=======
+
     def execute_logic(self):
->>>>>>> Stashed changes
         print("Limpiando tipo documento")
         self.clear_table()
         print("Obteniendo tipo documento")
