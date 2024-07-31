@@ -76,7 +76,7 @@ rc.execute_logic()
 print("##########################################")
 print("Inicio Consumo")
 cc = ConsumoController('consumo')
-cc.executelogic()
+cc.execute_logic()
 
 print("##########################################")
 print("Inicio Cliente")
