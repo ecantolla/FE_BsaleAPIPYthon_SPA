@@ -7,7 +7,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 class DocumentController:
     def __init__(self,firstDay,lastDay) -> None:

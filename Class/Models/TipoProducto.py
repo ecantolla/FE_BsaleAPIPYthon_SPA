@@ -5,7 +5,7 @@ import json
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 class TipoProducto:
     def __init__(self,id,name,isEditable,state,imagestionCategoryId,prestashopCategoryId,attributos):

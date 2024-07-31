@@ -6,7 +6,7 @@ from Class.ConnectionHandler import ConnectionHandler
 from Class.Controller.Herlpers import get_col_dtype
 from Class.Models.tablas import tablas
 import numpy as np
-load_dotenv()
+load_dotenv(override=True)
 
 
 class AbstractController:

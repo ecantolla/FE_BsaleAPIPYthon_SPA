@@ -5,7 +5,7 @@ import os
 from Class.Controller.AbstractController import AbstractController
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 
 class UsuarioController(AbstractController):

@@ -7,7 +7,7 @@ import os
 import numpy as np
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 class VarianteController(AbstractController):
     def __init__(self, tabla):
