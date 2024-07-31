@@ -1,15 +1,13 @@
 import pyodbc
-import configparser
+import os
 
 
 class ConnectionHandler:
     def __init__(self):
-        config = configparser.ConfigParser()
-        config.read('./config/config.ini')
-        self.host = config["config"]["host"]
-        self.database = config["config"]["database"]
-        self.user = config["config"]["user"]
-        self.passwd = config["config"]["passwd"]
+        self.host = os.getenv('HOST')
+        self.database = os.getenv('DATABASE')
+        self.user = os.getenv('USER')
+        self.passwd = os.getenv('PASSWORD')
         self.conn = None
 
     def connect(self):
