@@ -16,7 +16,6 @@ class ClienteController(AbstractController):
     def get_data(self):
         url = os.getenv('API_URL_BASE') + self.endpoint
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
-        i = 0
         while True:
             req = requests.get(url, headers=headers)
             response = json.loads(req.text)

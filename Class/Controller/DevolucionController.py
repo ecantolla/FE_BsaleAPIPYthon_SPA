@@ -10,21 +10,22 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 class DevolucionController(AbstractController):
     def __init__(self, tabla):
         super().__init__(tabla)
-        self.details=tablas["detalle_devolucion"]
+        self.details = tablas["detalle_devolucion"]
         d_t = np.array([dt for dt in get_col_dtype(self.details)])
         self.d_cols = d_t[:, 0].tolist()
         self.dc_types = d_t[:, 1].tolist()
-        self.detail_values=[]
+        self.detail_values = []
 
     def get_data(self):
         url = os.getenv('API_URL_BASE') + '/returns.json?limit=50&expand=[details]'
-        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
+            response = json.loads(req.text)
             
             for current in response["items"]:
                 if 'details' in current:
@@ -44,7 +45,7 @@ class DevolucionController(AbstractController):
                 if not self.row_exists(current_dev):
                     self.datas.append(current_dev)
             
-                for detail in items_details:                      
+                for detail in items_details:
                     detail['idDevolucion'] = current['id']
                     if 'documentDetailId' in detail:
                         detail['idDetalleDocumento'] = detail['documentDetailId']
@@ -53,126 +54,11 @@ class DevolucionController(AbstractController):
                     if not self.row_exists(current_detail, self.details):
                         self.detail_values.append(current_detail)
             
-            if("next" in response):
-                url=response["next"]+'&expand=[details]'
+            if "next" in response:
+                url = response["next"]+'&expand=[details]'
             else:
                 break
 
-    def getInsertQuery(self):
-        query=f"""INSERT INTO {self.table}
-                ([id]
-                ,[code]
-                ,[returnDate]
-                ,[motive]
-                ,[type]
-                ,[priceAdjustment]
-                ,[editTexts]
-                ,[amount]
-                ,[idOficina]
-                ,[idUsuario]
-                ,[idDocumentoReferencia]
-                ,[idDocumentoCredito]
-                ,[details])
-            VALUES"""
-        i=0
-        contDetail=0
-        detailQuery=f"""
-            INSERT INTO {self.details}
-                ([id]
-                ,[quantity]
-                ,[quantityDevStock]
-                ,[variantStock]
-                ,[variantCost]
-                ,[idDetalleDocumento]
-                ,[idDevolucion])
-            VALUES
-            """
-        for current in self.datas:
-            
-            i=i+1
-            note=0
-            if "credit_note" in current:
-                note=current["credit_note"]["id"]
-                if(note==946):
-                    print("aca")
-                print(note)
-            else:
-                print(current["id"])
-            query=query+f"""
-                ({current["id"]}
-                ,'{current["code"]}'
-                ,{current["returnDate"]}
-                ,'{current["motive"]}'
-                ,{current["type"]}
-                ,{current["priceAdjustment"]}
-                ,{current["editTexts"]}
-                ,{current["amount"]}
-                ,{current["office"]["id"]}
-                ,{current["user"]["id"]}
-                ,{current["reference_document"]["id"]}
-                ,{note}
-                ,'{current["details"]["href"]}'),"""
-            
-            for detail in current["details"]["items"]:
-                contDetail=contDetail+1
-                detailQuery=detailQuery+f"""
-                    ({detail["id"]}
-                    ,{detail["quantity"]}
-                    ,{detail["quantityDevStock"]}
-                    ,{detail["variantStock"]}
-                    ,{detail["variantCost"]}
-                    ,{detail["documentDetailId"]}
-                    ,{current["id"]}),"""
-                if contDetail>900:
-                    print("ingresando 900 detalles")
-                    contDetail=0
-                    detailQuery=detailQuery[:-1]
-                    self.executeQuery(detailQuery)
-                    detailQuery=f"""
-                    INSERT INTO {self.details}
-                            ([id]
-                            ,[quantity]
-                            ,[quantityDevStock]
-                            ,[variantStock]
-                            ,[variantCost]
-                            ,[idDetalleDocumento]
-                            ,[idDevolucion])
-                        VALUES            
-                    """
-            if i>900:
-                i=0
-                query=query[:-1]
-                print("ingresando 900 devoluciones")
-                self.executeQuery(query)
-                query=f"""INSERT INTO {self.table}
-                        ([id]
-                        ,[code]
-                        ,[returnDate]
-                        ,[motive]
-                        ,[type]
-                        ,[priceAdjustment]
-                        ,[editTexts]
-                        ,[amount]
-                        ,[idOficina]
-                        ,[idUsuario]
-                        ,[idDocumentoReferencia]
-                        ,[idDocumentoCredito]
-                        ,[details])
-                    VALUES"""
-        detailQuery=detailQuery[:-1]
-        self.executeQuery(detailQuery)
-        query=query.replace("'None'",'null')
-        query=query[:-1]
-        self.executeQuery(query)
-        return query
-    
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
-    
     def insert_data(self):
         #insert data for devolucion table
         query = f'INSERT INTO {self.table} '

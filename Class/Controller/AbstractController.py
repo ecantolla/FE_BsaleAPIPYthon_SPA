@@ -1,3 +1,5 @@
+import os
+
 from dotenv import load_dotenv
 
 from Class.ConnectionHandler import ConnectionHandler
@@ -15,13 +17,6 @@ class AbstractController:
         c_t = np.array([ct for ct in get_col_dtype(self.table)])
         self.cols = c_t[:, 0].tolist()
         self.ctypes = c_t[:, 1].tolist()
-        self.endpoint = ''
-
-    def get_data(self):
-        pass
-
-    def insert_data(self):
-        pass
 
     def clear_table(self, table=None):
         table = table if table else self.table
@@ -37,6 +32,12 @@ class AbstractController:
         query += " AND ".join([f"{c} = ?" for c in cols]) + ";"
         result = self.execute_query(query, 'select', vals)
         return True if result else False
+
+    def get_data(self):
+        pass
+
+    def insert_data(self):
+        pass
 
     def execute_query(self, query, query_type, values=None):
         conn = ConnectionHandler()

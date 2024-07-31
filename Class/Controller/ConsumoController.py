@@ -1,3 +1,7 @@
+import numpy as np
+
+from Class.Controller.AbstractController import AbstractController
+from Class.Controller.Herlpers import get_col_dtype, format_record
 from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 import requests
@@ -7,126 +11,80 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class ConsumoController:
-    def __init__(self):
-        self.table=tablas["consumo"]
-        self.details=tablas["consumoDetalle"]
-        self.datas=[]
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        self.executeQuery("delete from "+self.details)
-        return query
-    def getData(self):
+
+class ConsumoController(AbstractController):
+    def __init__(self, tabla):
+        super().__init__(tabla)
+        self.table2 = tablas["consumoDetalle"]
+        c_t = np.array([ct for ct in get_col_dtype(self.table2)])
+        self.table2_cols = c_t[:, 0].tolist()
+        self.table2_ctypes = c_t[:, 1].tolist()
+        self.table2_datas = []
+
+    def get_data(self):
         url = os.getenv('API_URL_BASE') + '/stocks/consumptions.json?limit=50&offset=0&expand=[details]'
-        flag=True
-        headers = {'Accept': 'application/json','access_token': os.getenv('API_KEY')}
-        while(flag):
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            print(url)
-            if("next" in response):
-                flag=True
-                url=response["next"]+'&expand=[details]'
-            else:
-                flag=False
+            response = json.loads(req.text)
             for current in response["items"]:
+                if "imagestionCcDescription" in current:
+                    current["imagestionCcDescription"] = current["imagestionCcDescription"]
+                else:
+                    current["imagestionCcDescription"] = None
+                current['idOficina'] = current["office"]["id"]
+                current['idUsuario'] = current["user"]["id"]
+                for detail in current["details"]["items"]:
+                    detail['idVariante'] = detail["variant"]["id"]
+                    detail['idConsumo'] = current["id"]
+
+                    detail = format_record(detail, self.table2_cols, self.table2_ctypes)
+                    self.table2_datas.append(detail)
+
+                current['details'] = current["details"]["href"]
+                current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
-    def getInsertQuery(self):
-        query=f"""INSERT INTO {self.table}
-                ([id]
-                ,[consumptionDate]
-                ,[note]
-                ,[imagestionCcDescription]
-                ,[imagestionCenterCostId]
-                ,[idOficina]
-                ,[idUsuario]
-                ,[details])
-            VALUES"""
-        i=0
-        contDetail=0
-        detailQuery=f"""
-            INSERT INTO {self.details}
-                ([id]
-                ,[quantity]
-                ,[cost]
-                ,[variantStock]
-                ,[idVariante]
-                ,[idConsumo])
-            VALUES
-        """
-        for current in self.datas:
-            i=i+1
-            im=''
-            if "imagestionCcDescription" in current:
-                im=current["imagestionCcDescription"]
-            query=query+f"""
-                ({current["id"]}
-                ,{current["consumptionDate"]}
-                ,'{current["note"]}'
-                ,'{im}'
-                ,{current["imagestionCenterCostId"]}
-                ,{current["office"]["id"]}
-                ,{current["user"]["id"]}
-                ,'{current["details"]["href"]}'),"""
-            
-            for detail in current["details"]["items"]:
-                contDetail=contDetail+1
-                detailQuery=detailQuery+f"""
-                    ({detail["id"]}
-                    ,{detail["quantity"]}
-                    ,{detail["cost"]}
-                    ,{detail["variantStock"]}
-                    ,{detail["variant"]["id"]}
-                    ,{current["id"]}),"""
-                if contDetail>900:
-                    print("ingresando 900 detalles")
-                    contDetail=0
-                    detailQuery=detailQuery[:-1]
-                    self.executeQuery(detailQuery)
-                    detailQuery=f"""
-                        INSERT INTO {self.details}
-                            ([id]
-                            ,[quantity]
-                            ,[cost]
-                            ,[variantStock]
-                            ,[idVariante]
-                            ,[idConsumo])
-                        VALUES
-                    """
-            if i>900:
-                i=0
-                query=query[:-1]
-                print("ingresando 900 recepcion")
-                self.executeQuery(query)
-                query=f"""INSERT INTO {self.table}
-                        ([id]
-                        ,[consumptionDate]
-                        ,[note]
-                        ,[imagestionCcDescription]
-                        ,[imagestionCenterCostId]
-                        ,[idOficina]
-                        ,[idUsuario]
-                        ,[details])
-                    VALUES"""
-        detailQuery=detailQuery[:-1]
-        self.executeQuery(detailQuery)
-        query=query.replace("'None'",'null')
-        query=query[:-1]
-        self.executeQuery(query)
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
-    def executelogic(self):
-        print("Limpiando Recepcion")
-        self.executeQuery(self.cleanData())
-        print("Obteniendo recepcion")
-        self.getData()
-        # breakpoint()
+
+            if "next" in response['items']:
+                url = response["next"]
+            else:
+                break
+
+    def insert_data(self):
+        query = f'INSERT INTO {self.table} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
+        for i, current in enumerate(self.datas, 1):
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+            if i % 900 == 0:
+                print(f"insertando consumo {i}")
+                self.execute_query(query, 'insert', values)
+                values = []
+        if values:
+            self.execute_query(query, 'insert', values)
+
+        query = f'INSERT INTO {self.table2} '
+        query += '(' + ','.join([f'[{c}]' for c in self.table2_cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.table2_cols))]) + ')'
+        values = []
+        for i, current in enumerate(self.table2_datas, 1):
+            vals = tuple([current[c] for c in self.table2_cols])
+            values.append(vals)
+            if i % 900 == 0:
+                print(f"insertando detalle consumo {i}")
+                self.execute_query(query, 'insert', values)
+                values = []
+        if values:
+            self.execute_query(query, 'insert', values)
+
+    def execute_logic(self):
+        print(f"Limpiando {self.table}")
+        self.clear_table()
+        print(f"Limpiando {self.table2}")
+        self.clear_table(self.table2)
+        print("Obteniendo datos")
+        self.get_data()
         print("Generando Query")
-        self.getInsertQuery()
-        #query=self.getInsertQuery()
-        #self.executeQuery(query)
+        self.insert_data()
