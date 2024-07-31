@@ -1,94 +1,54 @@
+from Class.Controller.AbstractController import AbstractController
+from Class.Controller.Herlpers import format_record
 from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
-class TipoDocumentoController:
-    def __init__(self):
-        self.table=tablas["tipoDocumento"]
-        self.datas=[]
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        return query
-    def getData(self):
-        url = 'https://api.bsale.cl/v1/document_types.json?limit=50'
-        flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
-        while(flag):
+load_dotenv(override=True)
+
+class TipoDocumentoController(AbstractController):
+    def __init__(self, tabla):
+        super().__init__(tabla)
+
+    def get_data(self):
+        url = os.getenv('API_URL_BASE') + '/document_types.json?limit=50'
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            if("next" in response):
-                flag=True
-                url=response["next"]+''
-            else:
-                flag=False
+            response = json.loads(req.text)
             for current in response["items"]:
+                if 'book_type' in current:
+                    current['idTipoLibro'] = current["book_type"]["id"]
+                    del current["book_type"]
+                else:
+                    current['idTipoLibro'] = None
+
+                current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
-    def getInsertQuery(self):
-        query=f"""INSERT INTO {self.table}
-            ([id]
-            ,[name]
-            ,[initialNumber]
-            ,[codeSii]
-            ,[isElectronicDocument]
-            ,[breakdownTax]
-            ,[use]
-            ,[isSalesNote]
-            ,[isExempt]
-            ,[restrictsTax]
-            ,[useClient]
-            ,[thermalPrinter]
-            ,[state]
-            ,[copyNumber]
-            ,[isCreditNote]
-            ,[continuedHigh]
-            ,[ledgerAccount]
-            ,[ipadPrint]
-            ,[ipadPrintHigh]
-            ,[restrictClientType]
-            ,[idTipoLibro])
-            VALUES"""
+
+            if "next" in response['items']:
+                url = response["next"]
+            else:
+                break
+
+    def insert_data(self):
+        query = f'INSERT INTO {self.table} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
         for current in self.datas:
-            idBookType='null'
-            if('book_type' in current):
-                idBookType=current["book_type"]["id"]
-            query=query+f"""
-                ({current["id"]}
-                ,'{current["name"]}'
-                ,{current["initialNumber"]}
-                ,'{current["codeSii"]}'
-                ,{current["isElectronicDocument"]}
-                ,{current["breakdownTax"]}
-                ,{current["use"]}
-                ,{current["isSalesNote"]}
-                ,{current["isExempt"]}
-                ,{current["restrictsTax"]}
-                ,{current["useClient"]}
-                ,{current["thermalPrinter"]}
-                ,{current["state"]}
-                ,{current["copyNumber"]}
-                ,{current["isCreditNote"]}
-                ,{current["continuedHigh"]}
-                ,'{current["ledgerAccount"]}'
-                ,{current["ipadPrint"]}
-                ,{current["ipadPrintHigh"]}
-                ,{current["restrictClientType"]}
-                ,{idBookType}),"""
-        
-        query=query.replace("'None'",'null')
-        query=query[:-1]
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
-    def executelogic(self):
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+        self.execute_query(query, 'insert', values)
+
+
+    def execute_logic(self):
         print("Limpiando tipo documento")
-        self.executeQuery(self.cleanData())
+        self.clear_table()
         print("Obteniendo tipo documento")
-        self.getData()
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
-        self.executeQuery(query)
+        self.insert_data()

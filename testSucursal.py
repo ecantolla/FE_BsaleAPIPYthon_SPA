@@ -1,4 +1,4 @@
-from Class.Controller.SusucrsalController import SucursalController
+from Class.Controller.SucursalController import SucursalController
 
-sucursal=SucursalController()
-sucursal.executelogic()
+sucursal = SucursalController('sucursal')
+sucursal.execute_logic()

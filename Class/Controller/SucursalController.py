@@ -1,30 +1,25 @@
+from Class.Controller.AbstractController import AbstractController
 from Class.Controller.Herlpers import *
 import requests
 import json
 import os
-from Class.Controller.AbstractController import AbstractController
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
 
-class UsuarioController(AbstractController):
+class SucursalController(AbstractController):
     def __init__(self, tabla):
         super().__init__(tabla)
-        self.offset = 0
 
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/users.json?limit=50&offset=' + str(self.offset)
+        url = os.getenv('API_URL_BASE') + '/offices.json'
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
             response = json.loads(req.text)
-            for current in response["items"]:
-                if 'office' in current:
-                    current['idSucursal'] = current['office']['id']
-                    del current['office']
+            for current in response["items"]:                
                 current = format_record(current, self.cols, self.ctypes)
-
                 if not self.row_exists(current):
                     self.datas.append(current)
                 
@@ -44,13 +39,13 @@ class UsuarioController(AbstractController):
         try:
             self.execute_query(query, 'insert', values)
         except Exception as e:
-            print('no se insertaron datos de usuario.')
+            print('no se insertaron datos.')
             print(e)
 
     def execute_logic(self):
-        print("Limpiando Usuario")
+        print("Limpiando sucursales")
         self.clear_table()
-        print("Obteniendo usuarios")
+        print("Obteniendo sucursales")
         self.get_data()
         print("Generando Query")
         self.insert_data()

@@ -1,98 +1,88 @@
+from typing import overload
+
+import numpy as np
+
+from Class.Controller.AbstractController import AbstractController
+from Class.Controller.Herlpers import format_record, get_col_dtype
 from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
-class ProductTypeController:
-    def __init__(self):
-        self.table=tablas["tipoProducto"]
-        self.datas=[]
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        return query
-    def getData(self):
-        url = 'https://api.bsale.cl/v1/product_types.json?limit=50&expand=[attributes]'
-        flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
-        while(flag):
+load_dotenv(override=True)
+
+
+class ProductTypeController(AbstractController):
+    def __init__(self, tabla):
+        super().__init__(tabla)
+        self.table2 = tablas['atributo']
+        c_t = np.array([ct for ct in get_col_dtype(self.table2)])
+        self.atrb_cols = c_t[:, 0].tolist()
+        self.atrb_ctypes = c_t[:, 1].tolist()
+        self.atrb_datas = []
+
+    def get_data(self):
+        url = os.getenv('API_URL_BASE') + '/product_types.json?limit=50&expand=[attributes]'
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            if("next" in response):
-                flag=True
-                url=response["next"]+''
-            else:
-                flag=False
+            response = json.loads(req.text)
             for current in response["items"]:
+                current['attributos'] = current['attributes']
+                del current['attributes']
+
+                current = format_record(current, self.cols, self.ctypes)
+
+                if type(current['attributos']) is str:
+                    current['attributos'] = current['attributos'].replace("'", '"')
+                    current['attributos'] = current['attributos'].replace("None", "null")
+                    current['attributos'] = json.loads(current['attributos'])
+                    for att in current['attributos']['items']:
+                        att['idTipoProducto'] = current['id']
+                        att = format_record(att, self.atrb_cols, self.atrb_ctypes)
+                        self.atrb_datas.append(att)
+
+                current['attributos'] = current['attributos']['href']
+
                 self.datas.append(current)
-    def getInsertQuery(self):
-        atributoTable=tablas["atributo"]
-        atributoQuery="delete from "+atributoTable
-        self.executeQuery(atributoQuery)
-        query=f"""INSERT INTO {self.table}
-            ([id]
-           ,[name]
-           ,[isEditable]
-           ,[state]
-           ,[imagestionCategoryId]
-           ,[prestashopCategoryId]
-           ,[attributos])
-            VALUES"""
+
+            if "next" in response['items']:
+                url = response["next"]
+            else:
+                break
+
+    def insert_data(self):
+        query = f'INSERT INTO {self.table} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
         for current in self.datas:
-            query=query+f"""
-                ({current["id"]}
-                ,'{current["name"]}'
-                ,{current["isEditable"]}
-                ,{current["state"]}
-                ,{current["imagestionCategoryId"]}
-                ,{current["prestashopCategoryId"]}
-                ,'{current["attributes"]["href"]}'),"""
-            
-            if len(current["attributes"]["items"]) >0:                
-                atributoQuery=f"""
-                        INSERT INTO {atributoTable}
-                        ([id]
-                        ,[name]
-                        ,[isMandatory]
-                        ,[generateVariantName]
-                        ,[hasOptions]
-                        ,[options]
-                        ,[state]
-                        ,[idTipoProducto])
-                        VALUES
-                        """
-                for att in current["attributes"]["items"]:
-                    options = att.get("options", "")  # Use a default empty string if att["options"] is missing
-                    if isinstance(options, str):
-                        options = options.replace('|', '')  # Now you can safely replace '|'
-                    else:
-                        options = ""  # Set options to an empty string if it's not a string
-                    
-                    atributoQuery=atributoQuery+f"""
-                        ({att["id"]}
-                        ,'{att["name"]}'
-                        ,{att["isMandatory"]}
-                        ,{att["generateVariantName"]}
-                        ,{att["hasOptions"]}
-                        ,'{options}'
-                        ,{att["state"]}
-                        ,{current["id"]}),"""
-                atributoQuery=atributoQuery[:-1]
-                
-                self.executeQuery(atributoQuery)
-        query=query.replace("'None'",'null')
-        query=query[:-1]
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
-    def executelogic(self):
-        print("Limpiando tipo documento")
-        self.executeQuery(self.cleanData())
-        print("Obteniendo tipo documento")
-        self.getData()
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+        self.execute_query(query, 'insert', values)
+
+        atrb_query = f'INSERT INTO {self.table2} '
+        atrb_query += '(' + ','.join([f'[{c}]' for c in self.atrb_cols]) + ')'
+        atrb_query += f' VALUES (' + ','.join(['?' for c in range(len(self.atrb_cols))]) + ')'
+        atrb_values = []
+        for att in self.atrb_datas:
+            if "options" in att and isinstance(att["options"], str):
+                att["options"] = att["options"].replace('|', '')
+            else:
+                att["options"] = ""
+
+            atrb_vals = tuple([att[c] for c in self.atrb_cols])
+            atrb_values.append(atrb_vals)
+        self.execute_query(atrb_query, 'insert', atrb_values)
+
+    def execute_logic(self):
+        print(f"Limpiando {self.table}")
+        self.clear_table()
+        print(f"Limpiando {self.table2}")
+        self.clear_table(self.table2)
+        print(f"Obteniendo {self.table}")
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
-        self.executeQuery(query)
+        self.insert_data()

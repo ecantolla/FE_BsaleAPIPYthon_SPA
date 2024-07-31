@@ -1,82 +1,91 @@
-from Class.Controller.SusucrsalController import SucursalController
-from Class.Controller.UsuarioController import UsuarioController
-from Class.Controller.DescuentoController import DescuentoController
-from Class.Controller.TipoLibroController import TipoLibroController
-from Class.Controller.TipoDocumentoController import TipoDocumentoController
-from Class.Controller.ProductTypeController import ProductTypeController
-from Class.Controller.ProductController import ProductController
-from Class.Controller.VarianteController import VarianteController
-from Class.Controller.ListaPrecioController import ListaPrecioController
-from Class.Controller.StockController import StockController
-from Class.Controller.RecepcionController import RecepcionController
-from Class.Controller.ConsumoController import ConsumoController
 from Class.Controller.ClienteController import ClienteController
+from Class.Controller.ConsumoController import ConsumoController
+from Class.Controller.DescuentoController import DescuentoController
 from Class.Controller.DevolucionController import DevolucionController
-from Class.ConnectionHandler import ConnectionHandler
+from Class.Controller.ListaPrecioController import ListaPrecioController
+from Class.Controller.ProductController import ProductController
+from Class.Controller.ProductTypeController import ProductTypeController
+from Class.Controller.RecepcionController import RecepcionController
+from Class.Controller.StockController import StockController
+from Class.Controller.SucursalController import SucursalController
+from Class.Controller.TipoDocumentoController import TipoDocumentoController
+from Class.Controller.TipoLibroController import TipoLibroController
+from Class.Controller.UsuarioController import UsuarioController
+from Class.Controller.VarianteController import VarianteController
 
 from datetime import datetime
 
-inicio=datetime.now()
+
+inicio = datetime.now()
+
 print("##########################################")
 print("Inicio sucursal")
-sucursal=SucursalController()
-sucursal.executelogic()
+sucursal = SucursalController('sucursal')
+sucursal.execute_logic()
+
 print("##########################################")
 print("Inicio usuario")
-usuario=UsuarioController()
-usuario.executelogic()
+usuario = UsuarioController('usuario')
+usuario.execute_logic()
+
 print("##########################################")
 print("Inicio Descuento")
-descuento=DescuentoController()
-descuento.executelogic()
+descuento = DescuentoController('descuento')
+descuento.execute_logic()
+
 print("##########################################")
 print("Inicio Tipo Libro")
-tp=TipoLibroController()
-tp.executelogic()
+tlc = TipoLibroController('tipoLibro')
+tlc.execute_logic()
+
 print("##########################################")
 print("Inicio Tipo Documento")
-tc=TipoDocumentoController()
-tc.executelogic()
+tdc = TipoDocumentoController('tipoDocumento')
+tdc.execute_logic()
+
 print("##########################################")
 print("Inicio Tipo Producto")
-tp=ProductTypeController()
-tp.executelogic()
+ptc = ProductTypeController('tipoProducto')
+ptc.execute_logic()
+
 print("##########################################")
 print("Inicio Producto")
-tp=ProductController()
-tp.executelogic()
+pc = ProductController('producto')
+pc.execute_logic()
+
 print("##########################################")
 print("Inicio Variante")
-tp=VarianteController()
-tp.executelogic()
+vc = VarianteController('variante')
+vc.execute_logic()
+
 print("##########################################")
 print("Inicio Lista precio")
-tp=ListaPrecioController()
-tp.executelogic()
+lpc = ListaPrecioController('listaPrecio')
+lpc.execute_logic()
 
 print("##########################################")
 print("Inicio Stock")
-tp=StockController()
-tp.executelogic()
+sc = StockController('stock')
+sc.execute_logic()
 
 print("##########################################")
 print("Inicio Recepcion")
-tp=RecepcionController()
-tp.executelogic()
+rc = RecepcionController('recepcion')
+rc.execute_logic()
 
 print("##########################################")
 print("Inicio Consumo")
-tp=ConsumoController()
-tp.executelogic()
+cc = ConsumoController('consumo')
+cc.execute_logic()
 
 print("##########################################")
 print("Inicio Cliente")
-tp=ClienteController()
-tp.executelogic()
+cc = ClienteController('cliente')
+cc.execute_logic()
 
 print("##########################################")
 print("Inicio Devolucion")
-tp=DevolucionController()
-tp.executelogic()
+dc = DevolucionController('devolucion')
+dc.execute_logic()
 
 print(datetime.now()-inicio)

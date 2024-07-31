@@ -1,76 +1,58 @@
+from Class.Controller.AbstractController import AbstractController
+from Class.Controller.Herlpers import format_record
 from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
-class StockController:
-    def __init__(self):
-        self.table=tablas["stock"]
-        self.datas=[]
-    def cleanData(self):
-        query=f"""delete from {self.table}"""
-        return query
-    def getData(self):
-        url = 'https://api.bsale.cl/v1/stocks.json?limit=50&offset=0'
-        flag=True
-        headers = {'Accept': 'application/json','access_token':'6de4c01b2a3d7f64153f0e4f96b1c1f51218be56'}
-        while(flag):
+load_dotenv(override=True)
+
+
+class StockController(AbstractController):
+
+    def __init__(self, tabla):
+        super().__init__(tabla)
+
+    def get_data(self):
+        url = os.getenv('API_URL_BASE') + '/stocks.json?limit=50&offset=0'
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            print(url)
-            if("next" in response):
-                flag=True
-                url=response["next"]+''
-            else:
-                flag=False
+            response = json.loads(req.text)
             for current in response["items"]:
+                current['idVariante'] = current["variant"]["id"]
+                del current["variant"]["id"]
+                current['idSucursal'] = current["office"]["id"]
+                del current["office"]["id"]
+                current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
-    def getInsertQuery(self):
-        query=f"""INSERT INTO {self.table}
-                ([quantity]
-                ,[quantityReserved]
-                ,[quantityAvailable]
-                ,[idVariante]
-                ,[idSucursal])
-            VALUES"""
-        i=0
-        for current in self.datas:
-            i=i+1
-            query=query+f"""
-                ({current["quantity"]}
-                ,{current["quantityReserved"]}
-                ,{current["quantityAvailable"]}
-                ,{current["variant"]["id"]}
-                ,{current["office"]["id"]}),"""
-            if i>900:
-                i=0
-                print("insertando 900 stocks")
-                query=query.replace("'None'",'null')
-                query=query[:-1]
-                self.executeQuery(query)
-                query=f"""INSERT INTO {self.table}
-                    ([quantity]
-                    ,[quantityReserved]
-                    ,[quantityAvailable]
-                    ,[idVariante]
-                    ,[idSucursal])
-                VALUES"""
 
-        query=query.replace("'None'",'null')
-        query=query[:-1]
-        self.executeQuery(query)
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
-    def executelogic(self):
+            if "next" in response['items']:
+                url = response["next"]
+            else:
+                break
+
+    def insert_data(self):
+        query = f'INSERT INTO {self.table} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
+        for i, current in enumerate(self.datas, 1):
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+            if i % 900 == 0:
+                print(f"insertando stocks {i}")
+                self.execute_query(query, 'insert', values)
+                values = []
+        if values:
+            self.execute_query(query, 'insert', values)
+
+    def execute_logic(self):
         print("Limpiando stock")
-        self.executeQuery(self.cleanData())
+        self.clear_table()
         print("Obteniendo stock")
-        self.getData()
+        self.get_data()
         print("Generando Query")
-        query=self.getInsertQuery()
-        #self.executeQuery(query)
+        self.insert_data()

@@ -1,0 +1,5 @@
+__pycache__
+.idea/
+bsale-env
+.env
+venv
