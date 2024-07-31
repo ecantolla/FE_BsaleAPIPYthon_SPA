@@ -33,15 +33,13 @@ class RecepcionController(AbstractController):
                 current['idUsuario'] = current["user"]["id"]
                 del current["office"]
                 del current["user"]
-                try:
-                    for detail in current["details"]["items"]:
-                        detail['idVariante'] = detail["variant"]["id"]
-                        detail['idRecepcion'] = current['id']
+                for detail in current["details"]["items"]:
+                    detail['idVariante'] = detail["variant"]["id"]
+                    detail['idRecepcion'] = current['id']
 
-                        detail = format_record(detail, self.table2_cols, self.table2_ctypes)
-                        self.table2_datas.append(detail)
-                except:
-                    breakpoint()
+                    detail = format_record(detail, self.table2_cols, self.table2_ctypes)
+                    self.table2_datas.append(detail)
+
                 current['details'] = current["details"]["href"]
                 current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)

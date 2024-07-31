@@ -28,18 +28,17 @@ class DevolucionController(AbstractController):
             response = json.loads(req.text)
             
             for current in response["items"]:
+                items_details = None
                 if 'details' in current:
                     items_details = current['details']['items']
                     current['details'] = current['details']['href']
+                else:
+                    current['details'] = None
 
-                if 'office' in current:
-                    current['idOficina'] = current['office']['id']
-                if 'user' in current:
-                    current['idUsuario'] = current['user']['id']
-                if 'reference_document' in current:
-                    current['idDocumentoReferencia'] = current['reference_document']['id']
-                if 'credit_note' in current:
-                    current['idDocumentoCredito'] = current['credit_note']['id']
+                current['idOficina'] = current['office']['id'] if 'office' in current else None
+                current['idUsuario'] = current['user']['id'] if 'user' in current else None
+                current['idDocumentoReferencia'] = current['reference_document']['id'] if 'reference_document' in current else None
+                current['idDocumentoCredito'] = current['credit_note']['id'] if 'credit_note' in current else None
                 
                 current_dev = format_record(current, self.cols, self.ctypes)
                 if not self.row_exists(current_dev):
@@ -50,6 +49,8 @@ class DevolucionController(AbstractController):
                     if 'documentDetailId' in detail:
                         detail['idDetalleDocumento'] = detail['documentDetailId']
                         del detail['documentDetailId']
+                    else:
+                        detail['idDetalleDocumento'] = None
                     current_detail = format_record(detail, self.d_cols, self.dc_types)
                     if not self.row_exists(current_detail, self.details):
                         self.detail_values.append(current_detail)
