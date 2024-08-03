@@ -52,6 +52,10 @@ class DocumentoController(AbstractController):
 
                 for detail in current["details"]["items"]:
                     detail["idDocumento"] = current["id"]
+                    detail["line"] = detail["lineNumber"]
+                    detail["idVariante"] = detail["variant"]["id"]
+                    detail["descriptionVariante"] = detail["variant"]["description"]
+                    detail["codeVariante"] = detail["variant"]["code"]
                     detail = format_record(detail, self.table3_cols, self.table3_ctypes)
                     self.table3_datas.append(detail)
 
