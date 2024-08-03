@@ -2,6 +2,7 @@ from Class.Controller.ClienteController import ClienteController
 from Class.Controller.ConsumoController import ConsumoController
 from Class.Controller.DescuentoController import DescuentoController
 from Class.Controller.DevolucionController import DevolucionController
+from Class.Controller.DocumentoController import DocumentoController
 from Class.Controller.ListaPrecioController import ListaPrecioController
 from Class.Controller.ProductController import ProductController
 from Class.Controller.ProductTypeController import ProductTypeController
@@ -37,6 +38,11 @@ print("##########################################")
 print("Inicio Tipo Libro")
 tlc = TipoLibroController('tipoLibro')
 tlc.execute_logic()
+
+print("##########################################")
+print("Inicio Documento")
+dc = DocumentoController('documento')
+dc.execute_logic()
 
 print("##########################################")
 print("Inicio Tipo Documento")

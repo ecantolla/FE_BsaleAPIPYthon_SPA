@@ -11,10 +11,9 @@ load_dotenv(override=True)
 class UsuarioController(AbstractController):
     def __init__(self, tabla):
         super().__init__(tabla)
-        self.offset = 0
 
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/users.json?limit=50&offset=' + str(self.offset)
+        url = os.getenv('API_URL_BASE') + '/users.json?limit=50'
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)

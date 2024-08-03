@@ -36,7 +36,7 @@ class ConnectionHandler:
         else:
             result = cursor.execute(query)
 
-        if query_type in ('insert', 'truncate'):
+        if query_type in ('insert', 'truncate', 'delete'):
             cursor.commit()
         elif query_type == 'select':
             result = cursor.fetchall() if result else None

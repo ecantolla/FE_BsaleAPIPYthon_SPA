@@ -26,7 +26,8 @@ class VarianteController(AbstractController):
         self.data_attribs = []
     
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/variants.json?expand=[attribute_values,product,costs]&limit=50&offset=0'
+        params = "&expand=[attribute_values,product,costs]"
+        url = os.getenv('API_URL_BASE') + '/variants.json?&limit=50&offset=0' + params
         headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
 
         while True:
@@ -54,7 +55,9 @@ class VarianteController(AbstractController):
                 for att in current["attribute_values"]["items"]:
                     att['idVariante'] = current['id']
                     att['idAtributo'] = att['attribute']['id']
-                    att['description'] = att['description'].replace("'","''")
+                    if att['description']:
+                        att['description'] = att['description'].replace("'","''")
+
                     current_attrib = format_record(att, self.a_cols, self.ac_types)
                     if not self.row_exists(current_attrib, self.attTable):
                         self.data_attribs.append(current_attrib)                
@@ -66,8 +69,8 @@ class VarianteController(AbstractController):
                 if not self.row_exists(current_product, self.productTable):
                     self.data_products.append(current_product)
                 
-            if "next" in response['items']:
-                url = response["next"] + '&expand=[attribute_values,product,costs]'
+            if "next" in response:
+                url = response["next"] + params
             else:
                 break
 

@@ -1,6 +1,11 @@
+import numpy as np
+
+from Class.Controller.AbstractController import AbstractController
+from Class.Controller.Herlpers import get_col_dtype, format_record
 from Class.Models.tablas import tablas
 from Class.ConnectionHandler import ConnectionHandler
 from datetime import datetime
+from dateutil.relativedelta import relativedelta
 import requests
 import json
 import os
@@ -8,265 +13,125 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-class DocumentoController:
-    def __init__(self,inicio,fin):
-        self.table=tablas["documento"]
-        self.vendedor=tablas["vendedor"]
-        self.detail=tablas["detalleDocumento"]
-        self.inicio=inicio
-        self.fin=fin
-        self.datas=[]
-    def cleanData(self):
-        pass
-    def getData(self):
-        url = os.getenv('API_URL_BASE') + '/documents.json?limit=50&offset=0&emissiondaterange=['+str(self.inicio)+' ,'+str(self.fin)+']&expand=[details,sellers]'
-        #1676430000.0 , 1678158000.0
-        flag=True
-        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
-        while(flag):
+
+class DocumentoController(AbstractController):
+    def __init__(self, tabla):
+        super().__init__(tabla)
+        self.table2 = tablas["vendedor"]
+        c_t2 = np.array([ct for ct in get_col_dtype(self.table2)])
+        self.table2_cols = c_t2[:, 0].tolist()
+        self.table2_ctypes = c_t2[:, 1].tolist()
+        self.table2_datas = []
+        self.table3 = tablas["detalleDocumento"]
+        c_t3 = np.array([ct for ct in get_col_dtype(self.table3)])
+        self.table3_cols = c_t3[:, 0].tolist()
+        self.table3_ctypes = c_t3[:, 1].tolist()
+        self.table3_datas = []
+        now = datetime.now()
+        self.inicio = now - relativedelta(months=6)
+        self.inicio = int(self.inicio.timestamp())
+        self.fin = int(now.timestamp())
+        self.doc_ids = []
+        
+    def clear_table(self, table=None):
+        tbl = self.table if table is None else table
+        id_field = '[id]' if table is None else '[idDocumento]'
+        query = f"DELETE FROM {tbl} where {id_field} in "
+        query += '(' + ','.join(self.doc_ids) + ');'
+        self.execute_query(query, "delete")
+
+    def get_data(self):
+        params = f"&expand=[details,sellers]&emissiondaterange=[{self.inicio},{self.fin}]"
+        url = os.getenv('API_URL_BASE') + "/documents.json?limit=50&offset=0" + params
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
+        while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
-            print(url)
-            if("next" in response):
-                flag=True
-                url=response["next"]+'&emissiondaterange=['+str(self.inicio)+' ,'+str(self.fin)+']&expand=[details,sellers]'
+            response = json.loads(req.text)
+            for current in response["items"]:
+                self.doc_ids.append(str(current["id"]))
+
+                for detail in current["details"]["items"]:
+                    detail["idDocumento"] = current["id"]
+                    detail = format_record(detail, self.table3_cols, self.table3_ctypes)
+                    self.table3_datas.append(detail)
+
+                vend = current["sellers"]["items"][0]
+                vend["idUsuario"] = vend["id"]
+                vend["idDocumento"] = current["id"]
+                vend = format_record(vend, self.table2_cols, self.table2_ctypes)
+                self.table2_datas.append(vend)
+
+                current['idTipoDocumento'] = current["document_type"]["id"]
+                current['idClient'] = current["client"]["id"] if 'client' in current else None
+                current['idSucursal'] = current["office"]["id"]
+                current['idUsuario'] = current["user"]["id"]
+                current['details'] = current["details"]["href"]
+                current['sellers'] = current["sellers"]["href"]
+                current['attributes'] = current["attributes"]["href"]
+                current = format_record(current, self.cols, self.ctypes)
+                self.datas.append(current)
+
+            if "next" in response:
+                url = response["next"] + params
             else:
-                flag=False
-            if "items in response":
-                for current in response["items"]:
-                    self.datas.append(current)
-    def setVendedorDefault(self):
-        return f"""
-            INSERT INTO {tablas["vendedor"]}
-                ([idUsuario]
-                ,[firstName]
-                ,[lastName]
-                ,[idDocumento])
-            VALUES
-        """
-    def setDocumentDefault(self):
-        return f"""
-            INSERT INTO {self.table}
-            ([id]
-            ,[emissionDate]
-            ,[expirationDate]
-            ,[generationDate]
-            ,[number]
-            ,[serialNumber]
-            ,[totalAmount]
-            ,[netAmount]
-            ,[taxAmount]
-            ,[exemptAmount]
-            ,[notExemptAmount]
-            ,[exportTotalAmount]
-            ,[exportNetAmount]
-            ,[exportTaxAmount]
-            ,[exportExemptAmount]
-            ,[commissionRate]
-            ,[commissionNetAmount]
-            ,[commissionTaxAmount]
-            ,[commissionTotalAmount]
-            ,[percentageTaxWithheld]
-            ,[purchaseTaxAmount]
-            ,[purchaseTotalAmount]
-            ,[address]
-            ,[municipality]
-            ,[city]
-            ,[urlTimbre]
-            ,[urlPublicView]
-            ,[urlPdf]
-            ,[urlPublicViewOriginal]
-            ,[urlPdfOriginal]
-            ,[token]
-            ,[state]
-            ,[urlXml]
-            ,[informedSii]
-            ,[responseMsgSii]
-            ,[idTipoDocumento]
-            ,[idClient]
-            ,[idSucursal]
-            ,[idUsuario]
-            ,[details]
-            ,[sellers]
-            ,[attributes])
-        VALUES
-        """
-    def setDocumentData(self,current):
-        client='null'
-        if "client" in current:
-            client=current["client"]["id"]
-        return f"""
-            ({current["id"]}
-           ,{current["emissionDate"]}
-           ,{current["expirationDate"]}
-           ,{current["generationDate"]}
-           ,{current["number"]}
-           ,{current["serialNumber"]}
-           ,{current["totalAmount"]}
-           ,{current["netAmount"]}
-           ,{current["taxAmount"]}
-           ,{current["exemptAmount"]}
-           ,{current["notExemptAmount"]}
-           ,{current["exportTotalAmount"]}
-           ,{current["exportNetAmount"]}
-           ,{current["exportTaxAmount"]}
-           ,{current["exportExemptAmount"]}
-           ,{current["commissionRate"]}
-           ,{current["commissionNetAmount"]}
-           ,{current["commissionTaxAmount"]}
-           ,{current["commissionTotalAmount"]}
-           ,{current["percentageTaxWithheld"]}
-           ,{current["purchaseTaxAmount"]}
-           ,{current["purchaseTotalAmount"]}
-           ,'{current["address"]}'
-           ,'{current["municipality"]}'
-           ,'{current["city"]}'
-           ,'{current["urlTimbre"]}'
-           ,'{current["urlPublicView"]}'
-           ,'{current["urlPdf"]}'
-           ,'{current["urlPublicViewOriginal"]}'
-           ,'{current["urlPdfOriginal"]}'
-           ,'{current["token"]}'
-           ,{current["state"]}
-           ,'{current["urlXml"]}'
-           ,{current["informedSii"]}
-           ,'{current["responseMsgSii"]}'
-           ,{current["document_type"]["id"]}
-           ,{client}
-           ,{current["office"]["id"]}
-           ,{current["user"]["id"]}
-           ,'{current["details"]["href"]}'
-           ,'{current["sellers"]["href"]}'
-           ,'{current["attributes"]["href"]}'),"""
-    def setDetailDefault(self):
-        return f"""
-            INSERT INTO {self.detail}
-                 ([id]
-                ,[line]
-                ,[quantity]
-                ,[netUnitValue]
-                ,[totalUnitValue]
-                ,[netAmount]
-                ,[taxAmount]
-                ,[totalAmount]
-                ,[netDiscount]
-                ,[totalDiscount]
-                ,[idVariante]
-                ,[descriptionVariante]
-                ,[codeVariante]
-                ,[note]
-                ,[relatedDetailId]
-                ,[idDocumento])
-            VALUES
-        """
-    def getDetalleData(self,current,document):
-        return f"""
-            ({current["id"]}
-           ,{current["lineNumber"]}
-           ,{current["quantity"]}
-           ,{current["netUnitValue"]}
-           ,{current["totalUnitValue"]}
-           ,{current["netAmount"]}
-           ,{current["taxAmount"]}
-           ,{current["totalAmount"]}
-           ,{current["netDiscount"]}
-           ,{current["totalDiscount"]}
-           ,{current["variant"]["id"]}
-           ,'{current["variant"]["description"]}'
-           ,'{current["variant"]["code"]}'
-           ,'{current["note"]}'
-           ,{current["relatedDetailId"]}
-           ,{document}),"""
-    def setVendedordata(self,data,documento):
-        return f"""
-            ({data["id"]}
-           ,'{data["firstName"]}'
-           ,'{data["lastName"]}'
-           ,{documento}),"""
+                break
 
+    def insert_data(self):
+        query = f'INSERT INTO {self.table} '
+        query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
+        query += ' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
+        values = []
+        for i, current in enumerate(self.datas, 1):
+            vals = tuple([current[c] for c in self.cols])
+            values.append(vals)
+            if i % 900 == 0:
+                print(f"insertando documento {i}")
+                self.execute_query(query, 'insert', values)
+                values = []
+        if values:
+            print(f"insertando documento")
+            self.execute_query(query, 'insert', values)
 
-    def getInsertQuery(self):
-        inicio=datetime.now()
-        query=self.setDocumentDefault() 
-        detailQuery=self.setDetailDefault()
-        i=0
-        contDetail=0
-        documentDelete='delete from '+self.table+' where id in (0'
-        vendedorDelete="delete from "+tablas["vendedor"]+ " where idDocumento in (0"
-        vendedorQuery=self.setVendedorDefault()
-        count=0
-        for current in self.datas:
-            i=i+1
-            count=count+1
-            print("documento",count)
-            query=query+self.setDocumentData(current)
-            vendedorDelete=vendedorDelete+','+str(current["id"])
-            documentDelete=documentDelete+','+str(current["id"])
-            vendedorQuery=vendedorQuery+self.setVendedordata(current["sellers"]["items"][0],current["id"])
-            #eliminar detalle documento
-            self.executeQuery("delete from "+self.detail+ " where idDocumento="+str(current["id"]))
-            for detail in current["details"]["items"]:
-                print("procesando detalle")
-                contDetail=contDetail+1
-                detailQuery=detailQuery+self.getDetalleData(detail,current["id"])
-                if contDetail>900:
-                    print(datetime.now()-inicio)
-                    contDetail=0
-                    detailQuery=detailQuery[:-1]
-                    detailQuery.replace("'None'",'null')
-                    query=query.replace('None','null')
-                    #print(detailQuery)
-                    print("Ingresando 900 detalles")
-                    self.executeQuery(detailQuery)
-                    detailQuery=self.setDetailDefault()
-            if i>900:
-                i=0
-                documentDelete=documentDelete+")"
-                self.executeQuery(documentDelete)
-                vendedorDelete=vendedorDelete+')'
-                self.executeQuery(vendedorDelete)
-                documentDelete='delete from '+self.table+' where id in (0'
-                vendedorDelete="delete from "+tablas["vendedor"]+ " where idDocumento in (0"
-                file=open("testVendedor.txt","w")
-                file.write(vendedorDelete)
-                file.close()
+        vend_query = f'INSERT INTO {self.table2} '
+        vend_query += '(' + ','.join([f'[{c}]' for c in self.table2_cols]) + ')'
+        vend_query += f' VALUES (' + ','.join(['?' for c in range(len(self.table2_cols))]) + ')'
+        vend_values = []
+        for i, current in enumerate(self.table2_datas, 1):
+            vals = tuple([current[c] for c in self.table2_cols])
+            vend_values.append(vals)
+            if i % 900 == 0:
+                print(f"insertando vendedor {i}")
+                self.execute_query(vend_query, 'insert', vend_values)
+                vend_values = []
+        if vend_values:
+            print(f"insertando vendedores")
+            self.execute_query(vend_query, 'insert', vend_values)
 
-                vendedorQuery=vendedorQuery.replace("'None'",'null')
-                vendedorQuery=vendedorQuery.replace('None','null')
-                vendedorQuery=vendedorQuery[:-1]
-                self.executeQuery(vendedorQuery)                
-                vendedorQuery=self.setVendedorDefault()
-                
-                query=query.replace("'None'",'null')
-                query=query.replace('None','null')
-                query=query[:-1]                
-                print("Ingresando 900 documentos")
-                self.executeQuery(query)
-                print(datetime.now()-inicio)
-                query=self.setDocumentDefault()
+        detail_query = f'INSERT INTO {self.table3} '
+        detail_query += '(' + ','.join([f'[{c}]' for c in self.table3_cols]) + ')'
+        detail_query += f' VALUES (' + ','.join(['?' for c in range(len(self.table3_cols))]) + ')'
+        detail_values = []
+        for i, current in enumerate(self.table3_datas, 1):
+            vals = tuple([current[c] for c in self.table3_cols])
+            detail_values.append(vals)
+            if i % 900 == 0:
+                print(f"insertando detalle {i}")
+                self.execute_query(detail_query, 'insert', detail_values)
+                detail_values = []
+        if detail_values:
+            print(f"insertando detalle")
+            self.execute_query(detail_query, 'insert', detail_values)
 
-        vendedorQuery=vendedorQuery.replace("'None'",'null')
-        vendedorQuery=vendedorQuery.replace('None','null')
-        vendedorQuery=vendedorQuery[:-1]
-        query=query.replace("'None'",'null')
-        query=query.replace('None','null')
-        query=query[:-1]
-        documentDelete=documentDelete+")"
-        self.executeQuery(vendedorQuery)                
-        self.executeQuery(documentDelete)
-        self.executeQuery(query)
-        detailQuery=detailQuery[:-1]
-        detailQuery.replace("'None'",'null')
-        query=query.replace('None','null')
-        self.executeQuery(detailQuery)
-        detailQuery=self.setDetailDefault()
-        return query
-    def executeQuery(self,query):
-        conn=ConnectionHandler()
-        conn.connect()
-        conn.executeQuery(query)
-        conn.commitChange()
-        conn.closeConnection()
+    def execute_logic(self):
+        print("Obteniendo documentos")
+        self.get_data()
+        print("Limpiando Documentos")
+        self.clear_table()
+        self.clear_table(self.table2)
+        self.clear_table(self.table3)
+        print("Generando Query")
+        self.insert_data()
+
     def getDocument(self):
         file=open("documentosProblema.txt",'w')
         documents=[812,994,962,998,796,791,803,993,796,797,790,812,799,993,947,811,810,1047,994,998,998,946]
@@ -293,37 +158,7 @@ class DocumentoController:
             except:
                 file.write(str(currentDocument)+' url '+url+'\n')
                 print(currentDocument, url)
-    
-    def executelogic(self):
-        print("Limpiando Documentos")
-#        self.executeQuery(self.cleanData())
-        print("Obteniendo documentos")
-        self.getData()
-        print("Generando Query")
-        query=self.getInsertQuery()
-#        self.executeQuery(query)]\
-    def patchDocument(self):
-        conn=ConnectionHandler()
-        conn.connect()
-        query=self.getNoDocument()
-        result=conn.executeQuery(query)
-        docs=[]
-        for current in result:
-#            docs.append(current)
-            #limpiar datos actuales de detalle y vendedor
-#            queryDetails="delete from "+tablas['detalleDocumento'] + " where idDocumento="+str(current[0])
- #           querySeller="delete from "+tablas['vendedor'] + " where idDocumento="+str(current[0])
-  #          conn.executeQuery(queryDetails)
-   #         conn.executeQuery(querySeller)
-            data=self.getDataPatch(current[0])
-            docs.append(data)
-     #       print(data['number'])
-            #Ingresar documento
-            #ingresar detalles
-            #ingresar vendedor
-            #print(current[0]+"\\n"+queryDetails+"\\n"+querySeller)
-        self.datas=docs
-        self.getInsertQuery()
+
     def getNoDocument(self):
         return f'''
         
@@ -355,6 +190,7 @@ class DocumentoController:
         and doc.id is null
         
         '''
+
     def getDataPatch(self,number):
         url = os.getenv('API_URL_BASE') + '/documents.json?number='+str(number)+'&expand=[details,sellers]'
         #1676430000.0 , 1678158000.0
@@ -368,3 +204,22 @@ class DocumentoController:
             for current in response["items"]:
                 result=current
         return result
+
+    def patchDocument(self):
+        conn=ConnectionHandler()
+        conn.connect()
+        query=self.getNoDocument()
+        result=conn.executeQuery(query)
+        docs=[]
+        for current in result:
+            # docs.append(current)
+            # limpiar datos actuales de detalle y vendedor
+            # queryDetails="delete from "+tablas['detalleDocumento'] + " where idDocumento="+str(current[0])
+            # querySeller="delete from "+tablas['vendedor'] + " where idDocumento="+str(current[0])
+            # conn.executeQuery(queryDetails)
+            # conn.executeQuery(querySeller)
+            data = self.getDataPatch(current[0])
+            docs.append(data)
+
+        self.datas = docs
+        self.insert_data()

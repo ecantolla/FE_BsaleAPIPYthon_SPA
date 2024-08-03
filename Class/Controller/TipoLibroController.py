@@ -24,7 +24,7 @@ class TipoLibroController(AbstractController):
                 current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
 
-            if "next" in response['items']:
+            if "next" in response:
                 url = response["next"]
             else:
                 break
