@@ -12,7 +12,7 @@ class ConnectionHandler:
 
     def connect(self):
         try:
-            connection_string = f'Driver={{ODBC Driver 18 for SQL Server}};' \
+            connection_string = f'Driver={{SQL Server}};' \
                 f'SERVER={self.host};' \
                 f'DATABASE={self.database};' \
                 f'UID={self.user};' \
