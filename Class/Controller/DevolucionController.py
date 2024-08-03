@@ -21,7 +21,8 @@ class DevolucionController(AbstractController):
         self.detail_values = []
 
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/returns.json?limit=50&expand=[details]'
+        params = "&expand=[details]"
+        url = os.getenv('API_URL_BASE') + '/returns.json?limit=50' + params
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
@@ -56,7 +57,7 @@ class DevolucionController(AbstractController):
                         self.detail_values.append(current_detail)
             
             if "next" in response:
-                url = response["next"]+'&expand=[details]'
+                url = response["next"] + params
             else:
                 break
 

@@ -22,7 +22,8 @@ class ConsumoController(AbstractController):
         self.table2_datas = []
 
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/stocks/consumptions.json?limit=50&offset=0&expand=[details]'
+        params = "&expand=[details]"
+        url = os.getenv('API_URL_BASE') + '/stocks/consumptions.json?limit=50&offset=0' + params
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
@@ -45,8 +46,8 @@ class ConsumoController(AbstractController):
                 current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
 
-            if "next" in response['items']:
-                url = response["next"]
+            if "next" in response:
+                url = response["next"] + params
             else:
                 break
 
@@ -58,7 +59,7 @@ class ConsumoController(AbstractController):
         for i, current in enumerate(self.datas, 1):
             vals = tuple([current[c] for c in self.cols])
             values.append(vals)
-            if i % 900 == 0:
+            if i % 50 == 0:
                 print(f"insertando consumo {i}")
                 self.execute_query(query, 'insert', values)
                 values = []
@@ -72,7 +73,7 @@ class ConsumoController(AbstractController):
         for i, current in enumerate(self.table2_datas, 1):
             vals = tuple([current[c] for c in self.table2_cols])
             values.append(vals)
-            if i % 900 == 0:
+            if i % 50 == 0:
                 print(f"insertando detalle consumo {i}")
                 self.execute_query(query, 'insert', values)
                 values = []

@@ -18,7 +18,8 @@ def get_col_dtype(table_name):
 
 
 def format_record(datas, cols, dtypes):
-    new_data = {k: v for k, v in datas.items() if k in cols}
+    new_data = {k: datas.get(k, None) for k in cols}
+    # new_data = {k: v for k, v in datas.items() if k in cols}
 
     for col, dtype in zip(cols, dtypes):
         if new_data[col] is not None:

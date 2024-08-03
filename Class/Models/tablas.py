@@ -8,7 +8,7 @@ tablas = {
     "detalle_devolucion": "detalle_devolucion_aux",     # unico: field - id.
     "detalleDocumento": "detalle_documento",        # unico: field - id. - idvariante,codevariante,iddocumento
     "devolucion": "devolucion_aux",         # unico: field - id ### [idOficina],[idUsuario],[idDocumentoReferencia],[idDocumentoCredito]
-    "documento": "documento",       # no es unico pero tipo_documento lo es
+    "documento": "DOCUMENTO",       # no es unico pero tipo_documento lo es
     "listaPrecio": "lista_precio_aux",      # unico: field - id.    #### MIGRADA v0 A v1
     "producto": "PRODUCTO",     #### MIGRADA v0 A v1
     "recepcionDetalle": "recepcion_detalle_aux",    # la trae el BOT y RecepcionController inserta esta info a la DB

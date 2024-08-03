@@ -22,7 +22,8 @@ class ListaPrecioController(AbstractController):
         self.dlp_datas = []
 
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/price_lists.json?limit=50&expand=[coin,details]'
+        params = "&expand=[coin,details]"
+        url = os.getenv('API_URL_BASE') + '/price_lists.json?limit=50' + params
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
@@ -39,8 +40,8 @@ class ListaPrecioController(AbstractController):
                 current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
 
-            if "next" in response['items']:
-                url = response["next"]
+            if "next" in response:
+                url = response["next"] + params
             else:
                 break
 

@@ -23,7 +23,8 @@ class RecepcionController(AbstractController):
         self.table2_datas = []
 
     def get_data(self):
-        url = os.getenv('API_URL_BASE') + '/stocks/receptions.json?limit=50&offset=0&expand=[details]'
+        params = "&expand=[details]"
+        url = os.getenv('API_URL_BASE') + '/stocks/receptions.json?limit=50&offset=0' + params
         headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
         while True:
             req = requests.get(url, headers=headers)
@@ -44,8 +45,8 @@ class RecepcionController(AbstractController):
                 current = format_record(current, self.cols, self.ctypes)
                 self.datas.append(current)
 
-            if "next" in response['items']:
-                url = response["next"]
+            if "next" in response:
+                url = response["next"] + params
             else:
                 break
 
