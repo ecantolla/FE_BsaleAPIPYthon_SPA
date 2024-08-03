@@ -12,7 +12,7 @@ class ConnectionHandler:
 
     def connect(self):
         try:
-            connection_string = f'Driver={{ODBC Driver 18 for SQL Server}};' \
+            connection_string = f'Driver={{SQL Server}};' \
                 f'SERVER={self.host};' \
                 f'DATABASE={self.database};' \
                 f'UID={self.user};' \
@@ -31,7 +31,7 @@ class ConnectionHandler:
             if query_type == 'select':
                 result = cursor.execute(query, values)
             else:
-                cursor.fast_executemany = True
+                # cursor.fast_executemany = True
                 result = cursor.executemany(query, values)
         else:
             result = cursor.execute(query)
