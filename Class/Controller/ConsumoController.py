@@ -29,10 +29,7 @@ class ConsumoController(AbstractController):
             req = requests.get(url, headers=headers)
             response = json.loads(req.text)
             for current in response["items"]:
-                if "imagestionCcDescription" in current:
-                    current["imagestionCcDescription"] = current["imagestionCcDescription"]
-                else:
-                    current["imagestionCcDescription"] = None
+                current["imagestionCcDescription"] = current["imagestionCcdescription"]
                 current['idOficina'] = current["office"]["id"]
                 current['idUsuario'] = current["user"]["id"]
                 for detail in current["details"]["items"]:
