@@ -1,22 +1,22 @@
 tablas = {
-    "atributo": "atributo_aux",
+    "atributo": "atributo",
     "cliente": "cliente",       # unico: field - code  #### MIGRADA v0 A v1
-    "consumo": "consumo_aux",       # id needed: cl/io + current id
-    "consumoDetalle": "detalle_consumo_aux",    # unico: field - id.
-    "descuento": "descuento_aux",       # unico: field - id.
-    "detalleListaPrecio": "DETALLE_LISTA_PRECIO_aux",       # unico: field - id.
-    "detalle_devolucion": "detalle_devolucion_aux",     # unico: field - id.
+    "consumo": "consumo",       # id needed: cl/io + current id
+    "consumoDetalle": "detalle_consumo",    # unico: field - id.
+    "descuento": "descuento",       # unico: field - id.
+    "detalleListaPrecio": "DETALLE_LISTA_PRECIO",       # unico: field - id.
+    "detalle_devolucion": "detalle_devolucion",     # unico: field - id.
     "detalleDocumento": "detalle_documento",        # unico: field - id. - idvariante,codevariante,iddocumento
-    "devolucion": "devolucion_aux",         # unico: field - id ### [idOficina],[idUsuario],[idDocumentoReferencia],[idDocumentoCredito]
+    "devolucion": "devolucion",         # unico: field - id ### [idOficina],[idUsuario],[idDocumentoReferencia],[idDocumentoCredito]
     "documento": "DOCUMENTO",       # no es unico pero tipo_documento lo es
-    "listaPrecio": "lista_precio_aux",      # unico: field - id.    #### MIGRADA v0 A v1
+    "listaPrecio": "lista_precio",      # unico: field - id.    #### MIGRADA v0 A v1
     "producto": "PRODUCTO",     #### MIGRADA v0 A v1
-    "recepcionDetalle": "recepcion_detalle_aux",    # la trae el BOT y RecepcionController inserta esta info a la DB
-    "recepcion": "recepcion_aux",       # unico: field - id, ifOficina(Sucursal), idUsuario
+    "recepcionDetalle": "DETALLE_RECEPCION",    # la trae el BOT y RecepcionController inserta esta info a la DB
+    "recepcion": "recepcion",       # unico: field - id, ifOficina(Sucursal), idUsuario
     "stock": "stock",       # es un snapshot del dia
-    "sucursal": "sucursal_aux",         # unico: field - id
-    "tipoDocumento": "Tipo_Documento_aux",      # unico field - id. Aplica agregar sufijo cl por api antigua para id unico
-    "tipoLibro": "tipoLibro_aux",       #### MIGRADA v0 A v1
+    "sucursal": "sucursal",         # unico: field - id
+    "tipoDocumento": "Tipo_Documento",      # unico field - id. Aplica agregar sufijo cl por api antigua para id unico
+    "tipoLibro": "tipo_libro",       #### MIGRADA v0 A v1
     "tipoProducto": "tipo_producto",        # CATEG PROD. Y VARIANTE        #### MIGRADA v0 A v1
     "valorAtributo": "valor_atributo",      # unico: field - id - idAtributo,idVariante
     "variante": "variante",     # unico: field - id.
@@ -50,31 +50,6 @@ old_tablas = {
     "tipoLibro": "OLD1807_TIPO_LIBRO"
 }
 
-#tablas={
-#    "detalle_devolucion": "detalle_devolucion_aux",
-#    "devolucion": "devolucion_aux",
-#    "cliente": "cliente_aux",    
-#    "vendedor": "vendedor",
-#    "documento": "documento",
-#    "detalleDocumento": "detalle_documento",
-#    "consumo": "consumo_aux",
-#    "consumoDetalle": "detalle_consumo_aux",
-##    "recepcionDetalle": "recepcion_detalle_aux",
-#    "recepcion": "recepcion_aux",
-#    "stock": "stock",
-#   "detalleListaPrecio": "DETALLE_LISTA_PRECIO_aux",
-#  "listaPrecio": "lista_precio_aux",
-# "valorAtributo": "valor_atributo",
-#    "producto": "PRODUCTO",
-#    "variante": "variante",
-#    "atributo": "atributo_aux",
-#    "tipoProducto": "tipo_producto",
-#    "tipoDocumento": "Tipo_Documento_aux",
-#    "sucursal": "sucursal_aux",
-#    "usuario": "usuario_aux",
-#    "descuento": "descuento_aux",
-#    "tipoLibro": "tipoLibro_aux"
-#}
 
 def createSucursal(id,name,description,address,latitude,longitude,isVirtual,country,municipality,city,zipCode,email,costCenter,state,imagestionCellarId,defaultPriceList):
     return f"""
