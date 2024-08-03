@@ -31,7 +31,7 @@ class ConnectionHandler:
             if query_type == 'select':
                 result = cursor.execute(query, values)
             else:
-                cursor.fast_executemany = True
+                # cursor.fast_executemany = True
                 result = cursor.executemany(query, values)
         else:
             result = cursor.execute(query)
