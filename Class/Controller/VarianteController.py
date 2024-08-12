@@ -28,23 +28,20 @@ class VarianteController(AbstractController):
     def get_data(self):
         params = "&expand=[attribute_values,product,costs]"
         url = os.getenv('API_URL_BASE') + '/variants.json?&limit=50&offset=0' + params
-        headers = {'Accept': 'application/json','access_token':os.getenv('API_KEY')}
+        headers = {'Accept': 'application/json', 'access_token': os.getenv('API_KEY')}
 
         while True:
             req = requests.get(url, headers=headers)
-            response=json.loads(req.text)
+            response = json.loads(req.text)
             
             for current in response["items"]:
-                if 'product' in current:
-                    current['idProducto'] = current['product']['id']
-                if 'attribute_values' in current:
-                    current['atributos'] = current['attribute_values']['href']
+                current['idProducto'] = current['product']['id'] if 'product' in current else None
+                current['atributos'] = current['attribute_values']['href'] if 'attribute_values' in current else None
                 if 'costs' in current:
                     current['costos'] = os.getenv('API_URL_BASE') + '/variants/' + str(current['id']) + '/costs.json'
-                    if "averageCost" in current["costs"]:
-                        current["costoPromedio"] = current["costs"]["averageCost"]
+                    current["costoPromedio"] = current["costs"]["averageCost"] if "averageCost" in current["costs"] else None
 
-                current['barCode'] = current["barCode"].replace("'","")
+                current['barCode'] = current["barCode"].replace("'", "")
 
                 #aqui se inserta en el array de variante
                 current_variant = format_record(current, self.cols, self.ctypes)
@@ -75,7 +72,8 @@ class VarianteController(AbstractController):
                 break
 
     def insert_data(self):
-        #insert data for varianate table
+        self.datas = [dict(t) for t in {tuple(d.items()) for d in self.datas}]
+        # insert data for variante table
         query = f'INSERT INTO {self.table} '
         query += '(' + ','.join([f'[{c}]' for c in self.cols]) + ')'
         query += f' VALUES (' + ','.join(['?' for c in range(len(self.cols))]) + ')'
@@ -91,6 +89,7 @@ class VarianteController(AbstractController):
         if values:
             self.execute_query(query, 'insert', values)
 
+        self.data_attribs = [dict(t) for t in {tuple(d.items()) for d in self.data_attribs}]
         #insert data for attribute table
         query2 = f'INSERT INTO {self.attTable} '
         query2 += '(' + ','.join([f'[{c}]' for c in self.a_cols]) + ')'
@@ -107,6 +106,8 @@ class VarianteController(AbstractController):
         if values2:
             self.execute_query(query2, 'insert', values2)
 
+
+        self.data_products = [dict(t) for t in {tuple(d.items()) for d in self.data_products}] # remove duplciated items
         #insert data for product table
         query3 = f'INSERT INTO {self.productTable} '
         query3 += '(' + ','.join([f'[{c}]' for c in self.p_cols]) + ')'
