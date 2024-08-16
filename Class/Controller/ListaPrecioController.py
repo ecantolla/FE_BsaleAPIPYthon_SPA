@@ -55,6 +55,7 @@ class ListaPrecioController(AbstractController):
             values.append(vals)
         self.execute_query(query, 'insert', values)
 
+
         query = f'INSERT INTO {self.table2} '
         query += '(' + ','.join([f'[{c}]' for c in self.dlp_cols]) + ')'
         query += f' VALUES (' + ','.join(['?' for c in range(len(self.dlp_cols))]) + ')'
@@ -63,6 +64,20 @@ class ListaPrecioController(AbstractController):
             vals = tuple([details[c] for c in self.dlp_cols])
             values.append(vals)
         self.execute_query(query, 'insert', values)
+
+    def del74(self):
+        query = """
+        DELETE FROM DETALLE_LISTA_PRECIO
+        WHERE idListaPrecio = 7
+        AND idVariante IN (
+            SELECT idVariante
+            FROM DETALLE_LISTA_PRECIO
+            WHERE idListaPrecio IN (7, 4)
+            GROUP BY idVariante
+            HAVING COUNT(*) > 1
+        );
+        """
+        self.execute_query(query, 'delete')
 
     def execute_logic(self):
         print(f"Limpiando {self.table}")
@@ -73,3 +88,4 @@ class ListaPrecioController(AbstractController):
         self.get_data()
         print("Generando Query")
         self.insert_data()
+        self.del74()
