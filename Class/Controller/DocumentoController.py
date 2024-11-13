@@ -36,9 +36,10 @@ class DocumentoController(AbstractController):
     def clear_table(self, table=None):
         tbl = self.table if table is None else table
         id_field = '[id]' if table is None else '[idDocumento]'
-        query = f"DELETE FROM {tbl} where {id_field} in "
-        query += '(' + ','.join(self.doc_ids) + ');'
-        self.execute_query(query, "delete")
+        for i in range(0, len(self.doc_ids), 50):
+            query = f"DELETE FROM {tbl} where {id_field} in "
+            query += '(' + ','.join(self.doc_ids[i:i+50]) + ');'
+            self.execute_query(query, "delete")
 
     def get_data(self):
         params = f"&expand=[details,sellers]&emissiondaterange=[{self.inicio},{self.fin}]"
